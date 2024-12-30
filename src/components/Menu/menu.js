@@ -114,15 +114,15 @@ const Menu = () => {
         </div>
         <div className="menu-info">
           <div className="menu-info-col">
-              <a href="#" className="underline-animation thin">Instagram &#8599;</a>
-              <a href="#" className="underline-animation thin">LinkedIn &#8599;</a>
+              <a href="#" className="underline-animation thin contact-links">Instagram &#8599;</a>
+              <a href="#" className="underline-animation thin contact-links">LinkedIn &#8599;</a>
           </div>
           <div className="menu-info-col">
               <div>
-                  <p>email here</p>
+                  <p className="contact-links">email here</p>
               </div>
               <div>
-                  <p>phone here</p>
+                  <p className="contact-links">phone here</p>
               </div>
           </div>
         </div>

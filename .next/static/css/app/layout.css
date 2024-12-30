@@ -853,3 +853,38 @@ h1 sup{
         font-size: 50px;
     }
 }
+
+@media(max-width: 450px){
+    .menu-overlay{
+        padding: 1rem;
+        flex-direction: column;
+    }
+
+    .menu-overlay-bar{
+        flex: 0.75;
+    }
+
+    .menu-copy{
+        padding: 1rem 1rem;
+    }
+
+    .extra{
+        font-size: 1rem;
+    }
+
+    .menu-link-item-holder a {
+        font-size: 40px;
+    }
+
+    .contact-links {
+        font-size: 1rem;
+    }
+
+    .menu-close p {
+        font-size: 1.5rem;
+    }
+
+    .underline-animation::after {
+        height: 0.18rem;
+    }
+}
