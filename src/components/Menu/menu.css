@@ -19,6 +19,9 @@
     color: #fff;
 }
 
+.menu-logo{
+}
+
 .menu-open{
     display: flex;
     flex-direction: row;

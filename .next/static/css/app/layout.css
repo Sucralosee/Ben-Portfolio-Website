@@ -528,6 +528,14 @@ video {
     max-width: 1536px;
   }
 }
+.fixed {
+  position: fixed;
+}
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
 
 @font-face {
     font-family: 'Chillax';
@@ -657,6 +665,9 @@ h1 sup{
     font-size: 2rem;
     gap: 1rem;
     color: #fff;
+}
+
+.menu-logo{
 }
 
 .menu-open{
@@ -889,3 +900,14 @@ h1 sup{
         height: 0.18rem;
     }
 }
+/*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/components/PageChange/page-Change.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************/
+.page-transition-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+  }

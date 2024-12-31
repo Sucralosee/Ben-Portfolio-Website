@@ -67,73 +67,73 @@ const Menu = () => {
 
   return (
     <div className="menu-container" ref={container}>
-    <div className="menu-bar">
-        <div className="menu-logo">
-          <Link href="/">
-            <Image src="/white-BL.svg" alt="logo" width={75} height={75} />
-          </Link>
-        </div>
-        <div className="menu-open" onClick={toggleMenu}>
-            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu">
-                <line x1="4" x2="20" y1="12" y2="12"/>
-                <line x1="4" x2="20" y1="6" y2="6"/>
-                <line x1="4" x2="20" y1="18" y2="18"/>
-            </svg>
-            <p className="extra">MENU</p>
-        </div>
-    </div>
-    <div className="menu-overlay">
-      <div className="menu-overlay-bar">
-        {/* <div className="menu-logo">
-          <Link href="/">
-            <Image src="/image/icon_v2.png" alt="logo" width={100} height={100} />
-          </Link>
-        </div> */}
-      <div className="menu-close underline-animation thin" onClick={toggleMenu}>
-          <p className="extra">CLOSE</p>
-          <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      <div className="menu-bar">
+          <div className="menu-logo">
+            <Link href="/">
+              <Image src="/white-BL.svg" alt="logo" width={75} height={75} />
+            </Link>
+          </div>
+          <div className="menu-open" onClick={toggleMenu}>
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu">
+                  <line x1="4" x2="20" y1="12" y2="12"/>
+                  <line x1="4" x2="20" y1="6" y2="6"/>
+                  <line x1="4" x2="20" y1="18" y2="18"/>
+              </svg>
+              <p className="extra">MENU</p>
+          </div>
       </div>
-      </div>
-      <div className="menu-copy">
-        <div className="menu-links">
-          {menuLinks.map((link, index) => (
-            <div className="menu-link-item" key={index}>
-              <div className="menu-link-item-holder" onClick={toggleMenu}>
-                <Link 
-                  href={link.path} 
-                  className={`menu-link underline-animation ${
-                    pathname === link.path ? 'active' : ''
-                  }`}
-                >
-                  {link.label}
-                  <div className="label-underline"></div>
-                </Link>
+      <div className="menu-overlay">
+        <div className="menu-overlay-bar">
+          {/* <div className="menu-logo">
+            <Link href="/">
+              <Image src="/image/icon_v2.png" alt="logo" width={100} height={100} />
+            </Link>
+          </div> */}
+        <div className="menu-close underline-animation thin" onClick={toggleMenu}>
+            <p className="extra">CLOSE</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+        </div>
+        </div>
+        <div className="menu-copy">
+          <div className="menu-links">
+            {menuLinks.map((link, index) => (
+              <div className="menu-link-item" key={index}>
+                <div className="menu-link-item-holder" onClick={toggleMenu}>
+                  <Link 
+                    href={link.path} 
+                    className={`menu-link underline-animation ${
+                      pathname === link.path ? 'active' : ''
+                    }`}
+                  >
+                    {link.label}
+                    <div className="label-underline"></div>
+                  </Link>
+                </div>
               </div>
+            ))}
+          </div>
+          <div className="menu-info">
+            <div className="menu-info-col">
+                <a href="#" className="underline-animation thin contact-links">Instagram &#8599;</a>
+                <a href="#" className="underline-animation thin contact-links">LinkedIn &#8599;</a>
             </div>
-          ))}
-        </div>
-        <div className="menu-info">
-          <div className="menu-info-col">
-              <a href="#" className="underline-animation thin contact-links">Instagram &#8599;</a>
-              <a href="#" className="underline-animation thin contact-links">LinkedIn &#8599;</a>
-          </div>
-          <div className="menu-info-col">
-              <div>
-                  <p className="contact-links">email here</p>
-              </div>
-              <div>
-                  <p className="contact-links">phone here</p>
-              </div>
+            <div className="menu-info-col">
+                <div>
+                    <p className="contact-links">email here</p>
+                </div>
+                <div>
+                    <p className="contact-links">phone here</p>
+                </div>
+            </div>
           </div>
         </div>
+        <div className="menu-preview">
+            <h2>Projects</h2>
+            <p>item</p>
+            <p>item</p>
+            <p>item</p>
+        </div>
       </div>
-      <div className="menu-preview">
-          <h2>Projects</h2>
-          <p>item</p>
-          <p>item</p>
-          <p>item</p>
-      </div>
-    </div>
     </div>
   );
 };

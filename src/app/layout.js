@@ -1,6 +1,9 @@
 import "./globals.css";
+import "../components/PageChange/page-Change.css";
 
 import Menu from "@/components/Menu/menu";
+
+import PageChange from '../components/PageChange/page-Change.js';
 
 export const metadata = {
   title: "BL Porfolio",
@@ -14,8 +17,10 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon.ico" />
       </head>
       <body>
-        <Menu />
-        {children}
+        {/* <PageChange> */}
+          <Menu />
+          {children}
+        {/* </PageChange> */}
       </body>
     </html>
   );
