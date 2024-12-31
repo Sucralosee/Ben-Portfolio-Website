@@ -3,8 +3,12 @@ import Header from "@/components/Header/header";
 
 export default function Home() {
   return (
-    <div className="page-content hero">
+    <>
       <Header title="Home" />
-    </div>
+      <div className="page-content hero">
+        {/* <h1>test</h1> */}
+      </div>
+    </>
+ 
   );
 }

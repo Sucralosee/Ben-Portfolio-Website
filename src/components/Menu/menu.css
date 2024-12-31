@@ -17,7 +17,6 @@
     font-size: 2rem;
     gap: 1rem;
     color: #fff;
-    cursor: pointer;
 }
 
 .menu-open{
@@ -26,6 +25,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 0.5rem;
+    cursor: pointer;
 }
 
 .menu-open svg {
@@ -61,7 +61,7 @@
     flex-direction: row;
     align-items: center;
     gap:1rem;
-    margin: 2rem;
+    margin: 2rem 1rem;
 }
 
 .menu-close-icon{
@@ -98,6 +98,7 @@
 .menu-link{
     font-family: 'Chillax', sans-serif;
     margin-top: 0.5rem;
+    
 }
 
 .menu-link-item{
