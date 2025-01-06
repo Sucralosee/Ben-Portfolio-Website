@@ -528,13 +528,64 @@ video {
     max-width: 1536px;
   }
 }
-.fixed {
-  position: fixed;
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
-.transition {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
+.grid {
+  display: grid;
+}
+.min-h-screen {
+  min-height: 100vh;
+}
+.w-full {
+  width: 100%;
+}
+.max-w-7xl {
+  max-width: 80rem;
+}
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+.gap-6 {
+  gap: 1.5rem;
+}
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+.bg-gray-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
+}
+.p-4 {
+  padding: 1rem;
+}
+.p-6 {
+  padding: 1.5rem;
+}
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.pt-64 {
+  padding-top: 16rem;
+}
+.shadow-lg {
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+:root {
+    --color-white: #fff;
+    --color-black: #000;
+    --color-primary: #e26c55;
+    --color-secondary: #f0f0f0; /* Example secondary color */
+    /* Add more color variables as needed */
 }
 
 @font-face {
@@ -558,12 +609,12 @@ video {
 
 body{
     font-family: "Poppins", sans-serif;
-    background-color: #000;
+    background-color: var(--color-black);
 }
 
 a,
 p{
-    color: #000;
+    color: var(--color-black);
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1.3rem;
@@ -611,7 +662,7 @@ h1 {
     font-size: 5vw;
     font-weight: 500;
     letter-spacing: -0.17rem;
-    color: #fff;
+    color: var(--color-white);
 
     /* top: 50%;
     left: 50%;
@@ -623,7 +674,7 @@ h2{
     font-size: 3.5vw;
     font-weight: 400;
     letter-spacing: -0.04rem;
-    color: #000;
+    color: var(--color-black);
 }
 
 h1 sup{
@@ -634,6 +685,10 @@ h1 sup{
     letter-spacing: 0;
 }
 
+body {
+    background: var(--color-primary);
+}
+
 @media(max-width: 900px){
     .page-content h1 {
         font-size: 10vw;
@@ -642,6 +697,33 @@ h1 sup{
     h1 sup{
         font-size: 4vw;
     }
+}
+
+@media (min-width: 640px) {
+
+  .sm\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
 /*!**************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/components/Menu/menu.css ***!
@@ -664,7 +746,7 @@ h1 sup{
 .menu-open p{
     font-size: 2rem;
     gap: 1rem;
-    color: #fff;
+    color: var(--color-white);
 }
 
 .menu-logo{
@@ -677,10 +759,12 @@ h1 sup{
     align-items: center;
     gap: 0.5rem;
     cursor: pointer;
+    color: var(--color-white);
+
 }
 
 .menu-open svg {
-    color: #fff; /* Match the text color */
+    color: var(--color-white);
 }
 
 .menu-close p {
@@ -696,8 +780,8 @@ h1 sup{
     width: 100vw;
     height: 100vh;
     padding: 2rem;
-    background-color: #cf5b45;
-    z-index: 2;
+    background-color: var(--color-primary);
+    z-index: 999;
     display: flex;
     clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
 }
@@ -778,7 +862,12 @@ h1 sup{
 
 .menu-link.active::after {
     width: 100%;
-  }
+}
+
+.menu-link-item-holder .menu-link.active {
+    margin-left: 1rem;
+    transition: transform 0.3s ease;
+}
 
 .underline-animation {
     position: relative;

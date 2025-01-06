@@ -14,11 +14,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/favicon.ico" />
-      </head>
+        <link rel="icon" href="/favicon.png" />      </head>
       <body>
         {/* <PageChange> */}
-          <Menu />
+        <Menu />  {/*this has to be here to be rendered on every page and that the animation is smooth between pages*/}
           {children}
         {/* </PageChange> */}
       </body>

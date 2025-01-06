@@ -6,23 +6,29 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
+    "/Designs/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/Designs/page.css",
+      "static/chunks/app/Designs/page.js"
+    ],
     "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/page.css",
       "static/chunks/app/page.js"
     ],
-    "/Contact/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/Contact/page.css",
-      "static/chunks/app/Contact/page.js"
-    ],
     "/About/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/About/page.css",
       "static/chunks/app/About/page.js"
+    ],
+    "/Contact/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/Contact/page.css",
+      "static/chunks/app/Contact/page.js"
     ],
     "/Development/page": [
       "static/chunks/webpack.js",

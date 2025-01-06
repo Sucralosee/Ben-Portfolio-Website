@@ -16,7 +16,7 @@
 .menu-open p{
     font-size: 2rem;
     gap: 1rem;
-    color: #fff;
+    color: var(--color-white);
 }
 
 .menu-logo{
@@ -29,10 +29,12 @@
     align-items: center;
     gap: 0.5rem;
     cursor: pointer;
+    color: var(--color-white);
+
 }
 
 .menu-open svg {
-    color: #fff; /* Match the text color */
+    color: var(--color-white);
 }
 
 .menu-close p {
@@ -48,8 +50,8 @@
     width: 100vw;
     height: 100vh;
     padding: 2rem;
-    background-color: #cf5b45;
-    z-index: 2;
+    background-color: var(--color-primary);
+    z-index: 999;
     display: flex;
     clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
 }
@@ -130,7 +132,12 @@
 
 .menu-link.active::after {
     width: 100%;
-  }
+}
+
+.menu-link-item-holder .menu-link.active {
+    margin-left: 1rem;
+    transition: transform 0.3s ease;
+}
 
 .underline-animation {
     position: relative;

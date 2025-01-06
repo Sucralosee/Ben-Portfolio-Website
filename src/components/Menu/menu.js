@@ -6,7 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
-import { usePathname } from 'next/navigation'; // Add this import
+import { usePathname } from 'next/navigation'; 
 
 
 const menuLinks = [
@@ -114,15 +114,16 @@ const Menu = () => {
           </div>
           <div className="menu-info">
             <div className="menu-info-col">
-                <a href="#" className="underline-animation thin contact-links">Instagram &#8599;</a>
-                <a href="#" className="underline-animation thin contact-links">LinkedIn &#8599;</a>
+                <a href="https://www.instagram.com/bl.graphic/" className="underline-animation thin contact-links" target="_blank" rel="noopener noreferrer">Instagram &#8599;</a>
+                <a href="https://www.linkedin.com/in/ben-louis-001116308/" className="underline-animation thin contact-links"
+                target="_blank" rel="noopener noreferrer">LinkedIn &#8599;</a>
             </div>
             <div className="menu-info-col">
                 <div>
-                    <p className="contact-links">email here</p>
+                    <p className="contact-links">Reach me here directly</p>
                 </div>
                 <div>
-                    <p className="contact-links">phone here</p>
+                    <p className="contact-links">benlouis.contact@gmail.com</p>
                 </div>
             </div>
           </div>
