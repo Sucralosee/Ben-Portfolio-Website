@@ -4,16 +4,17 @@ import Header from "@/components/Header/header";
 import Menu from "@/components/Menu/menu";
 
 export const metadata = {
-  title: "BL Porfolio | Development",
+  title: "BL Porfolio | Coding",
   description: "A page of Development projects for Ben Louis",
 };
 
 
-export default function Development() {
+export default function Coding() {
   return (
-    <div className="page-content hero-development">
-      {/* <Menu /> */}
-      <Header title="Development" />
-    </div>
+    <>
+      <Header title="Coding" />
+      <div className="page-content hero-development">
+      </div>
+    </>
   );
 }

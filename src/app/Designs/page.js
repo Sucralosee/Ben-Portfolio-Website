@@ -4,6 +4,7 @@ import Header from "@/components/Header/header";
 
 import Menu from "@/components/Menu/menu";
 
+
 export default function Designs() {
   useEffect(() => {
     const script = document.createElement("script");
@@ -13,10 +14,9 @@ export default function Designs() {
   }, []);
 
   return (
-    <div className="page-content hero-designs min-h-screen">
-      {/* <Menu /> */}
+    <>
       <Header title="Design" />
-      
+      <div className="page-content hero-designs min-h-screen">
       {/* Container with responsive padding */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 pt-64">
         {/* Grid container */}
@@ -95,6 +95,7 @@ export default function Designs() {
           </div>
         </div>
       </div>
-    </div>
+      </div>
+    </>
   );
 }

@@ -30,11 +30,17 @@
       "static/css/app/Contact/page.css",
       "static/chunks/app/Contact/page.js"
     ],
-    "/Development/page": [
+    "/Coding/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/Development/page.css",
-      "static/chunks/app/Development/page.js"
+      "static/css/app/Coding/page.css",
+      "static/chunks/app/Coding/page.js"
+    ],
+    "/Production/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/Production/page.css",
+      "static/chunks/app/Production/page.js"
     ],
     "/_not-found/page": [
       "static/chunks/webpack.js",

@@ -11,9 +11,10 @@ export const metadata = {
 
 export default function Contact() {
   return (
-    <div className="page-content hero-contact">
-      {/* <Menu /> */}
-      <Header title="Contact" />
-    </div>
+    <>
+      <Header title="Contact Me" />
+      <div className="page-content hero-contact">
+      </div>
+    </>
   );
 }

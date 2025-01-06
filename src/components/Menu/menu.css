@@ -136,6 +136,7 @@
 
 .menu-link-item-holder .menu-link.active {
     margin-left: 1rem;
+    font-weight: 500;
     transition: transform 0.3s ease;
 }
 

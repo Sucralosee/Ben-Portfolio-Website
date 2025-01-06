@@ -12,9 +12,11 @@ import { usePathname } from 'next/navigation';
 const menuLinks = [
   { path: "/", label: "Home" },
   { path: "/About", label: "About" },
-  { path: "/Contact", label: "Contact" },
   { path: "/Designs", label: "Designs" },
-  { path: "/Development", label: "Development" },
+  { path: "/Coding", label: "Coding" },
+  { path: "/Production", label: "Production" },
+  { path: "/Contact", label: "Contact" },
+
 ];
 
 const Menu = () => {
