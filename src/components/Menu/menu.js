@@ -11,12 +11,12 @@ import { usePathname } from 'next/navigation';
 
 const menuLinks = [
   { path: "/", label: "Home" },
-  { path: "/About", label: "About" },
   { path: "/Designs", label: "Designs" },
   { path: "/Coding", label: "Coding" },
+  { path: "/Projects", label: "Projects" },
   { path: "/Production", label: "Production" },
   { path: "/Contact", label: "Contact" },
-  { path: "/Projects", label: "Projects" },
+  { path: "/About", label: "About" },
 ];
 
 const Menu = () => {
@@ -120,9 +120,13 @@ const Menu = () => {
           </div>
           <div className="menu-info">
             <div className="menu-info-col">
-                <a href="https://www.instagram.com/bl.graphic/" className="underline-animation thin contact-links" target="_blank" rel="noopener noreferrer">Instagram &#8599;</a>
-                <a href="https://www.linkedin.com/in/ben-louis-001116308/" className="underline-animation thin contact-links"
-                target="_blank" rel="noopener noreferrer">LinkedIn &#8599;</a>
+              <a href="https://www.instagram.com/bl.graphic/" className="underline-animation thin contact-links social-link" target="_blank" rel="noopener noreferrer">
+                Instagram<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 5H19V11"/><path d="M19 5L5 19"/></svg>
+              </a>
+              <div></div>
+              <a href="https://www.linkedin.com/in/ben-louis-001116308/" className="underline-animation thin contact-links social-link" target="_blank" rel="noopener noreferrer">
+                LinkedIn<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 5H19V11"/><path d="M19 5L5 19"/></svg>
+              </a>
             </div>
             <div className="menu-info-col">
                 <div>

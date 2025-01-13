@@ -544,6 +544,15 @@ video {
 .mb-8 {
   margin-bottom: 2rem;
 }
+.mt-24 {
+  margin-top: 6rem;
+}
+.mt-6 {
+  margin-top: 1.5rem;
+}
+.flex {
+  display: flex;
+}
 .grid {
   display: grid;
 }
@@ -567,6 +576,12 @@ video {
 }
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+.flex-col {
+  flex-direction: column;
+}
+.items-center {
+  align-items: center;
 }
 .gap-6 {
   gap: 1.5rem;
@@ -630,6 +645,9 @@ video {
 .pt-64 {
   padding-top: 16rem;
 }
+.text-center {
+  text-align: center;
+}
 .leading-relaxed {
   line-height: 1.625;
 }
@@ -681,7 +699,6 @@ a,
 p{
     color: var(--color-black);
     text-decoration: none;
-    /* text-transform: uppercase; */
     font-size: 1.3rem;
     font-weight: 500;
     line-height: 100%;
@@ -690,8 +707,7 @@ p{
 .page-content{
     width: 100%;
     height: 100%;
-    height: 1000vh;
-    /* padding: 6em 2em; */
+    height: 300vh;
 }
 
 h1 {
@@ -700,18 +716,28 @@ h1 {
     font-weight: 500;
     letter-spacing: -0.17rem;
     color: var(--color-white);
-
-    /* top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
 }
 
-h2{
+h2, h3, h4, h5, h6{
     font-family: 'Supreme', sans-serif;
+    color: var(--color-white);
+
+}
+h2{
     font-size: 3vw;
     font-weight: 500;
-    letter-spacing: -0.04rem;
-    color: var(--color-black);
+}
+h3{
+    font-size: 2vw;
+    font-weight: 500;
+}
+h4{
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+h5{
+    font-size: 1.2vw;
+    font-weight: 500;
 }
 
 h1 sup{
@@ -726,6 +752,18 @@ h1 sup{
 @media(max-width: 900px){
     .page-content h1 {
         font-size: 10vw;
+    }
+    .page-content h2 {
+        font-size: 6vw;
+    }
+    .page-content h3 {
+        font-size: 4vw;
+    }
+    .page-content h4 {
+        font-size: 3vw;
+    }
+    .page-content h5 {
+        font-size: 3vw;
     }
 
     h1 sup{
@@ -983,6 +1021,11 @@ h1 sup{
     gap: 0.2rem;
 }
 
+.social-link {
+    display: flex;
+    align-items: center;
+}
+
 @media(max-width: 1100px){
     .menu-close-icon p{
        display: none;
@@ -1040,6 +1083,8 @@ h1 sup{
 
     .contact-links {
         font-size: 1rem;
+        display: flex;
+        flex-direction: row;
     }
 
     .menu-close p {
