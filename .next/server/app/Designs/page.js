@@ -324,7 +324,7 @@ function() { throw new Error("Attempted to call the default export of \"/Users/b
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, ["vendor-chunks/next","vendor-chunks/@swc","vendor-chunks/gsap","vendor-chunks/@gsap"], () => (__webpack_exec__("(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2FDesigns%2Fpage&page=%2FDesigns%2Fpage&appPaths=%2FDesigns%2Fpage&pagePath=private-next-app-dir%2FDesigns%2Fpage.js&appDir=%2FUsers%2Fbenl%2FDesktop%2FBen-Portfolio-Website%2Fsrc%2Fapp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=%2FUsers%2Fbenl%2FDesktop%2FBen-Portfolio-Website&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!")));
+var __webpack_exports__ = __webpack_require__.X(0, ["vendor-chunks/next","vendor-chunks/gsap","vendor-chunks/@gsap","vendor-chunks/@swc"], () => (__webpack_exec__("(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2FDesigns%2Fpage&page=%2FDesigns%2Fpage&appPaths=%2FDesigns%2Fpage&pagePath=private-next-app-dir%2FDesigns%2Fpage.js&appDir=%2FUsers%2Fbenl%2FDesktop%2FBen-Portfolio-Website%2Fsrc%2Fapp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=%2FUsers%2Fbenl%2FDesktop%2FBen-Portfolio-Website&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!")));
 module.exports = __webpack_exports__;
 
 })();

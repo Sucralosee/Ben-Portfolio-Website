@@ -77,6 +77,14 @@ export default function Home() {
           </h5>
           <svg ref={el => fadeRefs.current[5] = el} xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-down scroll mt-6"><path d="M8 18L12 22L16 18"/><path d="M12 2V22"/></svg>
         </div>
+
+        <div className="scrolled size-40 bg-white">Section 1 </div>
+
+        <div className="scrolled size-40 bg-white">Section 2 </div>
+
+        <div className="scrolled size-40 bg-white">Section 3 </div>
+        
+        <div className="scrolled size-40 bg-white">Section 4 </div>
       </div>
     </>
   );
