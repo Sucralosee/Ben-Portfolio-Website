@@ -1,4 +1,7 @@
-
+.menu-container{
+    z-index: 1000;
+    position: fixed;
+}
 
 .menu-bar, .menu-overlay{
     position: fixed;
@@ -9,7 +12,7 @@
     display: flex;
     justify-content: space-between;
     /* align-items: center; */
-    z-index: 1;
+    z-index: 100;
 }
 
 .menu-bar a,
@@ -107,6 +110,7 @@
 }
 
 .menu-link-item{
+    text-transform: uppercase;
     width: max-content;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }

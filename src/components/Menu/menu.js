@@ -16,7 +16,7 @@ const menuLinks = [
   { path: "/Coding", label: "Coding" },
   { path: "/Production", label: "Production" },
   { path: "/Contact", label: "Contact" },
-
+  { path: "/Projects", label: "Projects" },
 ];
 
 const Menu = () => {
@@ -68,7 +68,11 @@ const Menu = () => {
   }, [isMenuOpen]);
 
   return (
-    <div className="menu-container" ref={container}>
+    <div 
+      className="menu-container" 
+      ref={container}
+      id="navbar"
+    >
       <div className="menu-bar">
           <div className="menu-logo">
             <Link href="/">

@@ -42,6 +42,12 @@
       "static/css/app/Production/page.css",
       "static/chunks/app/Production/page.js"
     ],
+    "/Projects/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/Projects/page.css",
+      "static/chunks/app/Projects/page.js"
+    ],
     "/_not-found/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
