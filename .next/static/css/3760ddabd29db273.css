@@ -1,0 +1,1 @@
+.header-container{position:relative;top:0;width:100%;display:flex;flex-direction:column;padding:7rem 2rem 2rem;color:#fff}.header-title{position:relative;left:-.5rem}@media screen and (max-width:1200px){.header-title{margin-top:1rem;left:0}}@media screen and (max-width:600px){.header-title{margin-top:.5rem;left:0;font-size:2.5rem}}
