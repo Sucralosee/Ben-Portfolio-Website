@@ -615,9 +615,6 @@ video {
 .rounded-lg {
   border-radius: 0.5rem;
 }
-.border {
-  border-width: 1px;
-}
 .border-b-2 {
   border-bottom-width: 2px;
 }
@@ -679,9 +676,6 @@ video {
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
-.filter {
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
 
 :root {
     --color-white: #fff;
@@ -736,7 +730,7 @@ p{
 .page-content{
     width: 100%;
     height: 100%;
-    height: 400vh;
+    height: 700vh;
 }
 
 h1 {
@@ -787,12 +781,18 @@ h1 sup{
     font-family: 'Poppins', sans-serif;
     font-size: 4rem;
     color: var(--color-D-Header);
+
+    margin: 2rem 0 1rem;
+
 }
 
 .SubHead{
     font-family: 'Poppins', sans-serif;
     font-size: 2rem;
     color: var(--color-D-Header);
+
+    margin: 1.5rem 0 1rem;
+
 }
 
 .SubSub{
@@ -810,6 +810,8 @@ h1 sup{
     font-family: 'Poppins', sans-serif;
     font-size: 1.75rem;
     color: var(--color-D-Copy);
+
+    margin: 0.5rem 0 1rem;
 }
 
 .Pop24{

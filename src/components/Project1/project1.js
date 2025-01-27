@@ -62,20 +62,20 @@ const Project1 = ({
 
   return (
     <div className="project-container">
-      <div className="project-header-container">
-        <div className="top-head" ref={el => fadeRefs.current[0] = el}>
-          <div className="name-head">
-            <p className="SuprHead">{Head1}</p>
-            <p className="SubHead head-date top-head-pad">{Head2}</p>
-          </div>
-          <div className="place-head">
-            <p className="SubHead top-head-pad">{Head3}</p>
-          </div>
+        <div className="project-header-container">
+            <div className="top-head" ref={el => fadeRefs.current[0] = el}>
+            <div className="name-head">
+                <p className="SuprHead">{Head1}</p>
+                <p className="SubHead head-date top-head-pad">{Head2}</p>
+            </div>
+            <div className="place-head">
+                <p className="SubHead top-head-pad">{Head3}</p>
+            </div>
+            </div>
+            <div className="bot-head" ref={el => fadeRefs.current[1] = el}>
+            <div className="SubHead role-head">{Head4}</div>
+            </div>
         </div>
-        <div className="bot-head" ref={el => fadeRefs.current[1] = el}>
-          <div className="SubHead role-head">{Head4}</div>
-        </div>
-      </div>
     </div>
   );
 }

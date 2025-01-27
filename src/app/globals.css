@@ -55,7 +55,7 @@ p{
 .page-content{
     width: 100%;
     height: 100%;
-    height: 400vh;
+    height: 700vh;
 }
 
 h1 {
@@ -106,12 +106,18 @@ h1 sup{
     font-family: 'Poppins', sans-serif;
     font-size: 4rem;
     color: var(--color-D-Header);
+
+    margin: 2rem 0 1rem;
+
 }
 
 .SubHead{
     font-family: 'Poppins', sans-serif;
     font-size: 2rem;
     color: var(--color-D-Header);
+
+    margin: 1.5rem 0 1rem;
+
 }
 
 .SubSub{
@@ -129,6 +135,8 @@ h1 sup{
     font-family: 'Poppins', sans-serif;
     font-size: 1.75rem;
     color: var(--color-D-Copy);
+
+    margin: 0.5rem 0 1rem;
 }
 
 .Pop24{

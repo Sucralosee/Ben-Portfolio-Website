@@ -7,7 +7,6 @@
 }
 
 .project-header-container{
-    border-bottom: 0.25rem solid var(--color-primary);
 }
 
 .top-head{
@@ -17,6 +16,13 @@
     justify-content: space-between;
     align-items: flex-end;
     
+}
+
+.bot-head{
+
+    border-bottom: 0.25rem solid var(--color-primary);
+
+    margin-bottom: 0.5rem;
 }
 
 .top-head-pad{
