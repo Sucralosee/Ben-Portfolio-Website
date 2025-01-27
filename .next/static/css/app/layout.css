@@ -908,6 +908,10 @@ h1 sup{
     position: fixed;
 }
 
+.menu-bar{
+    margin: 0 6rem;
+}
+
 .menu-bar, .menu-overlay{
     /* border: red 2px solid; */
     position: fixed;
@@ -920,7 +924,6 @@ h1 sup{
     /* align-items: center; */
     z-index: 100;
 
-    margin: 0 6rem;
 }
 
 .menu-bar a,

@@ -3,6 +3,10 @@
     position: fixed;
 }
 
+.menu-bar{
+    margin: 0 6rem;
+}
+
 .menu-bar, .menu-overlay{
     /* border: red 2px solid; */
     position: fixed;
@@ -15,7 +19,6 @@
     /* align-items: center; */
     z-index: 100;
 
-    margin: 0 6rem;
 }
 
 .menu-bar a,
