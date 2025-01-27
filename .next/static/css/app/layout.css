@@ -800,6 +800,17 @@ h1 sup{
     font-size: 2rem;
     color: var(--color-D-Copy);
 }
+.Pop28{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.75rem;
+    color: var(--color-D-Copy);
+}
+
+.Pop24{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    color: var(--color-D-Copy);
+}
 
 .Pop20{
     font-family: 'Poppins', sans-serif;

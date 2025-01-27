@@ -99,6 +99,12 @@
     gap: 2rem;
 }
 
+.logos{
+    display: flex;
+    gap: 3rem;
+}
+
+
 .role-overview{
     margin-top: 1rem;
 }
@@ -115,7 +121,10 @@
 }
 
 .tertiary-container{
+    width: 100%;
+
     display: flex;
+    justify-content: space-between;
     margin-top: 8rem;
 
     gap: 2rem;
@@ -124,18 +133,29 @@
 .left-tertiary{
     display: flex;
     flex-direction: column;
-    width: 50%;
-    gap: 2rem;
+    width: 35%;
+}
+
+.left-tertiary .Head {
+    margin-bottom: 2rem;
+}
+
+.pop-gap{
+    margin-top: 0.5rem;
 }
 
 .right-tertiary{
     display: flex;
     flex-direction: column;
-    width: 50%;
+
+    width: 65%;
     gap: 2rem;
+    padding-left: 11rem;
+
 }
 
 .carousel {
+    display: flex;
     position: relative;
     width: 400px; /* Make the carousel take up 100% of the container's width */
     height: auto; /* Adjust height based on the images */
@@ -184,6 +204,7 @@
 
 .carousel img:nth-child(1) {
     left: 120%; /* Adjust this value to control the overlap */
+    margin-right: 1rem;
 }
 
 /* Media query for smaller screens */
