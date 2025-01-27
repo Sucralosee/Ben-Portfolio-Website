@@ -1,0 +1,24 @@
+.LH-container{
+    display: flex;
+    margin: 2rem 8rem 0 8rem;
+}
+
+.overview-container{
+    display: flex; 
+    justify-content: space-between;
+}
+
+.left-overview{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-right: 2rem;
+    gap: 1rem;
+}
+
+.right-overview{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 1rem;
+}

@@ -1,13 +1,8 @@
-import Image from "next/image";
 import Header from "@/components/Header/header";
 
-import Menu from "@/components/Menu/menu";
+import Project1 from "@/components/Project1/project1";
 
-export const metadata = {
-  title: "BL Porfolio | Projects",
-  description: "A page to contact Ben Louis",
-};
-
+import LH from "@/components/LocalHarvest/LH";
 
 export default function Projects() {
   return (
@@ -15,6 +10,7 @@ export default function Projects() {
       <Header title="Projects" />
       <div className="page-content hero-projects">
             
+        <LH />
 
       </div>
     </>

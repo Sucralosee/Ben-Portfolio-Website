@@ -6,8 +6,15 @@
     --color-white: #fff;
     --color-black: #000;
     --color-primary: #e26c55;
-    --color-secondary: #f0f0f0; 
-    --color-test: #2A2A2A;
+
+    --color-L-Header: #0d0d0d;
+    --color-L-Copy: #2A2A2A;
+    --color-L-BG: #eff0f3;
+
+    --color-D-Header: #eeeded;
+    --color-D-Copy: #ededed;
+    --color-D-BG: #2a2a2a;
+
 }
 
 @font-face {
@@ -33,7 +40,7 @@
 
 body{
     font-family: "Poppins", sans-serif;
-    background-color: var(--color-test);
+    background-color: var(--color-D-BG);
 }
 
 a,
@@ -56,12 +63,12 @@ h1 {
     font-size: 5vw;
     font-weight: 500;
     letter-spacing: -0.17rem;
-    color: var(--color-white);
+    color: var(--color-D-Header);
 }
 
 h2, h3, h4, h5, h6{
     font-family: 'Supreme', sans-serif;
-    color: var(--color-white);
+    color: var(--color-D-Header);
 
 }
 h2{
@@ -87,6 +94,42 @@ h1 sup{
     left: 0.5rem;
     font-size: 1.5vw;
     letter-spacing: 0;
+}
+
+.SuprHead{
+    font-family: 'Supreme', sans-serif;
+    font-size: 6rem;
+    color: var(--color-D-Header);
+}
+
+.Head{
+    font-family: 'Poppins', sans-serif;
+    font-size: 4rem;
+    color: var(--color-D-Header);
+}
+
+.SubHead{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    color: var(--color-D-Header);
+}
+
+.SubSub{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    color: var(--color-D-Header);
+}
+
+.Pop32{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    color: var(--color-D-Copy);
+}
+
+.Pop20{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+    color: var(--color-D-Copy);
 }
 
 

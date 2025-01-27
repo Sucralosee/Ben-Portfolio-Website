@@ -1,0 +1,35 @@
+.project-container{
+    /* border: green 2px solid; */
+
+    display: flex;
+    height: 10rem;
+    margin:0 8rem;
+}
+
+.project-header-container{
+    border-bottom: 0.25rem solid var(--color-primary);
+}
+
+.top-head{
+    width: 85vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+}
+
+.top-head-pad{
+    padding-bottom: 0.6rem;
+}
+
+.name-head{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.head-date{
+    margin-left: 4rem;
+    padding-bottom: 0.6rem;
+}

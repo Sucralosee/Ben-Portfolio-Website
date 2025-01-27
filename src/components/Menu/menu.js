@@ -80,7 +80,7 @@ const Menu = () => {
             </Link>
           </div>
           <div className="menu-open" onClick={toggleMenu}>
-              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-menu">
                   <line x1="4" x2="20" y1="12" y2="12"/>
                   <line x1="4" x2="20" y1="6" y2="6"/>
                   <line x1="4" x2="20" y1="18" y2="18"/>
@@ -97,7 +97,7 @@ const Menu = () => {
           </div> */}
         <div className="menu-close underline-animation thin" onClick={toggleMenu}>
             <p className="extra">CLOSE</p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
         </div>
         </div>
         <div className="menu-copy">
@@ -121,11 +121,11 @@ const Menu = () => {
           <div className="menu-info">
             <div className="menu-info-col">
               <a href="https://www.instagram.com/bl.graphic/" className="underline-animation thin contact-links social-link" target="_blank" rel="noopener noreferrer">
-                Instagram<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 5H19V11"/><path d="M19 5L5 19"/></svg>
+                Instagram<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M13 5H19V11"/><path d="M19 5L5 19"/></svg>
               </a>
               <div></div>
               <a href="https://www.linkedin.com/in/ben-louis-001116308/" className="underline-animation thin contact-links social-link" target="_blank" rel="noopener noreferrer">
-                LinkedIn<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 5H19V11"/><path d="M19 5L5 19"/></svg>
+                LinkedIn<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M13 5H19V11"/><path d="M19 5L5 19"/></svg>
               </a>
             </div>
             <div className="menu-info-col">

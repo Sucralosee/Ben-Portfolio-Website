@@ -4,6 +4,7 @@
 }
 
 .menu-bar, .menu-overlay{
+    border: red 2px solid;
     position: fixed;
     top: 0;
     left: 0;
@@ -13,13 +14,15 @@
     justify-content: space-between;
     /* align-items: center; */
     z-index: 100;
+
+    /* margin: 0 6rem; */
 }
 
 .menu-bar a,
 .menu-open p{
     font-size: 2rem;
     gap: 1rem;
-    color: var(--color-white);
+    color: var(--color-D-Header);
 }
 
 .menu-logo{
@@ -32,12 +35,12 @@
     align-items: center;
     gap: 0.5rem;
     cursor: pointer;
-    color: var(--color-white);
+    color: var(--color-D-Header);
 
 }
 
 .menu-open svg {
-    color: var(--color-white);
+    color: var(--color-D-Header);
 }
 
 .menu-close p {
