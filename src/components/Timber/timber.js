@@ -61,27 +61,33 @@ const Timber = ({
 
             <div className="Timber-main-container" ref={el => fadeRefs.current[1] = el}>
                 <div className="left-overview" ref={el => fadeRefs.current[2] = el}>
-                    <p className="Head">Overview</p>
+                    <p className="SubHead">Overview</p>
                     <p className="Pop20">Timber was a creative look into the design and copywriting experience of creating a magazine from the ground up.</p>
                     <p className="Pop20 gaps">Created for enjoyers of nature and people wanted to learn more of our relationship with wildfires </p>
                     {/* <img src="/image/LHlogo.svg" alt="logo" width={800} height={100} ref={el => fadeRefs.current[3] = el} /> */}
                     <p className="SubHead role-overview"> My Role</p>
                         <h2 className="Pop24">Editorial Design</h2>
-                        <p className="Pop20 pusher">
+                        <p className="Pop20 ML1">
                             Crafted the visual identity of *Timber* magazine by merging striking typography, cohesive color schemes, and compelling imagery. Ensured the design captured the essence of historic fire lookouts, creating an engaging reading experience that resonates with nature enthusiasts and history lovers.
                         </p>
                         
                         <h2 className="Pop24">Research</h2>
-                        <p className="Pop20 pusher">
+                        <p className="Pop20 ML1">
                             Delved into the rich history of fire lookouts, uncovering fascinating stories and details that brought *Timber* to life. Conducted meticulous research to ensure historical accuracy, blending facts with storytelling to provide a meaningful connection to these architectural icons.
                         </p>
                         
                         <h2 className="Pop24">Layout Design</h2>
-                        <p className="Pop20 pusher">
+                        <p className="Pop20 ML1">
                             Designed clean, visually captivating layouts that balanced aesthetics and readability. Created a structured yet creative framework to showcase *Timber's* content, seamlessly integrating text and imagery for an immersive magazine experience.
                         </p>
                     <div className="logos-container">
-                        <p className="SubHead">Tools that I used</p>
+                        <p className="SubHead">Tools used</p>
+                        <div className="tools-container">
+                            <img src="/image/Tools/ID.png" alt="InDesign logo" width={120} height={35} className="adobe-logo" ref={el => fadeRefs.current[4] = el} />
+                            <img src="/image/Tools/AI.png" alt="Illustrator logo" width={120} height={35} className="adobe-logo" ref={el => fadeRefs.current[4] = el} />
+                            <img src="/image/Tools/PS.png" alt="Photoshop logo" width={120} height={35} className="adobe-logo" ref={el => fadeRefs.current[4] = el} />
+                            <img src="/image/Tools/figmalogo.svg" alt="Figma logo" width={200} height={35} className="adobe-logo" ref={el => fadeRefs.current[4] = el} />
+                        </div>
                         {/* <div className="logos">
                             <img src="/image/figmalogo.svg" alt="logo" width={250} height={50} className="figma-logo" ref={el => fadeRefs.current[4] = el} />
                             <img src="/image/excel.png" alt="logo" width={120} height={35} className="adobe-logo" ref={el => fadeRefs.current[4] = el} />

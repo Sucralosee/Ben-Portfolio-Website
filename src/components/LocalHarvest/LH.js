@@ -73,15 +73,15 @@ const LH = ({
                         Went through multiple rounds of app design iterations from lo-fi to hi-fi to figure out what worked best.
                     </p>
 
-                    <h2 className="Pop24">User Testing</h2>
+                    <h2 className="Pop2">User Testing</h2>
                     <p className="Pop20 ML1">
                         Conducted numerous testing sessions to understand and adjust the prototypes of the app to improve the flow and usability within the app.
                     </p>
                     <div className="logos-container">
-                        <p className="SubHead">Tools that I used</p>
+                        <p className="SubHead">Tools used</p>
                         <div className="logos">
-                            <img src="/image/figmalogo.svg" alt="logo" width={250} height={50} className="figma-logo" ref={el => fadeRefs.current[4] = el} />
-                            <img src="/image/excel.png" alt="logo" width={120} height={35} className="adobe-logo" ref={el => fadeRefs.current[4] = el} />
+                            <img src="/image/Tools/figmalogo.svg" alt="logo" width={250} height={50} className="figma-logo" ref={el => fadeRefs.current[4] = el} />
+                            <img src="/image/Tools/excel.png" alt="logo" width={120} height={35} className="adobe-logo" ref={el => fadeRefs.current[4] = el} />
                         </div>
                     </div>
                 </div>

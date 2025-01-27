@@ -336,6 +336,14 @@
     margin: 1rem 8rem;
 }
 
+.tools-container{
+    display: flex;
+    align-items: center;
+    height:auto;
+
+    gap: 1rem;
+}
+
 .timber-frame{
     width: 100%;
     height: 80vh;
