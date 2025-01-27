@@ -4,6 +4,7 @@ import Project1 from "../Project1/project1";
 import gsap from "gsap";
 
 import "./LH.css";
+import Accordion from "../Accordion/accordion";
 
 const LH = ({ 
     Head1 = "Local Harvest", 
@@ -83,31 +84,17 @@ const LH = ({
                     </video>
                 </div>
             </div>
-
+            
+            
             <div className="tertiary-container" ref={el => fadeRefs.current[6] = el}>
                 <div className="left-tertiary" ref={el => fadeRefs.current[7] = el}>
-                    <p className="Head">Key Design Choices</p>
-                    <p className="SubHead">Account Page</p>
-                    <p className="Pop20 pop-gap">The design of the vendor account page emphasizes simplicity and clarity to ensure seamless navigation for users managing their marketplace presence. Each section is thoughtfully structured to provide quick access to essential features like order management, product inventory, and vendor profile customization.</p>
-                    <h3 className="Pop28 pop-gap">Streamlined Navigation</h3>
-                    <p className="Pop20">Designed an intuitive, left-aligned menu hierarchy to provide vendors quick access to essential tools, such as "Edit Vendor Page," "Add Products," and "Inventory," ensuring effortless usability.</p>
-                    <h3 className="Pop28 pop-gap">Cohesive Visual Identity</h3>
-                    <p className="Pop20">Crafted a professional interface using clean typography, intuitive icons, and balanced spacing to enhance clarity and brand consistency.</p>
-                    <h3 className="Pop28 pop-gap">Task-Focused Screens</h3>
-                    <p className="Pop20">Developed user-centered workflows with dedicated screens for specific actions, like updating branding or managing products, enabling efficiency and reducing cognitive load.</p>
-                    <h3 className="Pop28 pop-gap">Action-Oriented CTAs</h3>
-                    <p className="Pop20">Incorporated bold, strategically placed buttons like "Save Changes" and "Add Product" to guide user interactions seamlessly.</p>
-                    <h3 className="Pop28 pop-gap">Optimized Data Display</h3>
-                    <p className="Pop20">Prioritized essential information such as order details and inventory counts with structured layouts, improving scannability and comprehension.</p>
+                    <p className="SubHead">Key Design Choices</p>
+
+                    <Accordion/>                    
                 </div>
                 <div className="right-tertiary" ref={el => fadeRefs.current[8] = el}>
-                    <div className="carousel">
-                        <img src="/image/LH-image/LH-Acc6.png" alt="main local harvest account page" width={500} height={800} ref={el => fadeRefs.current[9] = el} />
-                        <img src="/image/LH-image/LH-Acc5.png" alt="main local harvest account page" width={500} height={800} ref={el => fadeRefs.current[10] = el} />
-                        <img src="/image/LH-image/LH-Acc4.png" alt="main local harvest account page" width={500} height={800} ref={el => fadeRefs.current[11] = el} />
-                        <img src="/image/LH-image/LH-Acc3.png" alt="main local harvest account page" width={500} height={800} ref={el => fadeRefs.current[12] = el} />
-                        <img src="/image/LH-image/LH-Acc1.png" alt="main local harvest account page" width={500} height={800} ref={el => fadeRefs.current[13] = el} />
-                        <img src="/image/LH-image/LH-Acc.png" alt="main local harvest account page" width={500} height={800} ref={el => fadeRefs.current[14] = el} />
+                    <div className="figma-container">
+                        <iframe className="figma" src="https://embed.figma.com/design/yIqwI8dJfG659K9I6YGTfB/LH-Portfolio?node-id=0-1&embed-host=share" allowFullScreen></iframe>
                     </div>
                 </div>
             </div>
