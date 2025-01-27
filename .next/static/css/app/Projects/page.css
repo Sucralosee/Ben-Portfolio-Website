@@ -330,14 +330,20 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height:auto;
 
-    margin: 2rem 8rem;
+
+    margin: 1rem 8rem;
 }
 
 .timber-frame{
     width: 100%;
-    height: 100%;
-
-    margin-top: 2rem;
+    height: 80vh;
+    margin-top: 1rem;
 }
+
+.gaps{
+    margin-top: 0.5rem;
+}
+
+

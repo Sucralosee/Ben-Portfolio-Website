@@ -151,6 +151,9 @@ h1 sup{
     color: var(--color-D-Copy);
 }
 
+.ML1{
+    margin-left: 1rem;
+}
 
 @media(max-width: 900px){
     .page-content h1 {

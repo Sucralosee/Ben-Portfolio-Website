@@ -63,18 +63,18 @@ const LH = ({
                     <p className="Pop20">Local Harvest was a project that was created from the ground up to solve a market researched problem amongst local farmers and farmers markets in BC. It sought to connect farmers and consumers before a farmers market to pre-order their goods before their products are sold out.</p>
                     <img src="/image/LHlogo.svg" alt="logo" width={800} height={100} ref={el => fadeRefs.current[3] = el} />
                     <p className="SubHead role-overview"> My Role</p>
-                    <h2 className="Pop28">UX/UI Design</h2>
-                    <p className="Pop20">
+                    <h2 className="Pop24">UX/UI Design</h2>
+                    <p className="Pop20 ML1">
                         Oversaw the design of the app from start to finish.
                     </p>
 
-                    <h2 className="Pop28">Design</h2>
-                    <p className="Pop20">
+                    <h2 className="Pop24">Design</h2>
+                    <p className="Pop20 ML1">
                         Went through multiple rounds of app design iterations from lo-fi to hi-fi to figure out what worked best.
                     </p>
 
-                    <h2 className="Pop28">User Testing</h2>
-                    <p className="Pop20">
+                    <h2 className="Pop24">User Testing</h2>
+                    <p className="Pop20 ML1">
                         Conducted numerous testing sessions to understand and adjust the prototypes of the app to improve the flow and usability within the app.
                     </p>
                     <div className="logos-container">
