@@ -96,8 +96,8 @@ const Timber = ({
             <div className="timber-container">
                 <img 
                     src="/image/timber/TimberSpreadMag.png"
-                    width={800} height={100}
-                    // className="timber-frame"
+                    width={800} height={800}
+                    className="timber-spread"
                 />
             </div>
             <div className="timber-container">

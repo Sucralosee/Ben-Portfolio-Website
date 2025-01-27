@@ -23,6 +23,11 @@
     margin-top: 1rem;
 }
 
+.timber-spread{
+    width: 100%;
+    height: fit-content;
+}
+
 .gaps{
     margin-top: 0.5rem;
 }
