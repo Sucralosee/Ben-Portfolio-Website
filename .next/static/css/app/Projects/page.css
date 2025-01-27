@@ -139,7 +139,7 @@
 
     display: flex;
     justify-content: space-between;
-    margin-top: 8rem;
+    margin-top: 2rem;
 
     gap: 2rem;
 }
@@ -164,8 +164,8 @@
 
     width: 65%;
     gap: 2rem;
-    /* padding-left: 11rem; */
 
+    margin-top: 8rem;
 }
 
 .carousel {

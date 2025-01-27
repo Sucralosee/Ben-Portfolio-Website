@@ -909,18 +909,18 @@ h1 sup{
 }
 
 .menu-bar, .menu-overlay{
-    border: red 2px solid;
+    /* border: red 2px solid; */
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 90vw;
     padding: 2rem;
     display: flex;
     justify-content: space-between;
     /* align-items: center; */
     z-index: 100;
 
-    /* margin: 0 6rem; */
+    margin: 0 6rem;
 }
 
 .menu-bar a,
@@ -931,6 +931,7 @@ h1 sup{
 }
 
 .menu-logo{
+
 }
 
 .menu-open{
@@ -1125,6 +1126,10 @@ h1 sup{
 
     .menu-link-item-holder a {
         font-size: 60px;
+    }
+
+    .menu-bar, .menu-overlay{
+    margin: 0;
     }
 }
 

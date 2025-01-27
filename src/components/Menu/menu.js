@@ -76,7 +76,7 @@ const Menu = () => {
       <div className="menu-bar">
           <div className="menu-logo">
             <Link href="/">
-              <Image src="/white-BL.svg" alt="logo" width={75} height={75} />
+              <Image src="/white-BL.svg" alt="logo" width={50} height={50} />
             </Link>
           </div>
           <div className="menu-open" onClick={toggleMenu}>

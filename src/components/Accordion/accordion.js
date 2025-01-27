@@ -65,7 +65,7 @@ const Accordion = () => {
         <div key={index} className="accordion-section SubHead">
             <div className="accordion-button">
                 <button
-                    className="accordion-header "
+                    className="accordion-header SubSub"
                     onClick={() => toggleAccordion(index)}
                 >
                     {section.title}

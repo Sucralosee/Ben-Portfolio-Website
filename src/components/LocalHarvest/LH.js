@@ -61,7 +61,7 @@ const LH = ({
                 <div className="left-overview" ref={el => fadeRefs.current[2] = el}>
                     <p className="Head">Overview</p>
                     <p className="Pop20">Local Harvest was a project that was created from the ground up to solve a market researched problem amongst local farmers and farmers markets in BC. It sought to connect farmers and consumers before a farmers market to pre-order their goods before their products are sold out.</p>
-                    <img src="/image/LHlogo.svg" alt="logo" width={800} height={100} ref={el => fadeRefs.current[3] = el} />
+                    {/* <img src="/image/LHlogo.svg" alt="logo" width={800} height={100} ref={el => fadeRefs.current[3] = el} /> */}
                     <p className="SubHead role-overview"> My Role</p>
                     <h2 className="Pop24">UX/UI Design</h2>
                     <p className="Pop20 ML1">
@@ -73,15 +73,15 @@ const LH = ({
                         Went through multiple rounds of app design iterations from lo-fi to hi-fi to figure out what worked best.
                     </p>
 
-                    <h2 className="Pop2">User Testing</h2>
+                    <h2 className="Pop24">User Testing</h2>
                     <p className="Pop20 ML1">
                         Conducted numerous testing sessions to understand and adjust the prototypes of the app to improve the flow and usability within the app.
                     </p>
                     <div className="logos-container">
                         <p className="SubHead">Tools used</p>
                         <div className="logos">
-                            <img src="/image/Tools/figmalogo.svg" alt="logo" width={250} height={50} className="figma-logo" ref={el => fadeRefs.current[4] = el} />
-                            <img src="/image/Tools/excel.png" alt="logo" width={120} height={35} className="adobe-logo" ref={el => fadeRefs.current[4] = el} />
+                            <img src="/image/Tools/figmalogo.svg" alt="logo" width={200} height={50} className="figma-logo" ref={el => fadeRefs.current[4] = el} />
+                            {/* <img src="/image/Tools/excel.png" alt="logo" width={120} height={35} className="adobe-logo" ref={el => fadeRefs.current[4] = el} /> */}
                         </div>
                     </div>
                 </div>
@@ -96,7 +96,7 @@ const LH = ({
             
             <div className="tertiary-container" ref={el => fadeRefs.current[6] = el}>
                 <div className="left-tertiary" ref={el => fadeRefs.current[7] = el}>
-                    <p className="SubHead">Key Design Choices</p>
+                    <p className="Head">Key Design Choices</p>
 
                     <Accordion/>                    
                 </div>
