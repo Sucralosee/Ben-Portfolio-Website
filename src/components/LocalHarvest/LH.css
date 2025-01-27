@@ -1,5 +1,6 @@
 .LH-container{
     display: flex;
+    flex-direction: column;
     margin: 2rem 8rem 0 8rem;
 }
 
@@ -13,7 +14,11 @@
     flex-direction: column;
     width: 50%;
     margin-right: 2rem;
-    gap: 1rem;
+    gap: 2rem;
+}
+
+.role-overview{
+    margin-top: 1rem;
 }
 
 .right-overview{
@@ -21,4 +26,107 @@
     flex-direction: column;
     justify-content: flex-end;
     gap: 1rem;
+}
+
+.figma-logo{
+    margin-top: 1rem;
+}
+
+.tertiary-container{
+    display: flex;
+    margin-top: 8rem;
+
+    gap: 2rem;
+}
+
+.left-tertiary{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 2rem;
+}
+
+.right-tertiary{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 2rem;
+}
+
+.carousel {
+    position: relative;
+    width: 400px; /* Make the carousel take up 100% of the container's width */
+    height: auto; /* Adjust height based on the images */
+    /* overflow: hidden;  */
+}
+
+.carousel img {
+    position: absolute;
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    left: 0;
+    transition: left 0.5s ease-in-out, z-index 0.3s ease-in-out, filter 0.3s ease-in-out;
+    z-index: 0; /* Default z-index */
+    filter: brightness(50%); /* Default filter to darken */
+}
+
+.carousel img:hover, .carousel img:active {
+    z-index: 1;
+    filter: brightness(100%); /* Fully bright when hovered or clicked */
+}
+
+.carousel img[src="/image/LH-image/LH-Acc.png"] {
+    filter: brightness(100%); /* Automatically brightened */
+    z-index: 1; /* Bring to the front */
+}
+
+.carousel img:nth-child(6) {
+    left: 0;
+}
+
+.carousel img:nth-child(5) {
+    left: 20%; /* Adjust this value to control the overlap */
+}
+
+.carousel img:nth-child(4) {
+    left: 45%; /* Adjust this value to control the overlap */
+}
+
+.carousel img:nth-child(3) {
+    left: 70%; /* Adjust this value to control the overlap */
+}
+
+.carousel img:nth-child(2) {
+    left: 95%; /* Adjust this value to control the overlap */
+}
+
+.carousel img:nth-child(1) {
+    left: 120%; /* Adjust this value to control the overlap */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .carousel img {
+        left: 0;
+    }
+
+    .carousel img:nth-child(2) {
+        left: 5%;
+    }
+
+    .carousel img:nth-child(3) {
+        left: 10%;
+    }
+
+    .carousel img:nth-child(4) {
+        left: 15%;
+    }
+
+    .carousel img:nth-child(5) {
+        left: 20%;
+    }
+
+    .carousel img:nth-child(6) {
+        left: 25%;
+    }
 }
