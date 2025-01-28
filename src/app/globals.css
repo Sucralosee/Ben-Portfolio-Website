@@ -38,8 +38,11 @@
     -webkit-font-smoothing: antialiased;
 }
 
-body{
+body {
     font-family: "Poppins", sans-serif;
+    background-image: url('../../public/image/BGportfolio.png');
+    background-position: 50% 50%;
+    background-size: cover;
     background-color: var(--color-D-BG);
 }
 

@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/favicon.png" />
+        <link rel="shortcut icon" href="/favicon.ico" sizes="any"/>
       </head>
       <body>
         <Menu />  {/* This has to be here to be rendered on every page and that the animation is smooth between pages */}
