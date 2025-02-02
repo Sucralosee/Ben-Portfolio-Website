@@ -1,0 +1,43 @@
+.overview-container{
+    display: flex; 
+    justify-content: space-between;
+}
+
+.left-overview{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-right: 2rem;
+}
+
+
+.logos{
+    display: flex;
+    gap: 3rem;
+}
+
+
+.role-overview{
+    margin-top: 1rem;
+}
+
+.right-overview{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.figma-logo{
+    margin-top: 1rem;
+}
+
+.figma-container{
+    display: flex;
+    justify-content: flex-end;
+}
+.figma{
+    width: 100%;
+    height: 44rem;
+}

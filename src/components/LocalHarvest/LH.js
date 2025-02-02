@@ -5,12 +5,40 @@ import gsap from "gsap";
 
 import "./LH.css";
 import Accordion from "../Accordion/accordion";
+import Overview from "../Overview/overview";
 
 const LH = ({ 
     Head1 = "Local Harvest", 
     Head2 = "2024", 
     Head3 = "BCIT - IDSP Project", 
-    Head4 = "My Role(s): UX/UI Design"
+    Head4 = "My Role(s): UX/UI Design",
+
+    Head = "Overview",
+    HeadContent = "Local Harvest was a project that was created from the ground up to solve a market researched problem amongst local farmers and farmers markets in BC. It sought to connect farmers and consumers before a farmers market to pre-order their goods before their products are sold out.",
+    SubHead = "",
+    Top1 = "Logo Design",
+    Content1 = "The staggered, layered effect resembles stacked timber or architectural elements, reinforcing the magazine's focus on wooden architecture. The sans-serif typeface is clean and contemporary, ensuring readability while maintaining a strong, architectural presence.",
+    Top2 = "Color Choices",
+    Content2 = "Blue represents the sky, mountains, and stability of wooden structures.Orange evokes warmth, fire, and energy, possibly referencing fire lookouts, the autumn hues of timber, or the craftsmanship of woodworking.",
+    Top3 = "Layout Design",
+    Content3 = "Designed clean, visually captivating layouts that balanced aesthetics and readability. Created a structured yet creative framework to showcase Timber content, seamlessly integrating text and imagery for an immersive magazine experience.",
+
+    LogoImage1 = "/image/Tools/figmalogo.svg",
+    LogoAlt1 = "figma",
+    LogoImage2 = "",
+    LogoAlt2 = "",
+    LogoImage3 = "",
+    LogoAlt3 = "",
+    LogoImage4 = "",
+    LogoAlt4 = "",
+    LogoImage5 = "",
+    LogoAlt5 = "",
+
+    Link1 = "https://www.figma.com/file/yIqwI8dJfG659K9I6YGTfB/Local-Harvest-Overview?node-id=0%3A1",
+    LinkContent1 = "View Figma File",
+
+    RightImage = "",
+    RightVideo = "./video/lhlogging.mp4"
 }) => {
     const fadeRefs = useRef([]);
 
@@ -57,52 +85,42 @@ const LH = ({
                 Head4={Head4} 
             />
         <div className="LH-container" ref={el => fadeRefs.current[0] = el}>
-            <div className="overview-container" ref={el => fadeRefs.current[1] = el}>
-                <div className="left-overview" ref={el => fadeRefs.current[2] = el}>
-                    <p className="Head">Overview</p>
-                    <p className="Pop20">Local Harvest was a project that was created from the ground up to solve a market researched problem amongst local farmers and farmers markets in BC. It sought to connect farmers and consumers before a farmers market to pre-order their goods before their products are sold out.</p>
-                    {/* <img src="/image/LHlogo.svg" alt="logo" width={800} height={100} ref={el => fadeRefs.current[3] = el} /> */}
-                    <p className="SubHead role-overview"> My Role</p>
-                    <h2 className="Pop24">UX/UI Design</h2>
-                    <p className="Pop20 ML1">
-                        Oversaw the design of the app from start to finish.
-                    </p>
+            <Overview
+                Head={Head}
+                HeadContent = {HeadContent}
+                SubHead = {SubHead}
+                Top1 = {Top1}
+                Content1 = {Content1}
+                Top2 = {Top2}
+                Content2 = {Content2}
+                Top3 = {Top3}
+                Content3 = {Content3}
 
-                    <h2 className="Pop24">Design</h2>
-                    <p className="Pop20 ML1">
-                        Went through multiple rounds of app design iterations from lo-fi to hi-fi to figure out what worked best.
-                    </p>
+                LogoImage1 = {LogoImage1}
+                LogoAlt1={LogoAlt1}
+                LogoImage2={LogoImage2}
+                LogoAlt2={LogoAlt2}
+                LogoImage3={LogoImage3}
+                LogoAlt3={LogoAlt3}
+                LogoImage4={LogoImage4}
+                LogoAlt4={LogoAlt4}
+                LogoImage5={LogoImage5}
+                LogoAlt5={LogoAlt5}
 
-                    <h2 className="Pop24">User Testing</h2>
-                    <p className="Pop20 ML1">
-                        Conducted numerous testing sessions to understand and adjust the prototypes of the app to improve the flow and usability within the app.
-                    </p>
-                    <div className="logos-container">
-                        <p className="SubHead">Tools used</p>
-                        <div className="logos">
-                            <img src="/image/Tools/figmalogo.svg" alt="logo" width={200} height={50} className="figma-logo" ref={el => fadeRefs.current[4] = el} />
-                            {/* <img src="/image/Tools/excel.png" alt="logo" width={120} height={35} className="adobe-logo" ref={el => fadeRefs.current[4] = el} /> */}
-                        </div>
-                    </div>
-                </div>
-                <div className="right-overview" ref={el => fadeRefs.current[5] = el}>
-                    <video width="500" height="800" autoPlay loop>
-                        <source src="/video/lhlogging.mp4" type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-            </div>
-            
-            
+                Link1 = {Link1}
+                LinkContent1={LinkContent1}
+
+                RightImage = {RightImage}
+                RightVideo={RightVideo}
+            />
             <div className="tertiary-container" ref={el => fadeRefs.current[6] = el}>
                 <div className="left-tertiary" ref={el => fadeRefs.current[7] = el}>
                     <p className="Head">Key Design Choices</p>
-
                     <Accordion/>                    
                 </div>
                 <div className="right-tertiary" ref={el => fadeRefs.current[8] = el}>
                     <div className="figma-container">
-                        <iframe className="figma" src="https://embed.figma.com/design/yIqwI8dJfG659K9I6YGTfB/LH-Portfolio?node-id=0-1&embed-host=share" allowFullScreen></iframe>
+                        <iframe className="figma" src="https://embed.figma.com/design/yIqwI8dJfG659K9I6YGTfB/Local-Harvest-Overview?node-id=0-1&embed-host=share" allowFullScreen></iframe>
                     </div>
                 </div>
             </div>
