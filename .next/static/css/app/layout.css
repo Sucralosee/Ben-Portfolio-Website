@@ -528,9 +528,6 @@ video {
     max-width: 1536px;
   }
 }
-.fixed {
-  position: fixed;
-}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;

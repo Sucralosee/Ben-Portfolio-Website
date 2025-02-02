@@ -23,7 +23,7 @@ const LH = ({
     Top3 = "Layout Design",
     Content3 = "Designed clean, visually captivating layouts that balanced aesthetics and readability. Created a structured yet creative framework to showcase Timber content, seamlessly integrating text and imagery for an immersive magazine experience.",
 
-    LogoImage1 = "/image/Tools/figmalogo.svg",
+    LogoImage1 = "/image/Tools/Figma.webp",
     LogoAlt1 = "figma",
     LogoImage2 = "",
     LogoAlt2 = "",

@@ -91,11 +91,11 @@ const Overview = ({
                 <div className="logos-container">
                     <p className="SubHead">Tools used</p>
                     <div className="logos">
-                        {LogoImage1 && <img src={LogoImage1} alt={LogoAlt1} width={200} height={50} className="figma-logo" ref={el => fadeRefs.current[0] = el} />}
-                        {LogoImage2 && <img src={LogoImage2} alt={LogoAlt2} width={200} height={50} className="figma-logo" ref={el => fadeRefs.current[1] = el} />}
-                        {LogoImage3 && <img src={LogoImage3} alt={LogoAlt3} width={200} height={50} className="figma-logo" ref={el => fadeRefs.current[2] = el} />}
-                        {LogoImage4 && <img src={LogoImage4} alt={LogoAlt4} width={200} height={50} className="figma-logo" ref={el => fadeRefs.current[3] = el} />}
-                        {LogoImage5 && <img src={LogoImage5} alt={LogoAlt5} width={200} height={50} className="figma-logo" ref={el => fadeRefs.current[4] = el} />}
+                        {LogoImage1 && <img src={LogoImage1} alt={LogoAlt1} width={100} height={100} className="logo" ref={el => fadeRefs.current[0] = el} />}
+                        {LogoImage2 && <img src={LogoImage2} alt={LogoAlt2} width={100} height={100} className="logo" ref={el => fadeRefs.current[1] = el} />}
+                        {LogoImage3 && <img src={LogoImage3} alt={LogoAlt3} width={100} height={100} className="logo" ref={el => fadeRefs.current[2] = el} />}
+                        {LogoImage4 && <img src={LogoImage4} alt={LogoAlt4} width={100} height={100} className="logo" ref={el => fadeRefs.current[3] = el} />}
+                        {LogoImage5 && <img src={LogoImage5} alt={LogoAlt5} width={100} height={100} className="logo" ref={el => fadeRefs.current[4] = el} />}
                     </div>
                 </div>
                 <div className="links-container">
@@ -104,7 +104,7 @@ const Overview = ({
             </div>
             <div className="right-overview" ref={el => fadeRefs.current[5] = el}>
                 {RightImage && <img src={RightImage} width={800} height={100} ref={el => fadeRefs.current[3] = el} />}
-            <video width="500" height="800" autoPlay loop>
+                <video width="500" height="800" autoPlay loop>
                     <source src={RightVideo} type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
