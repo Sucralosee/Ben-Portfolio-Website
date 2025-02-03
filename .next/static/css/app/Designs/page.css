@@ -518,7 +518,8 @@
 }
 
 .right-image{
-    height: 60rem;
+    height: auto;
+    max-height: 60rem;
     width: auto;
 }
 

@@ -8,6 +8,7 @@
     width: 85vw;
 
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     margin-top: 2rem;
 
@@ -46,6 +47,7 @@
 
 
     .tertiary-container{
+        flex-direction: column;
         margin: 0 2rem;
         width: 95vw;
     }

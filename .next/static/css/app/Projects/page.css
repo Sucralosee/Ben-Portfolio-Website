@@ -153,6 +153,7 @@
     width: 85vw;
 
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     margin-top: 2rem;
 
@@ -191,6 +192,7 @@
 
 
     .tertiary-container{
+        flex-direction: column;
         margin: 0 2rem;
         width: 95vw;
     }
@@ -320,7 +322,8 @@
 }
 
 .right-image{
-    height: 60rem;
+    height: auto;
+    max-height: 60rem;
     width: auto;
 }
 
@@ -409,6 +412,7 @@
   \******************************************************************************************************************************************************************************************************************************************************************************/
 .Timber-main-container{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 
     margin: 2rem 8rem 0 8rem;
@@ -420,8 +424,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* max-height:70rem; */
-    
+
+    height: auto;
 
     margin: 1rem 8rem;
 }
@@ -458,12 +462,16 @@
     .horizontal-view {
       display: block;
     }
+
+    .timber-container{
+        margin: 0 2rem;
+    }
   }
 
 
 @media (max-width: 450px) {
     .timber-container{
-        margin: 0;
+        margin: 0 1rem;
     }
 
     .timber-frame{
