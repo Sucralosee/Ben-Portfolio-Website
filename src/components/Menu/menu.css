@@ -4,7 +4,7 @@
 }
 
 .menu-bar{
-    margin: 0 6rem;
+    margin: 0 8rem;
 }
 
 .menu-bar, .menu-overlay{
@@ -12,8 +12,8 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 90vw;
-    padding: 2rem;
+    width: 85vw;
+    padding: 2rem 0;
     display: flex;
     justify-content: space-between;
     /* align-items: center; */
@@ -29,7 +29,6 @@
 }
 
 .menu-logo{
-
 }
 
 .menu-open{
