@@ -40,3 +40,24 @@
     margin-top: 0.5rem;
 }
 
+@media screen and (max-width: 1200px) {
+    .horizontal-view {
+      display: block;
+    }
+  }
+
+
+@media (max-width: 450px) {
+    .Timber-main-container{
+        width: 100vw;
+        margin: 0;
+    }
+
+    .timber-container{
+        margin: 0;
+    }
+
+    .timber-frame{
+        height: auto;
+    }
+}

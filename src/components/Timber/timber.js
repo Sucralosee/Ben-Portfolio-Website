@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef,useState } from "react";
 
 import Project1 from "../Project1/project1";
 import "./timber.css";
@@ -26,6 +26,21 @@ const Timber = ({
     RightImage = "./image/Timber/TimberHandMag.png",
     RightVideo = "",
 }) => {
+
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+      const handleResize = () => {
+        setIsMobile(window.innerWidth < 1200);
+      };
+  
+      window.addEventListener("resize", handleResize);
+      handleResize(); // Check initial screen size
+  
+      return () => {
+        window.removeEventListener("resize", handleResize);
+      };
+    }, []);
 
     const fadeRefs = useRef([]);
 
@@ -69,7 +84,7 @@ const Timber = ({
             <Project1
                 Head1 = "Timber"
                 Head2 = "2024" 
-                Head3 = "BCIT - Magazine Design" 
+                Head3 = "Magazine Design" 
                 Head4 = "My Role(s): Editorial Design, Research, Layout Design"
             />
 
@@ -105,7 +120,8 @@ const Timber = ({
             </div>
 
             <div className="timber-container">
-                <h4>Digital Version</h4>
+                <h4 className="SubHead">Digital Version</h4>
+                {isMobile && <p className="horizontal-view Pop20">Best viewed horizontally</p>}
                 <iframe 
                     src="https://indd.adobe.com/embed/44584cf8-4349-4ad7-b5fb-497ac28fd021?startpage=1&allowFullscreen=true" 
                     className="timber-frame" 
@@ -115,7 +131,7 @@ const Timber = ({
             </div>   
 
             <div className="timber-container">
-                <h4>Spreads of the Print Version</h4>
+                <h4 className="SubHead">Spreads of the Print Version</h4>
                 <img 
                     src="/image/Timber/TimberSpreadMag.png"
                     width={400} height={400}

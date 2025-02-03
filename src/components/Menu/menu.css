@@ -246,8 +246,13 @@
 }
 
 @media(max-width: 450px){
+    .menu-bar{
+        margin: 0rem 1rem;
+        width: 90vw;
+    }
+
     .menu-overlay{
-        padding: 1rem;
+        padding: 0.5rem;
         flex-direction: column;
     }
 

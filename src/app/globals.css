@@ -177,6 +177,61 @@ h1 sup{
     }
 }
 
+@media(max-width: 900px){ 
+    .SuprHead{
+        font-size: 2rem;
+    }
+    .Head{
+        font-size: 1.5rem;
+    }
+    .SubHead{
+        font-size: 1.25rem;
+    }
+    .SubSub{
+        font-size: 1.25rem;
+    }
+    .Pop32{
+        font-size: 1.5rem;
+    }
+    .Pop28{
+        font-size: 1.25rem;
+    }
+    .Pop24{
+        font-size: 1.25rem;
+    }
+    .Pop20{
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 450px){ 
+    .SuprHead{
+        font-size: 1.5rem;
+    }
+    .Head{
+        font-size: 1.5rem;
+    }
+    .SubHead{
+        font-size: 1.25rem;
+    }
+    .SubSub{
+        font-size: 1.25rem;
+    }
+    .Pop32{
+        font-size: 1.5rem;
+    }
+    .Pop28{
+        font-size: 1.25rem;
+    }
+    .Pop24{
+        font-size: 0.8rem;
+    }
+    .Pop20{
+        font-size: 0.75rem;
+    }
+}
+
+
 .page-content.hero{
     background: url(../../public/image/woods.jpg) no-repeat 50% 100%;
     background-size: contain;

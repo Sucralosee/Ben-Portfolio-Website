@@ -38,6 +38,25 @@
     margin-top: 8rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 450px) {
+    .LH-container{
+        width: 100vw;
+        margin: 0;
+    }
+
+    .tertiary-container{
+        flex-direction: column;
+        margin: 1rem;
+        width: 90vw;
+    }
+
+    .left-tertiary, .right-tertiary{
+        width: 100%;
+    }
+
+    .right-tertiary{
+        display: none;
+    }
 
 }
+

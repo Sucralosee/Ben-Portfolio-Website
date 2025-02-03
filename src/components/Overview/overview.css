@@ -56,3 +56,36 @@
     border-radius: 1rem;
     background-color: var(--color-L-BG);
 }
+
+@media (max-width: 450px) {
+    .overview-container{
+        margin: 0;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .left-overview{
+        width: 90vw;
+        margin: 1rem;
+    }
+
+    .logos{
+        gap: 0.5rem;
+    }
+
+    .logo{
+        width: 5rem;
+        margin: 0;
+    }
+
+    .links-container{
+        width: 15rem;
+        font-size: 1rem;
+    }
+
+    .right-image{
+        height: auto;
+        width: auto;
+    }
+
+}

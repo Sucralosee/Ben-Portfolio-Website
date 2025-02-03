@@ -6,9 +6,6 @@
     margin:0 8rem;
 }
 
-.project-header-container{
-}
-
 .top-head{
     width: 85vw;
     display: flex;
@@ -19,14 +16,12 @@
 }
 
 .bot-head{
-
     border-bottom: 0.25rem solid var(--color-primary);
 
     margin-bottom: 0.5rem;
 }
 
 .top-head-pad{
-    padding-bottom: 0.6rem;
     margin-bottom: 0;
     padding-bottom: 0;
 }
@@ -42,3 +37,30 @@
     padding-bottom: 0.6rem;
 }
 
+@media(max-width: 450px){
+    .project-container{
+        margin: 1rem;
+        flex-direction: column;
+    }
+
+    .head-date{
+        padding-bottom: 0.4rem;
+        font-size: 0.75rem;
+        margin: 0 0 0 2rem;
+
+    }
+
+    .top-head{
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100vw;
+    }
+
+    .bot-head{
+        /* border: 1px solid red; */
+    }
+
+    .place-head{    
+        margin: 0;
+    }
+}
