@@ -208,7 +208,25 @@
     align-items: center;
 }
 
-@media(max-width: 1100px){
+.menu-project-head{
+    color: var(--color-L-header);
+}
+
+@media(max-width: 1200px){
+    .menu-bar{
+        width: 95vw;
+        margin: 0 2rem;
+    }
+
+    .menu-overlay{
+        padding: 1rem;
+        flex-direction: column;
+    }
+
+    .menu-overlay-bar{
+        flex: 0;
+    }
+
     .menu-close-icon p{
        display: none;
     }
@@ -223,10 +241,6 @@
 
     .menu-link-item-holder a {
         font-size: 60px;
-    }
-
-    .menu-bar, .menu-overlay{
-    margin: 0;
     }
 }
 

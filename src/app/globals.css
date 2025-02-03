@@ -156,7 +156,7 @@ h1 sup{
 }
 
 @media(max-width: 900px){
-    .page-content h1 {
+    /* .page-content h1 {
         font-size: 10vw;
     }
     .page-content h2 {
@@ -170,14 +170,12 @@ h1 sup{
     }
     .page-content h5 {
         font-size: 3vw;
-    }
+    } */
 
     h1 sup{
         font-size: 4vw;
     }
-}
 
-@media(max-width: 900px){ 
     .SuprHead{
         font-size: 2rem;
     }
@@ -202,6 +200,37 @@ h1 sup{
     .Pop20{
         font-size: 1rem;
     }
+}
+
+@media(max-width: 1100px){ 
+    .SuprHead{
+        font-size: 3rem;
+    }
+    .Head{
+        font-size: 2rem;
+    }
+    .SubHead{
+        font-size: 1.5rem;
+    }
+    .SubSub{
+        font-size: 1.5rem;
+    }
+    .Pop32{
+        font-size: 1.75rem;
+    }
+    .Pop28{
+        font-size: 1.5rem;
+    }
+    .Pop24{
+        font-size: 1.5rem;
+    }
+    .Pop20{
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 900px){ 
+
 }
 
 @media(max-width: 450px){ 

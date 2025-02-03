@@ -38,11 +38,20 @@
     margin-top: 8rem;
 }
 
-@media (max-width: 450px) {
+@media (max-width:1200px){
     .LH-container{
         width: 100vw;
         margin: 0;
     }
+
+
+    .tertiary-container{
+        margin: 0 2rem;
+        width: 95vw;
+    }
+}
+
+@media (max-width: 450px) {
 
     .tertiary-container{
         flex-direction: column;

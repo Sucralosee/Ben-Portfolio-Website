@@ -22,14 +22,19 @@
     /* Add styles for your logo if needed */
 }
 
-@media screen and (max-width: 1200px){
+@media(max-width: 1200px){
+    .header-container{
+        margin: 0;
+        padding-bottom: 0;
+    }
+
     .header-title{
         margin-top: 1rem;
         left: 0;
     }
 }
 
-@media screen and (max-width: 600px){
+@media(max-width: 600px){
     .header-title{
         margin-top: 0.5rem;
         left: 0;

@@ -1,0 +1,361 @@
+/*!******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/components/Header/header.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************/
+.header-container{
+    position: relative;
+    top: 0;
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    padding-top: 7rem;
+    color: #fff;
+    /* z-index: 2;    */
+    /* border: red 4px solid; */
+
+    margin: 0 8rem;
+}
+
+.header-title{
+    position: relative;
+    left: -2.8rem;
+}
+
+.my-logo{
+    /* Add styles for your logo if needed */
+}
+
+@media(max-width: 1200px){
+    .header-container{
+        margin: 0;
+        padding-bottom: 0;
+    }
+
+    .header-title{
+        margin-top: 1rem;
+        left: 0;
+    }
+}
+
+@media(max-width: 600px){
+    .header-title{
+        margin-top: 0.5rem;
+        left: 0;
+        font-size: 2.5rem;
+    }
+}
+@media(max-width: 450px){
+    .header-container{
+        margin: 0;
+        padding: 7rem 1rem 0rem;
+    }        
+
+    .header-title{
+        margin: 0;
+    }
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/components/Menu/menu.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************/
+.menu-container{
+    z-index: 1000;
+    position: fixed;
+}
+
+.menu-bar{
+    margin: 0 8rem;
+}
+
+.menu-bar, .menu-overlay{
+    /* border: red 2px solid; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 85vw;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    z-index: 100;
+
+}
+
+.menu-bar a,
+.menu-open p{
+    font-size: 2rem;
+    gap: 1rem;
+    color: var(--color-D-Header);
+}
+
+.menu-logo{
+}
+
+.menu-open{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    color: var(--color-D-Header);
+
+}
+
+.menu-open svg {
+    color: var(--color-D-Header);
+}
+
+.menu-close p {
+    color: #000;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.menu-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 2rem;
+    background-color: var(--color-primary);
+    z-index: 999;
+    display: flex;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
+}
+
+.menu-overlay-bar{
+    flex:1.5;
+}
+
+.menu-close{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    gap:1rem;
+    margin: 2rem 1rem;
+}
+
+.menu-close-icon{
+    flex: 2;
+    display: flex;
+    align-items: flex-end;
+    cursor: pointer;
+
+}
+
+.menu-copy{
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    -webkit-text-stroke: 0.01rem #000;
+    padding: 4rem 2rem;
+}
+
+.menu-preview{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.menu-close-icon p{
+    font-size: 50px;
+    -webkit-text-stroke: 0.05rem #000;
+    line-height: 70%;
+}
+
+.menu-link{
+    font-family: 'Chillax', sans-serif;
+    margin-top: 0.5rem;
+    
+}
+
+.menu-link-item{
+    text-transform: uppercase;
+    width: max-content;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.menu-link-item-holder{
+    position: relative;
+    padding: 0.2rem 0;
+}
+
+.menu-link-item-holder a {
+    color: #000;
+    font-size: 80px;
+    font-weight: 400;
+    letter-spacing: -0.02rem;
+    line-height: 85%;
+}
+
+.menu-link {
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.menu-link.active::after {
+    width: 100%;
+}
+
+.menu-link-item-holder .menu-link.active {
+    margin-left: 1rem;
+    font-weight: 500;
+    transition: transform 0.3s ease;
+}
+
+.underline-animation {
+    position: relative;
+    text-decoration: none;
+    /* display: inline-block; */
+    width: fit-content;
+}
+  
+.underline-animation::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0%;
+    height: 0.3rem;
+    background-color: currentColor;
+    transition: width 0.3s cubic-bezier(0,.92,1,.8);
+    transform-origin: left center;
+}
+  
+.underline-animation:hover::after {
+    width: 100%;
+}
+  
+.underline-animation.light::after {
+    background-color: #ffffff;
+}
+  
+.underline-animation.dark::after {
+    background-color: #000000;
+}
+  
+.underline-animation.thin::after {
+    height: 2px;
+    bottom: -0.1rem;
+}
+  
+.underline-animation.thick::after {
+    height: 3px;
+}
+  
+
+.menu-info{
+    display: flex;
+}
+
+.menu-info-col {
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 0.2rem;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+}
+
+.menu-project-head{
+    color: var(--color-L-header);
+}
+
+@media(max-width: 1200px){
+    .menu-bar{
+        width: 95vw;
+        margin: 0 2rem;
+    }
+
+    .menu-overlay{
+        padding: 1rem;
+        flex-direction: column;
+    }
+
+    .menu-overlay-bar{
+        flex: 0;
+    }
+
+    .menu-close-icon p{
+       display: none;
+    }
+
+    .menu-preview{
+        display: none;
+    }
+
+    .menu-copy{
+        padding-top: 8rem;
+    }
+
+    .menu-link-item-holder a {
+        font-size: 60px;
+    }
+}
+
+@media(max-width: 750px){
+    .menu-overlay{
+        padding: 1rem;
+        flex-direction: column;
+    }
+
+    .menu-copy{
+        padding: 1rem 1rem;
+    }
+
+    .menu-link-item-holder a {
+        font-size: 50px;
+    }
+}
+
+@media(max-width: 450px){
+    .menu-bar{
+        margin: 0rem 1rem;
+        width: 90vw;
+    }
+
+    .menu-overlay{
+        padding: 0.5rem;
+        flex-direction: column;
+    }
+
+    .menu-overlay-bar{
+        flex: 0.75;
+    }
+
+    .menu-copy{
+        padding: 1rem 1rem;
+    }
+
+    .extra{
+        font-size: 1rem;
+    }
+
+    .menu-link-item-holder a {
+        font-size: 40px;
+    }
+
+    .contact-links {
+        font-size: 1rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .menu-close p {
+        font-size: 1.5rem;
+    }
+
+    .underline-animation::after {
+        height: 0.18rem;
+    }
+}

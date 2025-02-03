@@ -57,6 +57,38 @@
     background-color: var(--color-L-BG);
 }
 
+@media (max-width: 1200px) {
+    .overview-container{
+        width: 95vw;
+        margin: 1rem 2rem;
+    }
+
+    .right-overview{
+        justify-content: flex-start;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .overview-container{
+        margin: 0;
+        flex-direction: column;
+        width: 100vw;
+    }
+    .left-overview{
+        width: 90vw;
+        margin: 2rem;
+    }
+
+    .right-overview{
+        margin: 0 2rem;
+    }
+
+    .right-image{
+        /* height: 30rem; */
+    }
+}
+
 @media (max-width: 450px) {
     .overview-container{
         margin: 0;
@@ -66,7 +98,8 @@
 
     .left-overview{
         width: 90vw;
-        margin: 1rem;
+        height: auto;
+        margin-top: 0;
     }
 
     .logos{
@@ -83,9 +116,5 @@
         font-size: 1rem;
     }
 
-    .right-image{
-        height: auto;
-        width: auto;
-    }
 
 }

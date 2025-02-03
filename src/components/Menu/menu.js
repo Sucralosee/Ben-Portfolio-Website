@@ -139,7 +139,7 @@ const Menu = () => {
           </div>
         </div>
         <div className="menu-preview">
-            <h2>Projects</h2>
+            <h2 className="menu-project-head">Projects</h2>
             <p>item</p>
             <p>item</p>
             <p>item</p>
