@@ -88,36 +88,34 @@ const Timber = ({
                 Head4 = "My Role(s): Editorial Design, Research, Layout Design"
             />
 
-            <div className="Timber-main-container">
-                <Overview 
-                    Head="Overview"
-                    HeadContent = "Timber was a creative look into the design and copywriting experience of creating a magazine from the ground up. For both a print version and a digital version"
-                    SubHead = ""
-                    Top1 = "Logo Design"
-                    Content1 = "The staggered, layered effect of the logo resembles stacked timber or architectural elements. I did this to reinforce the magazine's focus on wooden architecture. Additionally, the sans-serif typeface is clean and contemporary, ensuring readability while maintaining a strong, architectural presence."
-                    Top2 = "Color Choices"
-                    Content2 = "The warm blue I chose is often associated with calmness, stability, and trust, reflecting the resilience of wooden structures and the natural world. The light orange I used represents energy, warmth, and urgency, making it a fitting choice to convey the threat of wildfires. The blue-orange contrast is one of the most striking complementary color pairings, and is commonly used in nature and design to create visual balance and strong emotional impact. "
-                    Top3 = "Layout Design"
-                    Content3 = "I designed the pages to be clean, visually captivating layouts that balanced aesthetics and readability. I created a structured yet creative framework to showcase Timber content, seamlessly integrating text and imagery for an immersive magazine experience."
+            <Overview 
+                Head="Overview"
+                HeadContent = "Timber was a creative look into the design and copywriting experience of creating a magazine from the ground up. For both a print version and a digital version"
+                SubHead = ""
+                Top1 = "Logo Design"
+                Content1 = "The staggered, layered effect of the logo resembles stacked timber or architectural elements. I did this to reinforce the magazine's focus on wooden architecture. Additionally, the sans-serif typeface is clean and contemporary, ensuring readability while maintaining a strong, architectural presence."
+                Top2 = "Color Choices"
+                Content2 = "The warm blue I chose is often associated with calmness, stability, and trust, reflecting the resilience of wooden structures and the natural world. The light orange I used represents energy, warmth, and urgency, making it a fitting choice to convey the threat of wildfires. The blue-orange contrast is one of the most striking complementary color pairings, and is commonly used in nature and design to create visual balance and strong emotional impact. "
+                Top3 = "Layout Design"
+                Content3 = "I designed the pages to be clean, visually captivating layouts that balanced aesthetics and readability. I created a structured yet creative framework to showcase Timber content, seamlessly integrating text and imagery for an immersive magazine experience."
 
-                    LogoImage1 = {LogoImage1}
-                    LogoAlt1={LogoAlt1}
-                    LogoImage2={LogoImage2}
-                    LogoAlt2={LogoAlt2}
-                    LogoImage3={LogoImage3}
-                    LogoAlt3={LogoAlt3}
-                    LogoImage4={LogoImage4}
-                    LogoAlt4={LogoAlt4}
-                    LogoImage5={LogoImage5}
-                    LogoAlt5={LogoAlt5}
+                LogoImage1 = {LogoImage1}
+                LogoAlt1={LogoAlt1}
+                LogoImage2={LogoImage2}
+                LogoAlt2={LogoAlt2}
+                LogoImage3={LogoImage3}
+                LogoAlt3={LogoAlt3}
+                LogoImage4={LogoImage4}
+                LogoAlt4={LogoAlt4}
+                LogoImage5={LogoImage5}
+                LogoAlt5={LogoAlt5}
 
-                    Link1 = ""
-                    LinkContent1={LinkContent1}
+                Link1 = ""
+                LinkContent1={LinkContent1}
 
-                    RightImage={RightImage}
-                    RightVideo={RightVideo}
-                />
-            </div>
+                RightImage={RightImage}
+                RightVideo={RightVideo}
+            />
 
             <div className="timber-container">
                 <h4 className="SubHead">Digital Version</h4>

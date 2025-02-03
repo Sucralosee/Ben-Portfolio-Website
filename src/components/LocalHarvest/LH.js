@@ -63,41 +63,41 @@ const LH = ({
 
     return (
         <>  
-            <Project1
-                Head1="Local Harvest"
-                Head2="2024"
-                Head3="BCIT - IDSP Project" 
-                Head4="My Role(s): UX/UI Design" 
-            />
+        <Project1
+            Head1="Local Harvest"
+            Head2="2024"
+            Head3="BCIT - IDSP Project" 
+            Head4="My Role(s): UX/UI Design" 
+        />
+        <Overview
+            Head="Overview"
+            HeadContent = "Local Harvest was a project that was created from the ground up to solve a market researched problem amongst local farmers and farmers markets in BC. It sought to connect farmers and consumers before a farmers market to pre-order their goods before their products are sold out."
+            SubHead = ""
+            Top1 = "Account Pages"
+            Content1 = "Designed for vendor efficiency, the interface includes an intuitive left-aligned menu, task-focused screens, and action-oriented CTAs. A cohesive visual identity ensures clarity, while optimized data displays enhance usability."
+            Top2 = "Market Pages"
+            Content2 = "Structured for easy browsing, these pages feature an engaging visual hierarchy, familiar UI elements, and a clean layout that encourages exploration. Consistent design elements ensure a seamless user experience."
+            Top3 = "Checkout Pages"
+            Content3 = "A simplified, step-by-step flow enhances the checkout experience. Adaptive payment options, error-resistant forms, and transparent feedback improve usability, while a mobile-first approach ensures accessibility across devices."
+
+            LogoImage1 = {LogoImage1}
+            LogoAlt1={LogoAlt1}
+            LogoImage2={LogoImage2}
+            LogoAlt2={LogoAlt2}
+            LogoImage3={LogoImage3}
+            LogoAlt3={LogoAlt3}
+            LogoImage4={LogoImage4}
+            LogoAlt4={LogoAlt4}
+            LogoImage5={LogoImage5}
+            LogoAlt5={LogoAlt5}
+
+            Link1 = {Link1}
+            LinkContent1={LinkContent1}
+
+            RightImage = {RightImage}
+            RightVideo={RightVideo}
+        />
         <div className="LH-container">
-            <Overview
-                Head="Overview"
-                HeadContent = "Local Harvest was a project that was created from the ground up to solve a market researched problem amongst local farmers and farmers markets in BC. It sought to connect farmers and consumers before a farmers market to pre-order their goods before their products are sold out."
-                SubHead = ""
-                Top1 = "Account Pages"
-                Content1 = "Designed for vendor efficiency, the interface includes an intuitive left-aligned menu, task-focused screens, and action-oriented CTAs. A cohesive visual identity ensures clarity, while optimized data displays enhance usability."
-                Top2 = "Market Pages"
-                Content2 = "Structured for easy browsing, these pages feature an engaging visual hierarchy, familiar UI elements, and a clean layout that encourages exploration. Consistent design elements ensure a seamless user experience."
-                Top3 = "Checkout Pages"
-                Content3 = "A simplified, step-by-step flow enhances the checkout experience. Adaptive payment options, error-resistant forms, and transparent feedback improve usability, while a mobile-first approach ensures accessibility across devices."
-
-                LogoImage1 = {LogoImage1}
-                LogoAlt1={LogoAlt1}
-                LogoImage2={LogoImage2}
-                LogoAlt2={LogoAlt2}
-                LogoImage3={LogoImage3}
-                LogoAlt3={LogoAlt3}
-                LogoImage4={LogoImage4}
-                LogoAlt4={LogoAlt4}
-                LogoImage5={LogoImage5}
-                LogoAlt5={LogoAlt5}
-
-                Link1 = {Link1}
-                LinkContent1={LinkContent1}
-
-                RightImage = {RightImage}
-                RightVideo={RightVideo}
-            />
             <div className="tertiary-container" ref={el => fadeRefs.current[6] = el}>
                 <div className="left-tertiary" ref={el => fadeRefs.current[7] = el}>
                     <p className="Head">Key Design Choices</p>

@@ -25,6 +25,7 @@ const Poster = ({
     RightVideo = ""
 }) => {
     const fadeRefs = useRef([]);
+    const tertiaryContainerRef = useRef(null);
 
     useEffect(() => {
         gsap.set(fadeRefs.current, {
@@ -51,13 +52,30 @@ const Poster = ({
                     });
                 }
             });
+
+            // Add right-overview style animation for tertiary-container
+            if (tertiaryContainerRef.current) {
+                const containerRect = tertiaryContainerRef.current.getBoundingClientRect();
+                if (containerRect.bottom < 250) {
+                    gsap.to(tertiaryContainerRef.current, {
+                        y: -75,
+                        opacity: 0,
+                        duration: 1,
+                        ease: "power4.out"
+                    });
+                } else {
+                    gsap.to(tertiaryContainerRef.current, {
+                        y: 0,
+                        opacity: 1,
+                        duration: 1,
+                        ease: "power4.out"
+                    });
+                }
+            }
         };
 
         window.addEventListener("scroll", handleScroll);
-
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-        };
+        return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
     return (
@@ -68,7 +86,6 @@ const Poster = ({
                 Head3="Automotive Poster Series" 
                 Head4="" 
             />
-        <div className="poster-container">
             <Overview
                 Head="Overview"
                 HeadContent="In this poster series, I set out to capture the spirit of three Japanese automotive icons that have always fascinated me. I wanted to tell the story of each vehicle through a distinct color palette - a deep red for the mysterious Nissan Skyline, a vibrant yellowish-orange for the humble Suzuki Carry, and a bold purple for the revolutionary Mazda RX-7."
@@ -97,10 +114,8 @@ const Poster = ({
                 RightImage = {RightImage}
                 RightVideo={RightVideo}
             />
-            <div className="tertiary-container" ref={el => fadeRefs.current[6] = el}>
-                {/* <div className="left-tertiary" ref={el => fadeRefs.current[7] = el}>
-                    <p className="Head">Key Design Choices</p>
-                </div> */}
+        <div className="poster-container">
+            <div className="tertiary-container" ref={tertiaryContainerRef}>
                 <div  ref={el => fadeRefs.current[8] = el}>
                     <img src="/image/Posters/ThreeFence.png" alt="?" width={100} height={100} className="tertiary-poster"/>
                 </div>                

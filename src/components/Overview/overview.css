@@ -1,13 +1,17 @@
 .overview-container{
-    width: 85vw;
-    display: flex; 
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
+
+    margin: 2rem 8rem 0 8rem;
+    
+    width: 85vw;
 }
 
 .left-overview{
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 45%;
     margin-right: 2rem;
 }
 
@@ -31,6 +35,7 @@
     justify-content: flex-end;
     gap: 1rem;
     margin: 1rem;
+    width: 45%;
 }
 
 .right-image{
