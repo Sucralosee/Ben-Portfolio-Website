@@ -11,8 +11,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height:auto;
-
+    max-height:70rem;
+    
 
     margin: 1rem 8rem;
 }

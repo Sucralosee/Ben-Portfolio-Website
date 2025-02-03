@@ -71,6 +71,8 @@
 
 .top-head-pad{
     padding-bottom: 0.6rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .name-head{
@@ -80,9 +82,11 @@
 }
 
 .head-date{
-    margin-left: 4rem;
+    margin: 4rem 0 0 2rem;
     padding-bottom: 0.6rem;
 }
+
+
 /*!********************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/components/LocalHarvest/LH.css ***!
   \********************************************************************************************************************************************************************************************************************************************************************************/
@@ -233,7 +237,10 @@
     margin: 1rem;
 }
 
-
+.right-image{
+    height: 60rem;
+    width: auto;
+}
 
 .figma-container{
     display: flex;
@@ -269,8 +276,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height:auto;
-
+    max-height:70rem;
+    
 
     margin: 1rem 8rem;
 }

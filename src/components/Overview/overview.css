@@ -32,7 +32,10 @@
     margin: 1rem;
 }
 
-
+.right-image{
+    height: 60rem;
+    width: auto;
+}
 
 .figma-container{
     display: flex;

@@ -8,20 +8,6 @@ import gsap from "gsap";
 import Overview from "../Overview/overview";
 
 const Timber = ({
-    Head1 = "Local Harvest", 
-    Head2 = "2024", 
-    Head3 = "BCIT - IDSP Project", 
-    Head4 = "My Role(s): UX/UI Design",
-
-    Head = "Overview",
-    HeadContent = "Timber was a creative look into the design and copywriting experience of creating a magazine from the ground up.",
-    SubHead = "",
-    Top1 = "Logo Design",
-    Content1 = "The staggered, layered effect resembles stacked timber or architectural elements, reinforcing the magazine's focus on wooden architecture. The sans-serif typeface is clean and contemporary, ensuring readability while maintaining a strong, architectural presence.",
-    Top2 = "Color Choices",
-    Content2 = "Blue represents the sky, mountains, and stability of wooden structures.Orange evokes warmth, fire, and energy, possibly referencing fire lookouts, the autumn hues of timber, or the craftsmanship of woodworking.",
-    Top3 = "Layout Design",
-    Content3 = "Designed clean, visually captivating layouts that balanced aesthetics and readability. Created a structured yet creative framework to showcase Timber content, seamlessly integrating text and imagery for an immersive magazine experience.",
 
     LogoImage1 = "/image/Tools/ID.png",
     LogoAlt1 = "indesign",
@@ -34,11 +20,11 @@ const Timber = ({
     LogoImage5 = "",
     LogoAlt5 = "",
 
-    Link1 = "https://www.figma.com/file/yIqwI8dJfG659K9I6YGTfB/Local-Harvest-Overview?node-id=0%3A1",
-    LinkContent1 = "View Figma File",
+    Link1 = "",
+    LinkContent1 = "View Magazine",
 
     RightImage = "./image/Timber/TimberHandMag.png",
-
+    RightVideo = "",
 }) => {
 
     const fadeRefs = useRef([]);
@@ -87,18 +73,17 @@ const Timber = ({
                 Head4 = "My Role(s): Editorial Design, Research, Layout Design"
             />
 
-
-            <div className="Timber-main-container" ref={el => fadeRefs.current[1] = el}>
+            <div className="Timber-main-container">
                 <Overview 
-                    Head={Head}
-                    HeadContent = {HeadContent}
-                    SubHead = {SubHead}
-                    Top1 = {Top1}
-                    Content1 = {Content1}
-                    Top2 = {Top2}
-                    Content2 = {Content2}
-                    Top3 = {Top3}
-                    Content3 = {Content3}
+                    Head="Overview"
+                    HeadContent = "Timber was a creative look into the design and copywriting experience of creating a magazine from the ground up. For both a print version and a digital version"
+                    SubHead = ""
+                    Top1 = "Logo Design"
+                    Content1 = "The staggered, layered effect of the logo resembles stacked timber or architectural elements. I did this to reinforce the magazine's focus on wooden architecture. Additionally, the sans-serif typeface is clean and contemporary, ensuring readability while maintaining a strong, architectural presence."
+                    Top2 = "Color Choices"
+                    Content2 = "The warm blue I chose is often associated with calmness, stability, and trust, reflecting the resilience of wooden structures and the natural world. The light orange I used represents energy, warmth, and urgency, making it a fitting choice to convey the threat of wildfires. The blue-orange contrast is one of the most striking complementary color pairings, and is commonly used in nature and design to create visual balance and strong emotional impact. "
+                    Top3 = "Layout Design"
+                    Content3 = "I designed the pages to be clean, visually captivating layouts that balanced aesthetics and readability. I created a structured yet creative framework to showcase Timber content, seamlessly integrating text and imagery for an immersive magazine experience."
 
                     LogoImage1 = {LogoImage1}
                     LogoAlt1={LogoAlt1}
@@ -111,28 +96,33 @@ const Timber = ({
                     LogoImage5={LogoImage5}
                     LogoAlt5={LogoAlt5}
 
-                    Link1 = {Link1}
+                    Link1 = ""
                     LinkContent1={LinkContent1}
 
                     RightImage={RightImage}
+                    RightVideo={RightVideo}
                 />
             </div>
 
             <div className="timber-container">
-                <img 
-                    src="/image/Timber/TimberSpreadMag.png"
-                    width={400} height={400}
-                    className="timber-spread"
-                />
-            </div>
-            <div className="timber-container">
+                <h4>Digital Version</h4>
                 <iframe 
                     src="https://indd.adobe.com/embed/44584cf8-4349-4ad7-b5fb-497ac28fd021?startpage=1&allowFullscreen=true" 
                     className="timber-frame" 
                     frameborder="0" 
                     allowfullscreen=""
                 ></iframe>
-            </div>        
+            </div>   
+
+            <div className="timber-container">
+                <h4>Spreads of the Print Version</h4>
+                <img 
+                    src="/image/Timber/TimberSpreadMag.png"
+                    width={400} height={400}
+                    className="timber-spread"
+                />
+            </div>
+     
         </>
     )
 }

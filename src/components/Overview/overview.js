@@ -70,7 +70,7 @@ const Overview = ({
 
     return (
         <div className="overview-container" ref={el => fadeRefs.current[1] = el}>
-            <div className="left-overview" ref={el => fadeRefs.current[2] = el}>
+            <div className="left-overview">
                 <p className="Head">{Head}</p>
                 <p className="Pop20">{HeadContent}</p>
                 {/* <img src="/image/LHlogo.svg" alt="logo" width={800} height={100} ref={el => fadeRefs.current[3] = el} /> */}
@@ -91,23 +91,20 @@ const Overview = ({
                 <div className="logos-container">
                     <p className="SubHead">Tools used</p>
                     <div className="logos">
-                        {LogoImage1 && <img src={LogoImage1} alt={LogoAlt1} width={100} height={100} className="logo" ref={el => fadeRefs.current[0] = el} />}
-                        {LogoImage2 && <img src={LogoImage2} alt={LogoAlt2} width={100} height={100} className="logo" ref={el => fadeRefs.current[1] = el} />}
-                        {LogoImage3 && <img src={LogoImage3} alt={LogoAlt3} width={100} height={100} className="logo" ref={el => fadeRefs.current[2] = el} />}
-                        {LogoImage4 && <img src={LogoImage4} alt={LogoAlt4} width={100} height={100} className="logo" ref={el => fadeRefs.current[3] = el} />}
-                        {LogoImage5 && <img src={LogoImage5} alt={LogoAlt5} width={100} height={100} className="logo" ref={el => fadeRefs.current[4] = el} />}
+                        {LogoImage1 && <img src={LogoImage1} alt={LogoAlt1} width={100} height={100} className="logo" ref={el => fadeRefs.current[3] = el} />}
+                        {LogoImage2 && <img src={LogoImage2} alt={LogoAlt2} width={100} height={100} className="logo" ref={el => fadeRefs.current[4] = el} />}
+                        {LogoImage3 && <img src={LogoImage3} alt={LogoAlt3} width={100} height={100} className="logo" ref={el => fadeRefs.current[5] = el} />}
+                        {LogoImage4 && <img src={LogoImage4} alt={LogoAlt4} width={100} height={100} className="logo" ref={el => fadeRefs.current[6] = el} />}
+                        {LogoImage5 && <img src={LogoImage5} alt={LogoAlt5} width={100} height={100} className="logo" ref={el => fadeRefs.current[7] = el} />}
                     </div>
                 </div>
-                <div className="links-container">
+                {Link1 && <div className="links-container">
                     <a href={Link1} target="_blank" rel="noreferrer">{LinkContent1}</a>
-                </div>
+                </div> }
             </div>
-            <div className="right-overview" ref={el => fadeRefs.current[5] = el}>
-                {RightImage && <img src={RightImage} width={800} height={100} ref={el => fadeRefs.current[3] = el} />}
-                <video width="500" height="800" autoPlay loop>
-                    <source src={RightVideo} type="video/mp4" />
-                    Your browser does not support the video tag.
-                </video>
+            <div className="right-overview" ref={el => fadeRefs.current[8] = el}>
+                {RightImage && <img src={RightImage} className="right-image" width={100} height={100}/>}
+                {RightVideo && <video src={RightVideo} type="video/mp4" width="500" height="800" autoPlay loop> </video> }
             </div>
 
         </div>

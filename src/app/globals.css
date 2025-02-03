@@ -53,6 +53,7 @@ p{
     font-size: 1.3rem;
     font-weight: 500;
     line-height: 100%;
+    padding-bottom: 0.3rem;
 }
 
 .page-content{
@@ -72,23 +73,19 @@ h1 {
 h2, h3, h4, h5, h6{
     font-family: 'Supreme', sans-serif;
     color: var(--color-D-Header);
-
+    font-weight: 500;
 }
 h2{
     font-size: 3vw;
-    font-weight: 500;
 }
 h3{
     font-size: 2vw;
-    font-weight: 500;
 }
 h4{
     font-size: 1.5vw;
-    font-weight: 500;
 }
 h5{
     font-size: 1.2vw;
-    font-weight: 500;
 }
 
 h1 sup{

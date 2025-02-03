@@ -8,21 +8,6 @@ import Accordion from "../Accordion/accordion";
 import Overview from "../Overview/overview";
 
 const LH = ({ 
-    Head1 = "Local Harvest", 
-    Head2 = "2024", 
-    Head3 = "BCIT - IDSP Project", 
-    Head4 = "My Role(s): UX/UI Design",
-
-    Head = "Overview",
-    HeadContent = "Local Harvest was a project that was created from the ground up to solve a market researched problem amongst local farmers and farmers markets in BC. It sought to connect farmers and consumers before a farmers market to pre-order their goods before their products are sold out.",
-    SubHead = "",
-    Top1 = "Logo Design",
-    Content1 = "The staggered, layered effect resembles stacked timber or architectural elements, reinforcing the magazine's focus on wooden architecture. The sans-serif typeface is clean and contemporary, ensuring readability while maintaining a strong, architectural presence.",
-    Top2 = "Color Choices",
-    Content2 = "Blue represents the sky, mountains, and stability of wooden structures.Orange evokes warmth, fire, and energy, possibly referencing fire lookouts, the autumn hues of timber, or the craftsmanship of woodworking.",
-    Top3 = "Layout Design",
-    Content3 = "Designed clean, visually captivating layouts that balanced aesthetics and readability. Created a structured yet creative framework to showcase Timber content, seamlessly integrating text and imagery for an immersive magazine experience.",
-
     LogoImage1 = "/image/Tools/Figma.webp",
     LogoAlt1 = "figma",
     LogoImage2 = "",
@@ -79,22 +64,22 @@ const LH = ({
     return (
         <>  
             <Project1
-                Head1={Head1} 
-                Head2={Head2} 
-                Head3={Head3} 
-                Head4={Head4} 
+                Head1="Local Harvest"
+                Head2="2024"
+                Head3="BCIT - IDSP Project" 
+                Head4="My Role(s): UX/UI Design" 
             />
-        <div className="LH-container" ref={el => fadeRefs.current[0] = el}>
+        <div className="LH-container">
             <Overview
-                Head={Head}
-                HeadContent = {HeadContent}
-                SubHead = {SubHead}
-                Top1 = {Top1}
-                Content1 = {Content1}
-                Top2 = {Top2}
-                Content2 = {Content2}
-                Top3 = {Top3}
-                Content3 = {Content3}
+                Head="Overview"
+                HeadContent = "Local Harvest was a project that was created from the ground up to solve a market researched problem amongst local farmers and farmers markets in BC. It sought to connect farmers and consumers before a farmers market to pre-order their goods before their products are sold out."
+                SubHead = ""
+                Top1 = "Account Pages"
+                Content1 = "Designed for vendor efficiency, the interface includes an intuitive left-aligned menu, task-focused screens, and action-oriented CTAs. A cohesive visual identity ensures clarity, while optimized data displays enhance usability."
+                Top2 = "Market Pages"
+                Content2 = "Structured for easy browsing, these pages feature an engaging visual hierarchy, familiar UI elements, and a clean layout that encourages exploration. Consistent design elements ensure a seamless user experience."
+                Top3 = "Checkout Pages"
+                Content3 = "A simplified, step-by-step flow enhances the checkout experience. Adaptive payment options, error-resistant forms, and transparent feedback improve usability, while a mobile-first approach ensures accessibility across devices."
 
                 LogoImage1 = {LogoImage1}
                 LogoAlt1={LogoAlt1}
