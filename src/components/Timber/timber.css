@@ -53,11 +53,6 @@
 
 
 @media (max-width: 450px) {
-    .Timber-main-container{
-        width: 100vw;
-        margin: 0;
-    }
-
     .timber-container{
         margin: 0;
     }
