@@ -1,0 +1,25 @@
+.card-container{
+    /* border: 1px solid red; */
+    background-color: var(--color-L-BG);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+
+    margin: 1rem;
+    width: 23rem;
+    height: 32rem;
+}
+
+.card-image-container{
+    /* width: 19rem;
+    height: 19rem; */
+
+    margin: 2rem;
+    
+}
+
+.card-image{
+    width: 100%;
+    height: 100%;
+    
+}

@@ -3,6 +3,7 @@ import React, { useEffect, useRef } from "react";
 import Header from "@/components/Header/header";
 import styles from "./page.css";
 import { gsap } from "gsap";
+import Card from "@/components/Card/card";
 
 export default function Home() {
   const tl = useRef(null);
@@ -64,7 +65,7 @@ export default function Home() {
           <h2 className="Head" ref={el => fadeRefs.current[0] = el}>Hello there,</h2>
           <h1 className="SuprHead" ref={el => fadeRefs.current[1] = el}>I'm Ben Louis</h1>
           <h2 className="SuprHead"ref={el => fadeRefs.current[2] = el}>a digital designer</h2>
-          <h5 className="mt-24 SubSub" ref={el => fadeRefs.current[3] = el}>
+          <h5 className="mt-24 SubSub home-extra-text" ref={el => fadeRefs.current[3] = el}>
             I've gained a versatile skillset from working on a variety  
             <br />
             of projects. As well as a burning passion for learning!
@@ -75,7 +76,14 @@ export default function Home() {
           <svg ref={el => fadeRefs.current[5] = el} xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-down scroll mt-6"><path d="M8 18L12 22L16 18"/><path d="M12 2V22"/></svg>
         </div>
 
-        <div className="scrolled">Section 1 </div>
+        <div className="scrolled">
+          <Card 
+            titleItem="Japanese Classics"
+            subTitleItem="Magazine Design"
+
+            cardImage="./image/Posters/Poster-Skyline.png"
+          />
+        </div>
       </div>
     </>
   );

@@ -79,8 +79,44 @@
 
 .scrolled{
     position: relative;
-    top: 10vh;
-
+    /* background-color: var(--color-L-BG); */
     width: 100vw;
-    height: 30vh;
+}
+
+@media (max-width:450px){
+    .SuprHead{
+        font-size: 2.5rem;
+    }
+
+    .home-extra-text{
+        display: none;
+    }
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/components/Card/card.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************/
+.card-container{
+    /* border: 1px solid red; */
+    background-color: var(--color-L-BG);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+
+    margin: 1rem;
+    width: 23rem;
+    height: 32rem;
+}
+
+.card-image-container{
+    /* width: 19rem;
+    height: 19rem; */
+
+    margin: 2rem;
+    
+}
+
+.card-image{
+    width: 100%;
+    height: 100%;
+    
 }

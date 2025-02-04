@@ -8,8 +8,16 @@
 
 .scrolled{
     position: relative;
-    top: 10vh;
-
+    /* background-color: var(--color-L-BG); */
     width: 100vw;
-    height: 30vh;
+}
+
+@media (max-width:450px){
+    .SuprHead{
+        font-size: 2.5rem;
+    }
+
+    .home-extra-text{
+        display: none;
+    }
 }

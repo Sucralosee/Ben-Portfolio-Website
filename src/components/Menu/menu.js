@@ -133,7 +133,7 @@ const Menu = () => {
                     <p className="contact-links">Reach me here directly</p>
                 </div>
                 <div>
-                    <p className="contact-links">benlouis.contact@gmail.com</p>
+                    <a className="contact-links" href="mailto:benlouis.contact@gmail.com" >benlouis.contact@gmail.com</a>
                 </div>
             </div>
           </div>
