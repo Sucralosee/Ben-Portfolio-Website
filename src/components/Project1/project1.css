@@ -38,6 +38,25 @@
     padding-bottom: 0.6rem;
 }
 
+@media (width>2560px){
+    .project-container{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        width: 60%;
+    }
+    .top-head{
+        width: 100%;
+    }
+    .bot-head{
+        width: 100%;
+    }
+}
+
+
 @media(max-width: 1200px){
     .project-container{
         width: 95vw;
@@ -47,6 +66,8 @@
 
     .top-head{
         width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .place-head{    

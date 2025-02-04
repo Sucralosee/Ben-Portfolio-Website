@@ -33,6 +33,17 @@
     margin-top: 0.5rem;
 }
 
+@media (width>2560px){
+    .timber-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        width: 60%;
+    }
+}
+
 @media(max-width: 1200px) {
     .Timber-main-container{
         width: 100vw;

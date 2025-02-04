@@ -18,9 +18,7 @@ export default function Designs() {
     <>
       <Header title="Design" />
         <div className="page-content hero-designs">
-        <Poster
-        
-        />
+        <Poster/>
       </div>
     </>
   );
