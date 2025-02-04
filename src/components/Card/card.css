@@ -7,19 +7,36 @@
 
     margin: 1rem;
     width: 23rem;
-    height: 32rem;
+    height: auto;
 }
 
 .card-image-container{
     /* width: 19rem;
     height: 19rem; */
 
-    margin: 2rem;
-    
+    margin: 2rem 2rem 1rem;
 }
 
 .card-image{
     width: 100%;
     height: 100%;
-    
+    border-radius: 0.5rem;
+
+}
+
+.card-extra{
+    display: flex;
+    align-items: center;
+}
+
+.card-title{
+    margin: 0 2rem;
+}
+
+.card-subTitle{
+    margin: 0.25rem 2rem;
+}
+
+@media (max-width>1200) {
+
 }

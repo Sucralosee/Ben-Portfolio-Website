@@ -154,6 +154,14 @@ h1 sup{
     color: var(--color-D-Copy);
 }
 
+.Light-Text{
+    color: var(--color-L-Header);
+}
+
+.bold{
+    font-weight: bold;
+}
+
 .ML1{
     margin-left: 1rem;
 }

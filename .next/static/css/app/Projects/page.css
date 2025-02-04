@@ -164,6 +164,11 @@
         width: 100vw;
     }
 
+    .name-head{
+        display: flex;
+        flex-direction: column;
+    }
+
     .bot-head{
         /* border: 1px solid red; */
     }

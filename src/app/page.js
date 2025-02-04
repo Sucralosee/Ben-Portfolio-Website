@@ -80,8 +80,11 @@ export default function Home() {
           <Card 
             titleItem="Japanese Classics"
             subTitleItem="Magazine Design"
+            cardYear="2024"
 
             cardImage="./image/Posters/Poster-Skyline.png"
+            
+            linkPath="/Designs"
           />
         </div>
       </div>

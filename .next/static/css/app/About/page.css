@@ -100,6 +100,8 @@
 }
 
 .menu-logo{
+    height: 3.5rem;
+    width: auto;
 }
 
 .menu-open{
@@ -349,8 +351,13 @@
         padding: 1rem 1rem;
     }
 
+    .menu-logo{
+        height: 2.5rem;
+        width: auto;
+    }
+
     .extra{
-        font-size: 1rem;
+        display: none;
     }
 
     .menu-link-item-holder a {
