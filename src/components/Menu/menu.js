@@ -90,15 +90,10 @@ const Menu = () => {
       </div>
       <div className="menu-overlay">
         <div className="menu-overlay-bar">
-          {/* <div className="menu-logo">
-            <Link href="/">
-              <Image src="/image/icon_v2.png" alt="logo" width={100} height={100} />
-            </Link>
-          </div> */}
-        <div className="menu-close underline-animation thin" onClick={toggleMenu}>
-            <p className="extra">CLOSE</p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
-        </div>
+          <div className="menu-close underline-animation thin" onClick={toggleMenu}>
+              <p className="extra">CLOSE</p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+          </div>
         </div>
         <div className="menu-copy">
           <div className="menu-links">

@@ -1,5 +1,22 @@
-.main-header{
+.intro-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 90vh;
+    margin-top: 5rem;
+}
 
+.intro-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro-next{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .scroll{
@@ -17,7 +34,9 @@
         font-size: 2.5rem;
     }
 
-    .home-extra-text{
-        display: none;
+    .intro-content{
+        align-items: flex-start;
+        margin: 1rem;
     }
+
 }

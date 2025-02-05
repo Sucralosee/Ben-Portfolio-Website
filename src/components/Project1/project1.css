@@ -17,6 +17,7 @@
 }
 
 .bot-head{
+    width: 85vw;
     border-bottom: 0.25rem solid var(--color-primary);
 
     margin-bottom: 0.5rem;
