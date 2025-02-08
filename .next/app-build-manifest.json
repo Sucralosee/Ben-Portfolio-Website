@@ -18,6 +18,18 @@
       "static/css/app/Projects/page.css",
       "static/chunks/app/Projects/page.js"
     ],
+    "/Designs/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/Designs/page.css",
+      "static/chunks/app/Designs/page.js"
+    ],
+    "/Designs/JapaneseClassics/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/Designs/JapaneseClassics/page.css",
+      "static/chunks/app/Designs/JapaneseClassics/page.js"
+    ],
     "/_not-found/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",

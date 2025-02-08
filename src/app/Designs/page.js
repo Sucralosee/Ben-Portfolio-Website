@@ -4,6 +4,7 @@ import Header from "@/components/Header/header";
 
 import Menu from "@/components/Menu/menu";
 import Poster from "@/components/Poster/poster";
+import Card from "@/components/Card/card";
 
 
 export default function Designs() {
@@ -18,7 +19,16 @@ export default function Designs() {
     <>
       <Header title="Design" />
         <div className="page-content hero-designs">
-        <Poster/>
+
+        <Card 
+            titleItem="Japanese Classics"
+            subTitleItem="Magazine Design"
+            cardYear="2024"
+
+            cardImage="./image/Posters/Poster-Skyline.png"
+            
+            linkPath="/Designs/JapaneseClassics"
+          />
       </div>
     </>
   );
