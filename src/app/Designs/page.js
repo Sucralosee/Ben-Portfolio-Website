@@ -19,16 +19,27 @@ export default function Designs() {
     <>
       <Header title="Design" />
         <div className="page-content hero-designs">
+          <div className="containerOfCards">
+            <Card 
+                titleItem="Japanese Classics"
+                subTitleItem="Magazine Design"
+                cardYear="2024"
 
-        <Card 
-            titleItem="Japanese Classics"
-            subTitleItem="Magazine Design"
-            cardYear="2024"
+                cardImage="./image/Posters/Poster-Skyline.png"
+                
+                linkPath="/Designs/JapaneseClassics"
+              />
+              <Card 
+                titleItem="Japanese Classics"
+                subTitleItem="Magazine Design"
+                cardYear="2024"
 
-            cardImage="./image/Posters/Poster-Skyline.png"
-            
-            linkPath="/Designs/JapaneseClassics"
-          />
+                cardImage="./image/Posters/Poster-Skyline.png"
+                
+                linkPath="/Designs/JapaneseClassics"
+              />
+          </div>
+
       </div>
     </>
   );

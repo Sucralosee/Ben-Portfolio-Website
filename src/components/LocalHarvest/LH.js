@@ -19,9 +19,6 @@ const LH = ({
     LogoImage5 = "",
     LogoAlt5 = "",
 
-    Link1 = "https://www.figma.com/file/yIqwI8dJfG659K9I6YGTfB/Local-Harvest-Overview?node-id=0%3A1",
-    LinkContent1 = "View Figma File",
-
     RightImage = "",
     RightVideo = "./video/lhlogging.mp4"
 }) => {
@@ -91,8 +88,10 @@ const LH = ({
             LogoImage5={LogoImage5}
             LogoAlt5={LogoAlt5}
 
-            Link1 = {Link1}
-            LinkContent1={LinkContent1}
+            Link1 = "https://www.figma.com/file/yIqwI8dJfG659K9I6YGTfB/Local-Harvest-Overview?node-id=0%3A1"
+            LinkContent1="View Figma File"
+            Link2="https://www.figma.com/proto/EueSKezqQqyA6V9YG3tpeN/Local-Harvest?node-id=3914-4148&t=wGJjgLZEaTohdZ90-1"
+            LinkContent2="View Prototype"
 
             RightImage = {RightImage}
             RightVideo={RightVideo}

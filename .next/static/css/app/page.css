@@ -120,8 +120,7 @@
     border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
-
-    margin: 1rem;
+    padding: 0 0 1rem;
     width: 23rem;
     height: auto;
 }

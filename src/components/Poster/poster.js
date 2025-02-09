@@ -9,8 +9,8 @@ import Overview from "../Overview/overview";
 const Poster = ({ 
     LogoImage1 = "/image/Tools/PS.png",
     LogoAlt1 = "Photoshop",
-    LogoImage2 = "",
-    LogoAlt2 = "",
+    LogoImage2 = "/image/Tools/AI.png",
+    LogoAlt2 = "illustrator",
     LogoImage3 = "",
     LogoAlt3 = "",
     LogoImage4 = "",
@@ -20,6 +20,8 @@ const Poster = ({
 
     Link1 = "",
     LinkContent1 = "",
+    Link2 = "",
+    LinkContent2 = "",
 
     RightImage = "/image/Posters/SingleRX7.png",
     RightVideo = ""

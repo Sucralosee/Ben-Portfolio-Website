@@ -30,6 +30,12 @@
       "static/css/app/Designs/JapaneseClassics/page.css",
       "static/chunks/app/Designs/JapaneseClassics/page.js"
     ],
+    "/Coding/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/Coding/page.css",
+      "static/chunks/app/Coding/page.js"
+    ],
     "/_not-found/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",

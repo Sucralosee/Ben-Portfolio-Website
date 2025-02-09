@@ -30,6 +30,8 @@ export default function Overview({
     
     Link1 = "Link1",
     LinkContent1 = "LinkContent1",
+    Link2 = "Link2",
+    LinkContent2 = "LinkContent2",
 
     RightImage = "RightImage",
     RightVideo = "RightVideo"
@@ -128,10 +130,13 @@ export default function Overview({
                 {Link1 && <div className="links-container">
                     <a href={Link1} target="_blank" rel="noreferrer">{LinkContent1}</a>
                 </div> }
+                {Link2 && <div className="links-container">
+                    <a href={Link2} target="_blank" rel="noreferrer">{LinkContent2}</a>
+                </div> }
             </div>
             <div className="right-overview" ref={rightOverviewRef}>
                 {RightImage && <img src={RightImage} className="right-image" width={100} height={100}/>}
-                {RightVideo && <video src={RightVideo} type="video/mp4" width="500" height="800" autoPlay loop> </video> }
+                {RightVideo && <video src={RightVideo} type="video/mp4" width="500" height="800" autoPlay loop muted> </video> }
             </div>
 
         </div>

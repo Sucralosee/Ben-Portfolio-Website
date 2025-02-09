@@ -20,9 +20,6 @@ const Timber = ({
     LogoImage5 = "",
     LogoAlt5 = "",
 
-    Link1 = "",
-    LinkContent1 = "View Magazine",
-
     RightImage = "./image/Timber/TimberHandMag.png",
     RightVideo = "",
 }) => {
@@ -111,7 +108,9 @@ const Timber = ({
                 LogoAlt5={LogoAlt5}
 
                 Link1 = ""
-                LinkContent1={LinkContent1}
+                LinkContent1=""
+                Link2 = ""
+                LinkContent2 = ""
 
                 RightImage={RightImage}
                 RightVideo={RightVideo}

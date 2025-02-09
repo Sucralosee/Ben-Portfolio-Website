@@ -339,9 +339,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 
-    margin: 4rem 8rem 0 8rem;
+    margin: 2rem 8rem 0 8rem;
     
     width: 85vw;
 }
@@ -375,6 +375,7 @@
     flex-wrap: wrap;
     gap: 1rem;
     width: 45%;
+    margin-top: 2rem;
 }
 
 .right-image{
