@@ -121,14 +121,12 @@
     display: flex;
     flex-direction: column;
     padding: 0 0 1rem;
-    width: 23rem;
+    max-width: 23rem;
+    width: auto;
     height: auto;
 }
 
 .card-image-container{
-    /* width: 19rem;
-    height: 19rem; */
-
     margin: 2rem 2rem 1rem;
 }
 
