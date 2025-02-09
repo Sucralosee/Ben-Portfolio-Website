@@ -74,7 +74,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    height: 90vh;
+    height: 80vh;
     margin-top: 5rem;
 }
 
@@ -82,6 +82,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 1rem;
+}
+.home-extra-text{
+    text-align: center;
+
 }
 
 .intro-next{
@@ -96,8 +101,15 @@
 
 .scrolled{
     position: relative;
-    /* background-color: var(--color-L-BG); */
+    background-color: var(--color-L-BG-25);
     width: 100vw;
+    border-radius: 2rem;
+
+    padding: 2rem 8rem 0 8rem;
+}
+
+.scrolled .card-container{
+    opacity: 100%;
 }
 
 @media (max-width:450px){

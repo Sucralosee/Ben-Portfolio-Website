@@ -64,11 +64,16 @@ export default function Home() {
         <div className="intro-container">
           <div className="intro-content">
             <h1 className="SuprHead" ref={el => fadeRefs.current[1] = el}>Hello, I'm Ben</h1>
-            <h5 className="mt-10 SubSub home-extra-text" ref={el => fadeRefs.current[3] = el}>
+            <h3 className="Head home-extra-text " ref={el => fadeRefs.current[3] = el}>
+              multidisciplinary
+              <br/>
+              designer
+            </h3>
+            {/* <h5 className="mt-10 SubSub home-extra-text" ref={el => fadeRefs.current[3] = el}>
               I've gained a versatile skillset from working on a variety  
               <br />
               of projects. As well as a burning passion for learning!
-            </h5>
+            </h5> */}
           </div>
           <div className="intro-next">
             <h5 className="mt-24 SubSub" ref={el => fadeRefs.current[4] = el}>Explore my work and get in touch with me!</h5>
@@ -85,6 +90,7 @@ export default function Home() {
             cardImage="./image/Posters/Poster-Skyline.png"
             
             linkPath="/Designs"
+            className="scroll-Card"
           />
         </div>
       </div>
