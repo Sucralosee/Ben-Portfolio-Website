@@ -87,15 +87,13 @@ const Timber = ({
 
             <Overview 
                 Head="Overview"
-                HeadContent = "Timber was a creative look into the design and copywriting experience of creating a magazine from the ground up. For both a print version and a digital version"
-                SubHead = ""
+                HeadContent = "Timber explores the intersection of design and editorial content through both print and digital magazine formats, examining wooden architecture and environmental narratives from concept to execution."
                 Top1 = "Logo Design"
-                Content1 = "The staggered, layered effect of the logo resembles stacked timber or architectural elements. I did this to reinforce the magazine's focus on wooden architecture. Additionally, the sans-serif typeface is clean and contemporary, ensuring readability while maintaining a strong, architectural presence."
+                Content1 = "The logo's staggered, layered design elements mirror stacked timber and architectural forms, reinforcing the magazine's focus on wooden architecture. A contemporary sans-serif typeface ensures optimal readability while maintaining strong architectural presence in the visual identity."
                 Top2 = "Color Choices"
-                Content2 = "The warm blue I chose is often associated with calmness, stability, and trust, reflecting the resilience of wooden structures and the natural world. The light orange I used represents energy, warmth, and urgency, making it a fitting choice to convey the threat of wildfires. The blue-orange contrast is one of the most striking complementary color pairings, and is commonly used in nature and design to create visual balance and strong emotional impact. "
+                Content2 = "The color palette employs a warm blue to evoke calmness, stability, and trust - qualities that reflect the endurance of wooden structures and the natural world. Light orange accents represent energy, warmth, and urgency, speaking to the threat of wildfires. This blue-orange complementary pairing, frequently found in nature, creates a striking visual balance and delivers strong emotional impact."
                 Top3 = "Layout Design"
-                Content3 = "I designed the pages to be clean, visually captivating layouts that balanced aesthetics and readability. I created a structured yet creative framework to showcase Timber content, seamlessly integrating text and imagery for an immersive magazine experience."
-
+                Content3 = "The page layouts balance aesthetic appeal with functional readability through clean, structured design principles. A carefully crafted framework seamlessly integrates textual and visual elements, creating an immersive magazine experience that serves both form and function."
                 LogoImage1 = {LogoImage1}
                 LogoAlt1={LogoAlt1}
                 LogoImage2={LogoImage2}

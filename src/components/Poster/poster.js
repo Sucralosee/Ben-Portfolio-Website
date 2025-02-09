@@ -18,11 +18,6 @@ const Poster = ({
     LogoImage5 = "",
     LogoAlt5 = "",
 
-    Link1 = "",
-    LinkContent1 = "",
-    Link2 = "",
-    LinkContent2 = "",
-
     RightImage = "/image/Posters/SingleRX7.png",
     RightVideo = ""
 }) => {
@@ -90,15 +85,13 @@ const Poster = ({
             />
             <Overview
                 Head="Overview"
-                HeadContent="In this poster series, I set out to capture the spirit of three Japanese automotive icons that have always fascinated me. I wanted to tell the story of each vehicle through a distinct color palette - a deep red for the mysterious Nissan Skyline, a vibrant yellowish-orange for the humble Suzuki Carry, and a bold purple for the revolutionary Mazda RX-7."
-                SubHead=""
+                HeadContent="This poster series captures the spirit of three Japanese automotive icons through distinct visual storytelling. Each design employs a carefully selected color palette - a deep red for the mysterious Nissan Skyline, a vibrant yellowish-orange for the humble Suzuki Carry, and a bold purple for the revolutionary Mazda RX-7."
                 Top1="Design Philosophy"
-                Content1="I approached each design with the goal of stripping away the unnecessary while preserving the soul of each vehicle. For me, it was crucial to capture those distinctive lines and shapes that make each car instantly recognizable. I spent considerable time studying the unique characteristics of each vehicle to ensure I could represent them in their most pure form."
+                Content1="The design approach emphasizes minimalism while preserving the essential character of each vehicle. The compositions strip away extraneous details to focus on the distinctive lines and shapes that make each car instantly recognizable. Every element serves to highlight the unique characteristics and defining features of these automotive legends."
                 Top2="Color Selection"
-                Content2="The color choices were intentional - I selected purple to emphasize the RX-7's legendary status, yellowish-orange to reflect the Suzuki Carry's utilitarian charm and workmanlike character, and purple to embody the RX-7's passionate engineering and performance heritage."
-                Top3="Creative Process"
-                Content3="Working in Photoshop, I focused on achieving clean, precise linework that would complement the color schemes.  My goal was to create pieces that would speak to both casual observers and dedicated car enthusiasts, capturing what makes these vehicles special to so many people."
-
+                Content2="The color palette serves as a fundamental storytelling element. Purple underscores the RX-7's legendary status, while the yellowish-orange reflects the Suzuki Carry's utilitarian charm and workmanlike character. The deep red chosen for the Skyline embodies its mysterious allure and performance heritage."
+                Top3="Technical Execution"
+                Content3="The design process in Photoshop prioritizes clean, precise linework that harmonizes with the carefully chosen color schemes. The resulting compositions resonate with both casual observers and dedicated car enthusiasts, effectively communicating the unique appeal of these iconic vehicles."
                 LogoImage1 = {LogoImage1}
                 LogoAlt1={LogoAlt1}
                 LogoImage2={LogoImage2}
@@ -110,8 +103,10 @@ const Poster = ({
                 LogoImage5={LogoImage5}
                 LogoAlt5={LogoAlt5}
 
-                Link1 = {Link1}
-                LinkContent1={LinkContent1}
+                Link1 = ""
+                LinkContent1= ""
+                Link2=""
+                LinkContent2=""
 
                 RightImage = {RightImage}
                 RightVideo={RightVideo}
