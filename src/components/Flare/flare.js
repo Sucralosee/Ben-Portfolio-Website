@@ -1,5 +1,6 @@
 import "./flare.css"
 import Project1 from "../Project1/project1";
+import Card from "../Card/card";
 
 export default function Flare() {
   return (
@@ -40,7 +41,7 @@ export default function Flare() {
                 <div className="case-issues">
                     <p className="SubHead">Developing Flare came with several design challenges and requirements:</p>
                     <p className="Pop28">1. User Centric Design</p>
-                    <p className="Pop20">The app needed to be intuitive and accessible for a diverse audience, including users with little to no technical expertise.</p>
+                    <p className="Pop24">The app needed to be intuitive and accessible for a diverse audience, including users with little to no technical expertise.</p>
                     
                     {/* <p className="Pop28">2. Quick and Easy Information</p>
                     <p className="Pop20">The app was designed based on the bento method to ensure information was given in clear and distinct areas.</p> */}
@@ -59,8 +60,42 @@ export default function Flare() {
         </div>
 
         <div className="case-container-link">
-
+            <div className="case-left-content">
+                <p className="Pop28">2. Branding</p>
+                <p className="Pop20">Flare's branding needed to be simple yet reflect Flare's wider design personality. With its bento design and the usage of rounded corners. The color choices reflected the urgent nature of the app and to mimic the color of fire.</p>
+                <p className="Pop32 case-left-arrow">Read more about the Branding here <span className="arrowBack transform group-hover:translate-x-1 transition-transform duration-200">→</span></p>
+                <p className="Pop28">3. Collaboration</p>
+                <p className="Pop24">Managed the entire design and development process within a sprint-based workflow, balancing tight deadlines while prioritizing tasks to ensure efficient execution. Took on a leadership role within a diverse, seven-member team, fostering clear communication and collaboration across different specializations. By coordinating efforts, addressing challenges proactively, and streamlining workflows, I helped maintain project momentum and deliver high-quality results on time.</p>
+            </div>
+            <div className="case-right-image">
+                <Card 
+                    titleItem= "Flare"
+                    subTitleItem= "Graphic Design"
+                    cardYear= "2024"
+                    cardImage= "/image/Flare/FlareIcon.png"
+                    linkPath= "/Designs/FlareLogo"
+                />
+            </div>
         </div>
+
+        <div className="case-container-showcase"> 
+            <div className="case-left-content">
+                <p className="Pop28">4. Showcasing</p>
+                <p className="Pop20">Flare was then showcased to a large audience of industry professionals and government officials as part of an effort to gain support and recognition. This required extensive hours of practice to refine the presentation, effectively communicate the product’s value, and convincingly position it for potential market entry. Through this experience, I significantly improved my presentation and communication skills, gaining confidence in articulating ideas clearly and engaging with a professional audience.</p>
+                <p className="Pop20 mt-6">Additionally, I designed and coded a website which highlighted the design and development process in a blog. As well as a information hub about Flare in general.</p>
+                <div className="case-links">
+                    <div className="links-container">
+                        <a href="https://flare-wildfire-blog.vercel.app/about" target="_blank" rel="noreferrer">Visit Blog</a>
+                    </div> 
+                </div>
+            </div>
+            <div className="case-right-image">
+                <img src="/image/Flare/FlareTeam.png"></img>
+            </div>
+        </div>
+
+        <img src="/image/Flare/FlareBlog.png" className="case-image-wide"></img>
+
     </div>
     </>
 

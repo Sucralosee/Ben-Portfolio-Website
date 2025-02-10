@@ -68,6 +68,25 @@
     justify-content: space-between;
 }
 
+.case-container-link{
+    margin: 2rem 0;
+    gap: 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.case-left-arrow{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2rem;
+}
+
+.case-container-showcase{
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
 .case-third{
     width: 32%;
 }
