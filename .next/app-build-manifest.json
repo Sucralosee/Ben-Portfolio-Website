@@ -66,10 +66,11 @@
       "static/css/app/Projects/FlareIDSP/page.css",
       "static/chunks/app/Projects/FlareIDSP/page.js"
     ],
-    "/_not-found/page": [
+    "/Designs/FlareLogo/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/_not-found/page.js"
+      "static/css/app/Designs/FlareLogo/page.css",
+      "static/chunks/app/Designs/FlareLogo/page.js"
     ]
   }
 }

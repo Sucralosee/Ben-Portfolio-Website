@@ -65,7 +65,7 @@ export default function Flare() {
                 <p className="Pop20">Flare's branding needed to be simple yet reflect Flare's wider design personality. With its bento design and the usage of rounded corners. The color choices reflected the urgent nature of the app and to mimic the color of fire.</p>
                 <p className="Pop32 case-left-arrow">Read more about the Branding here <span className="arrowBack transform group-hover:translate-x-1 transition-transform duration-200">→</span></p>
                 <p className="Pop28">3. Collaboration</p>
-                <p className="Pop24">Managed the entire design and development process within a sprint-based workflow, balancing tight deadlines while prioritizing tasks to ensure efficient execution. Took on a leadership role within a diverse, seven-member team, fostering clear communication and collaboration across different specializations. By coordinating efforts, addressing challenges proactively, and streamlining workflows, I helped maintain project momentum and deliver high-quality results on time.</p>
+                <p className="Pop20">Managed the entire design and development process within a sprint-based workflow, balancing tight deadlines while prioritizing tasks to ensure efficient execution. Took on a leadership role within a diverse, seven-member team, fostering clear communication and collaboration across different specializations. By coordinating efforts, addressing challenges proactively, and streamlining workflows, I helped maintain project momentum and deliver high-quality results on time.</p>
             </div>
             <div className="case-right-image">
                 <Card 
@@ -78,9 +78,22 @@ export default function Flare() {
             </div>
         </div>
 
+        <div className="case-container-testing"> 
+            <div className="case-left-content">
+                <p className="Pop28">4. User Reaseach / Testing</p>
+                <p className="Pop20">Was done to understand market gaps and more specifically user needs.</p>
+                <p className="Pop20 mt-4">Two personas were created to reflect the typical user that would potentially find value in Flare as useful tool.</p>
+            </div> 
+            <div className="flex justify-between">
+                <img className="case-half" src="/image/Flare/FlarePersona-1.png"></img>
+                <img className="case-half" src="/image/Flare/FlarePersona-2.png"></img>
+            </div>
+
+        </div>
+
         <div className="case-container-showcase"> 
             <div className="case-left-content">
-                <p className="Pop28">4. Showcasing</p>
+                <p className="Pop28">5. Showcasing</p>
                 <p className="Pop20">Flare was then showcased to a large audience of industry professionals and government officials as part of an effort to gain support and recognition. This required extensive hours of practice to refine the presentation, effectively communicate the product’s value, and convincingly position it for potential market entry. Through this experience, I significantly improved my presentation and communication skills, gaining confidence in articulating ideas clearly and engaging with a professional audience.</p>
                 <p className="Pop20 mt-6">Additionally, I designed and coded a website which highlighted the design and development process in a blog. As well as a information hub about Flare in general.</p>
                 <div className="case-links">

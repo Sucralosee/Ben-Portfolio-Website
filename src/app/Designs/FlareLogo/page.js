@@ -10,7 +10,8 @@ export default function FlareLogo() {
       <Header title="" />
         <div className="page-content hero-designs">
             <Flare/>
-            <Back title="Back to Projects" route="Projects" />
+            <Back title="Back to Flare Case Study" route="Projects/FlareIDSP" />
+            <Back title="Back to Designs" route="Designs" />
 
         </div>
     </>
