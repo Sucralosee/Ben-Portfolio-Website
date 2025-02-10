@@ -1,7 +1,7 @@
 "use client";
 import Header from "@/components/Header/header";
 import Back from "@/components/Back/back";
-import Flare from "@/components/Flare/flare";
+import FlareBrand from "@/components/FlareBrand/flarebrand";
 
 export default function FlareLogo() {
 
@@ -9,7 +9,7 @@ export default function FlareLogo() {
     <>
       <Header title="" />
         <div className="page-content hero-designs">
-            <Flare/>
+            <FlareBrand/>
             <Back title="Back to Flare Case Study" route="Projects/FlareIDSP" />
             <Back title="Back to Designs" route="Designs" />
 

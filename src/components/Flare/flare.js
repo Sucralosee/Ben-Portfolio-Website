@@ -54,8 +54,8 @@ export default function Flare() {
         </div>
 
         <div className="case-container-triple">
-            <img src="/image/Flare/HomeScreen.png" className="case-third"></img>
             <img src="/image/Flare/DangerScreen.png" className="case-third"></img>
+            <img src="/image/Flare/MockupPhoneMap.png" className="case-third"></img>
             <img src="/image/Flare/MapScreen.png" className="case-third"></img>
         </div>
 
@@ -121,6 +121,7 @@ export default function Flare() {
         </div>
 
         <img src="/image/Flare/FlareBlog.png" className="case-image-wide"></img>
+        <img src="/image/Flare/MockupPhoneFlareCropped.png" className="case-image-wide mt-6"></img>
 
     </div>
     </>

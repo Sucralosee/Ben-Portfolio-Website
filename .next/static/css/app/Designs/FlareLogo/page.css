@@ -82,129 +82,6 @@
     font-size: 3rem;
     color: var(--color-D-Copy);
 }
-/*!****************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/components/Flare/flare.css ***!
-  \****************************************************************************************************************************************************************************************************************************************************************************/
-.case-container{
-    margin: 2rem 8rem 0 8rem;
-    width: 85vw;
-
-}
-
-.case-container-top{
-    margin: 5rem 0 2rem;
-    display: flex;
-    justify-content: space-between;
-}
-
-.case-left-content{
-    width: 60%;
-}
-
-.case-right-image{
-    width: 40%;
-    margin-left: 2rem;
-}
-
-.case-links{
-    display: flex;
-    gap: 2rem;
-}
-
-.links-container {
-    display: flex;
-    justify-content: center;
-    width: 30%;
-    padding: 1rem;
-    margin: 1rem 0;
-    border-radius: 1rem;
-    background-color: var(--color-L-BG);
-    border: 0.2rem solid transparent;
-    transition: all 0.3s ease-in-out;
-}
-
-.links-container:hover {
-    background-color: var(--color-D-BG-25);
-    border: 0.2rem solid var(--color-D-Copy);
-    transform: scale(1.05);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.links-container:hover a{
-    color: var(--color-L-copy);
-}
-
-.case-container-problem{
-    margin: 2rem 0;
-    display: flex;
-    justify-content: space-between;
-}
-
-.highlight-issue {
-    color: var(--color-primary);
-    font-weight: 500;
-}
-
-.case-issues{
-    margin: 4rem 0 1rem;
-}
-
-.case-container-triple{
-    margin: 2rem 0;
-    display: flex;
-    justify-content: space-between;
-}
-
-.case-container-link{
-    margin: 2rem 0;
-    gap: 5rem;
-    display: flex;
-    justify-content: center;
-}
-
-.case-left-arrow{
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 2rem;
-}
-
-.case-container-testing{
-    margin: 2rem 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.case-container-showcase{
-    margin: 2rem 0;
-    display: flex;
-    justify-content: space-between;
-}
-
-.case-container-mock{
-    margin: 2rem 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.case-figma{
-    width: 100%;
-    height: 90%;
-}
-
-.case-half{
-    width: 40vw;
-}
-.case-third{
-    width: 32%;
-}
-
-.case-image-wide{
-    height: 50rem;
-    width: 100%;
-    object-fit:cover;
-}
 /*!**********************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/components/Project1/project1.css ***!
   \**********************************************************************************************************************************************************************************************************************************************************************************/
@@ -317,52 +194,185 @@
         margin: 0;
     }
 }
-/*!**************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/components/Card/card.css ***!
-  \**************************************************************************************************************************************************************************************************************************************************************************/
-.containerOfCards a {
-    display: inline-block;
-    width: 23rem; /* Set fixed width instead of auto */
+/*!**************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/components/FlareBrand/flarebrand.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************/
+.lottie-container{
+    width: 30rem;
+}
+/*!**********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/components/Overview/overview.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************/
+.overview-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    margin: 2rem 8rem 0 8rem;
+    
+    width: 85vw;
 }
 
-/* Update card-container to be more strict */
-.card-container {
-    background-color: var(--color-L-BG);
-    border-radius: 0.5rem;
+.left-overview{
     display: flex;
     flex-direction: column;
-    padding: 0 0 1rem;
-    width: 23rem; 
-    height: auto;
-    object-fit: cover;
-    overflow: hidden; 
-
+    width: 45%;
+    margin-right: 2rem;
 }
 
-.card-image-container{
-    margin: 2rem 2rem 0rem;
-}
-
-.card-image{
-    width: 100%;
-    height: 100%;
-    border-radius: 0.5rem;
-
-}
-
-.card-extra{
+.logos{
     display: flex;
-    align-items: center;
+    gap: 1rem;
 }
 
-.card-title{
-    margin: 0.3rem 2rem 0;
+.logo{
+    margin-top: 1rem;
 }
 
-.card-subTitle{
-    margin: 0.25rem 2rem;
+
+.role-overview{
+    margin-top: 1rem;
 }
 
-@media (max-width>1200) {
+.right-overview{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 45%;
+    margin-top: 2rem;
+}
+
+.right-image{
+    height: 100%;
+    max-height: 60rem;
+    width: fit-content;
+}
+
+.figma-container{
+    display: flex;
+    justify-content: flex-end;
+}
+.figma{
+    width: 100%;
+    height: 44rem;
+}
+
+.links-container {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 1rem;
+    background-color: var(--color-L-BG);
+    border: 0.2rem solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.links-container:hover {
+    background-color: var(--color-D-BG-25);
+    border: 0.2rem solid var(--color-D-Copy);
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.links-container:hover a{
+    color: var(--color-L-copy);
+}
+
+@media (width>2560px){
+    .overview-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 2rem auto;
+        width: 60%;
+    }
+}
+
+@media (max-width: 1800px){
+    .overview-container{
+
+    }
+
+    .right-image{
+        height: auto;
+        width: auto;
+        
+    }
+
+    .left-overview{
+        color: rebeccapurple
+    }
+}
+
+@media (max-width: 1200px) {
+    .overview-container{
+        width: 95vw;
+        margin: 2rem;
+    }
+
+    .right-overview{
+        justify-content: flex-start;
+    }
+
+
+    .right-image{
+    }
+
+}
+
+@media (max-width: 800px) {
+    .overview-container{
+        margin: 0;
+        flex-direction: column;
+        width: 100vw;
+    }
+    .left-overview{
+        width: 90vw;
+        margin: 2rem;
+    }
+
+    .right-overview{
+        margin: 0 2rem;
+        width: auto;
+    }
+
+    .right-image{
+        /* height: 30rem; */
+    }
+}
+
+@media (max-width: 450px) {
+    .overview-container{
+        margin: 0;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .left-overview{
+        width: 90vw;
+        height: auto;
+        margin-top: 0;
+    }
+
+    .logos{
+        gap: 0.5rem;
+    }
+
+    .logo{
+        width: 5rem;
+        margin: 0;
+    }
+
+    .links-container{
+        width: 10rem;
+        padding: 0.5rem 0.4rem 0.4rem;
+        margin: 0.5rem;
+    }
 
 }
