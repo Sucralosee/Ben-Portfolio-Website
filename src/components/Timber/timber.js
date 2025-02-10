@@ -20,8 +20,6 @@ const Timber = ({
     LogoImage5 = "",
     LogoAlt5 = "",
 
-    RightImage = "./image/Timber/TimberHandMag.png",
-    RightVideo = "",
 }) => {
 
     const [isMobile, setIsMobile] = useState(false);
@@ -88,6 +86,7 @@ const Timber = ({
             <Overview 
                 Head="Overview"
                 HeadContent = "Timber explores the intersection of design and editorial content through both print and digital magazine formats, examining wooden architecture and environmental narratives from concept to execution."
+                SubHead=""
                 Top1 = "Logo Design"
                 Content1 = "The logo's staggered, layered design elements mirror stacked timber and architectural forms, reinforcing the magazine's focus on wooden architecture. A contemporary sans-serif typeface ensures optimal readability while maintaining strong architectural presence in the visual identity."
                 Top2 = "Color Choices"
@@ -110,8 +109,8 @@ const Timber = ({
                 Link2 = ""
                 LinkContent2 = ""
 
-                RightImage={RightImage}
-                RightVideo={RightVideo}
+                RightImage="/image/Timber/TimberHandMag.png"
+                RightVideo=""
             />
 
             <div className="timber-container">

@@ -80,7 +80,7 @@ const Menu = () => {
             </Link>
           </div>
           <div className="menu-open" onClick={toggleMenu}>
-              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-menu">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-menu hamburger">
                   <line x1="4" x2="20" y1="12" y2="12"/>
                   <line x1="4" x2="20" y1="6" y2="6"/>
                   <line x1="4" x2="20" y1="18" y2="18"/>
@@ -92,7 +92,7 @@ const Menu = () => {
         <div className="menu-overlay-bar">
           <div className="menu-close underline-animation thin" onClick={toggleMenu}>
               <p className="extra">CLOSE</p>
-              <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-x hamburger"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
           </div>
         </div>
         <div className="menu-copy">
@@ -134,10 +134,10 @@ const Menu = () => {
           </div>
         </div>
         <div className="menu-preview">
-            <h2 className="menu-project-head">Projects</h2>
+            <h2 className="menu-project-head"></h2>
+            {/* <p>item</p>
             <p>item</p>
-            <p>item</p>
-            <p>item</p>
+            <p>item</p> */}
         </div>
       </div>
     </div>

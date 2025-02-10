@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: column;
     padding: 2rem;
-    padding-top: 7rem;
+    padding-top: 11rem;
     color: #fff;
     /* z-index: 2;    */
     /* border: red 4px solid; */
@@ -18,7 +18,7 @@
 
 .header-title{
     position: relative;
-    left: -2.8rem;
+    left: -2.6rem;
 }
 
 .my-logo{
@@ -112,7 +112,6 @@
     gap: 0.5rem;
     cursor: pointer;
     color: var(--color-D-Header);
-
 }
 
 .menu-open svg {
@@ -364,7 +363,8 @@
     }
 
     .extra{
-        display: none;
+        padding-bottom: 0;
+        margin-bottom: 0;
     }
 
     .menu-link-item-holder a {
@@ -383,5 +383,20 @@
 
     .underline-animation::after {
         height: 0.18rem;
+    }
+    .extra {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+}
+
+@media (min-width: 451px) {
+    .extra {
+        display: block;
+    }
+    .hamburger {
+        display: none;
     }
 }

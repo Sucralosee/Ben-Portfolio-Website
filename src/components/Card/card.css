@@ -1,13 +1,20 @@
-.card-container{
-    /* border: 1px solid red; */
+.containerOfCards a {
+    display: inline-block;
+    width: 23rem; /* Set fixed width instead of auto */
+}
+
+/* Update card-container to be more strict */
+.card-container {
     background-color: var(--color-L-BG);
     border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
     padding: 0 0 1rem;
-    max-width: 23rem;
-    width: auto;
+    width: 23rem; 
     height: auto;
+    object-fit: cover;
+    overflow: hidden; 
+
 }
 
 .card-image-container{
@@ -27,7 +34,7 @@
 }
 
 .card-title{
-    margin: 0 2rem;
+    margin: 0.3rem 2rem 0;
 }
 
 .card-subTitle{

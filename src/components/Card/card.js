@@ -39,7 +39,13 @@ const Card = ({
       duration: 0.3,
       margin: 0,
       ease: 'power2.inOut'
-    }, 0);
+    }, 0)
+    .to(card, {
+        height: 'auto',
+        duration: 0.3,
+        ease: 'power2.inOut'
+      }, 0)
+    ;
 
     // Add hover events
     card.addEventListener('mouseenter', () => tl.play());

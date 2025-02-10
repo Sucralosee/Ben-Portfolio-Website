@@ -5,7 +5,7 @@ import Menu from "@/components/Menu/menu";
 import PageChange from '../components/PageChange/page-Change.js';
 
 export const metadata = {
-  title: "BL Porfolio",
+  title: "Porfolio | Ben Louis",
   description: "A portfolio website for Ben Louis",
 };
 

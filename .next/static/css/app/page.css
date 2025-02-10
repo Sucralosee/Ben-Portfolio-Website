@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: column;
     padding: 2rem;
-    padding-top: 7rem;
+    padding-top: 11rem;
     color: #fff;
     /* z-index: 2;    */
     /* border: red 4px solid; */
@@ -18,7 +18,7 @@
 
 .header-title{
     position: relative;
-    left: -2.8rem;
+    left: -2.6rem;
 }
 
 .my-logo{
@@ -82,7 +82,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 1rem;
+    margin-top: 5rem;
 }
 .home-extra-text{
     text-align: center;
@@ -103,10 +103,12 @@
     position: relative;
     background-color: var(--color-L-BG-25);
     width: 100vw;
-    border-radius: 2rem;
+    border-radius: 2rem 2rem 0 0 ;
 
     padding: 2rem 8rem 0 8rem;
 }
+
+
 
 .scrolled .card-container{
     opacity: 100%;
@@ -126,16 +128,23 @@
 /*!**************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/components/Card/card.css ***!
   \**************************************************************************************************************************************************************************************************************************************************************************/
-.card-container{
-    /* border: 1px solid red; */
+.containerOfCards a {
+    display: inline-block;
+    width: 23rem; /* Set fixed width instead of auto */
+}
+
+/* Update card-container to be more strict */
+.card-container {
     background-color: var(--color-L-BG);
     border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
     padding: 0 0 1rem;
-    max-width: 23rem;
-    width: auto;
+    width: 23rem; 
     height: auto;
+    object-fit: cover;
+    overflow: hidden; 
+
 }
 
 .card-image-container{
@@ -155,7 +164,7 @@
 }
 
 .card-title{
-    margin: 0 2rem;
+    margin: 0.3rem 2rem 0;
 }
 
 .card-subTitle{
