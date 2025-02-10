@@ -1,0 +1,240 @@
+/*!******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/components/Header/header.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************/
+.header-container{
+    position: relative;
+    top: 0;
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    padding-top: 11rem;
+    color: #fff;
+    /* z-index: 2;    */
+    /* border: red 4px solid; */
+
+    margin: 0 8rem;
+}
+
+.header-title{
+    position: relative;
+    left: -2.6rem;
+}
+
+.my-logo{
+    /* Add styles for your logo if needed */
+}
+
+@media (width>2560px) {
+    .header-container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin: 0 auto;
+        width: 60%;
+    }
+    
+}
+
+@media(max-width: 1200px){
+    .header-container{
+        margin: 0;
+        padding-bottom: 0;
+    }
+
+    .header-title{
+        margin-top: 1rem;
+        left: 0;
+    }
+}
+
+@media(max-width: 600px){
+    .header-title{
+        margin-top: 0.5rem;
+        left: 0;
+        font-size: 2.5rem;
+    }
+}
+@media(max-width: 450px){
+    .header-container{
+        margin: 0;
+        padding: 7rem 1rem 0rem;
+    }        
+
+    .header-title{
+        margin: 0;
+    }
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/components/Back/back.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************/
+.arrow-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrowBack{
+    position: relative;
+    top:0.4rem;
+    left: 2rem;
+    font-size: 3rem;
+    color: var(--color-D-Copy);
+}
+/*!****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/components/Flare/flare.css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************/
+.case-container{
+    margin: 2rem 8rem 0 8rem;
+    width: 85vw;
+
+}
+
+.case-container-top{
+    margin: 5rem 0 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.case-left-content{
+    width: 60%;
+}
+
+.case-right-image{
+    width: 40%;
+    margin-left: 2rem;
+}
+
+.case-container-problem{
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.highlight-issue {
+    color: var(--color-primary);
+    font-weight: 500;
+}
+
+.case-issues{
+    margin: 4rem 0 2rem;
+}
+
+.case-image-wide{
+    height: 50rem;
+    width: 100%;
+    object-fit:cover;
+}
+/*!**********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/components/Project1/project1.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************/
+.project-container{
+    /* border: green 2px solid; */
+
+    display: flex;
+    flex-direction: column;
+    height: 10rem;
+    margin:0 8rem;
+}
+
+.top-head{
+    width: 85vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+}
+
+.bot-head{
+    width: 85vw;
+    border-bottom: 0.25rem solid var(--color-primary);
+
+    margin-bottom: 0.5rem;
+}
+
+.top-head-pad{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.name-head{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.head-date{
+    margin: 4rem 0 0 2rem;
+    padding-bottom: 0.9rem;
+}
+
+@media (width>2560px){
+    .project-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        width: 60%;
+    }
+    .top-head{
+        width: 100%;
+    }
+    .bot-head{
+        width: 100%;
+    }
+}
+
+
+@media(max-width: 1200px){
+    .project-container{
+        width: 95vw;
+        height: auto;
+        margin: 0 2rem;
+    }
+
+    .top-head{
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .place-head{    
+        margin: 0;
+    }
+}
+
+@media(max-width: 450px){
+    .project-container{
+        margin: 1rem;
+        flex-direction: column;
+    }
+
+    .head-date{
+        padding-bottom: 0.4rem;
+        font-size: 0.75rem;
+        margin: 0 0 0 2rem;
+
+    }
+
+    .top-head{
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100vw;
+    }
+
+    .name-head{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bot-head{
+        /* border: 1px solid red; */
+    }
+
+    .place-head{    
+        margin: 0;
+    }
+}

@@ -1,0 +1,41 @@
+.case-container{
+    margin: 2rem 8rem 0 8rem;
+    width: 85vw;
+
+}
+
+.case-container-top{
+    margin: 5rem 0 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.case-left-content{
+    width: 60%;
+}
+
+.case-right-image{
+    width: 40%;
+    margin-left: 2rem;
+}
+
+.case-container-problem{
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.highlight-issue {
+    color: var(--color-primary);
+    font-weight: 500;
+}
+
+.case-issues{
+    margin: 4rem 0 2rem;
+}
+
+.case-image-wide{
+    height: 50rem;
+    width: 100%;
+    object-fit:cover;
+}

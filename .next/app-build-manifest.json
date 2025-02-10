@@ -60,6 +60,12 @@
       "static/css/app/Designs/WhiteRabbit/page.css",
       "static/chunks/app/Designs/WhiteRabbit/page.js"
     ],
+    "/Projects/FlareIDSP/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/Projects/FlareIDSP/page.css",
+      "static/chunks/app/Projects/FlareIDSP/page.js"
+    ],
     "/_not-found/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",

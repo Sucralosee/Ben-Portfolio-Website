@@ -107,7 +107,7 @@
 
 .head-date{
     margin: 4rem 0 0 2rem;
-    padding-bottom: 0.6rem;
+    padding-bottom: 0.9rem;
 }
 
 @media (width>2560px){
@@ -374,4 +374,20 @@
         margin: 0.5rem;
     }
 
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/components/Back/back.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************/
+.arrow-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrowBack{
+    position: relative;
+    top:0.4rem;
+    left: 2rem;
+    font-size: 3rem;
+    color: var(--color-D-Copy);
 }

@@ -553,6 +553,12 @@ video {
 .mt-6 {
   margin-top: 1.5rem;
 }
+.ml-2 {
+  margin-left: 0.5rem;
+}
+.mt-12 {
+  margin-top: 3rem;
+}
 .flex {
   display: flex;
 }
@@ -562,11 +568,17 @@ video {
 .hidden {
   display: none;
 }
+.w-full {
+  width: 100%;
+}
 .max-w-3xl {
   max-width: 48rem;
 }
 .grow {
   flex-grow: 1;
+}
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .resize {
   resize: both;
@@ -625,11 +637,22 @@ video {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
 .pb-2 {
   padding-bottom: 0.5rem;
 }
 .pl-6 {
   padding-left: 1.5rem;
+}
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.font-bold {
+  font-weight: 700;
 }
 .leading-relaxed {
   line-height: 1.625;
@@ -637,6 +660,14 @@ video {
 .text-gray-700 {
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity, 1));
+}
+.transition-transform {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.duration-200 {
+  transition-duration: 200ms;
 }
 
 :root {
@@ -981,6 +1012,12 @@ h1 sup{
     background: url(../../public/image/falltime.jpg) no-repeat 50% 100%;
     background-size: contain;
 } */
+
+
+.group:hover .group-hover\:translate-x-1 {
+  --tw-translate-x: 0.25rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
 /*!**************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/components/Menu/menu.css ***!
   \**************************************************************************************************************************************************************************************************************************************************************************/
