@@ -617,6 +617,9 @@ video {
 .rounded {
   border-radius: 0.25rem;
 }
+.border {
+  border-width: 1px;
+}
 .border-b-2 {
   border-bottom-width: 2px;
 }
