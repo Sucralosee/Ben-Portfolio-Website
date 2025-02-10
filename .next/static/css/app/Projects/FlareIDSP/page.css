@@ -106,6 +106,34 @@
     margin-left: 2rem;
 }
 
+.case-links{
+    display: flex;
+    gap: 2rem;
+}
+
+.links-container {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 1rem;
+    background-color: var(--color-L-BG);
+    border: 0.2rem solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.links-container:hover {
+    background-color: var(--color-D-BG-25);
+    border: 0.2rem solid var(--color-D-Copy);
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.links-container:hover a{
+    color: var(--color-L-copy);
+}
+
 .case-container-problem{
     margin: 2rem 0;
     display: flex;
@@ -118,9 +146,18 @@
 }
 
 .case-issues{
-    margin: 4rem 0 2rem;
+    margin: 4rem 0 1rem;
 }
 
+.case-container-triple{
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.case-third{
+    width: 32%;
+}
 .case-image-wide{
     height: 50rem;
     width: 100%;
