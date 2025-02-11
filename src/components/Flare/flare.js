@@ -55,7 +55,7 @@ export default function Flare() {
 
         <div className="case-container-triple">
             <img src="/image/Flare/DangerScreen.png" className="case-third"></img>
-            <img src="/image/Flare/MockupPhoneMap.png" className="case-third"></img>
+            <img src="/image/Flare/Moc" className="case-third"></img>
             <img src="/image/Flare/MapScreen.png" className="case-third"></img>
         </div>
 

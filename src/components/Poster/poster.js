@@ -7,15 +7,10 @@ import "./poster.css";
 import Overview from "../Overview/overview";
 
 const Poster = ({ 
-    LogoImage1 = "/image/Tools/PS.png",
-    LogoAlt1 = "Photoshop",
-    LogoImage2 = "/image/Tools/AI.png",
-    LogoAlt2 = "illustrator",
-    LogoImage3 = "",
+    LogoAlt1 = "Adobe Photoshop",
+    LogoAlt2 = "Adove Illustrator",
     LogoAlt3 = "",
-    LogoImage4 = "",
     LogoAlt4 = "",
-    LogoImage5 = "",
     LogoAlt5 = "",
 
     RightImage = "/image/Posters/SingleRX7.png",
@@ -85,6 +80,7 @@ const Poster = ({
             />
             <Overview
                 Head="Overview"
+                SubHead=""
                 HeadContent="This poster series captures the spirit of three Japanese automotive icons through distinct visual storytelling. Each design employs a carefully selected color palette - a deep red for the mysterious Nissan Skyline, a vibrant yellowish-orange for the humble Suzuki Carry, and a bold purple for the revolutionary Mazda RX-7."
                 Top1="Design Philosophy"
                 Content1="The design approach emphasizes minimalism while preserving the essential character of each vehicle. The compositions strip away extraneous details to focus on the distinctive lines and shapes that make each car instantly recognizable. Every element serves to highlight the unique characteristics and defining features of these automotive legends."
@@ -92,15 +88,10 @@ const Poster = ({
                 Content2="The color palette serves as a fundamental storytelling element. Purple underscores the RX-7's legendary status, while the yellowish-orange reflects the Suzuki Carry's utilitarian charm and workmanlike character. The deep red chosen for the Skyline embodies its mysterious allure and performance heritage."
                 Top3="Technical Execution"
                 Content3="The design process in Photoshop prioritizes clean, precise linework that harmonizes with the carefully chosen color schemes. The resulting compositions resonate with both casual observers and dedicated car enthusiasts, effectively communicating the unique appeal of these iconic vehicles."
-                LogoImage1 = {LogoImage1}
                 LogoAlt1={LogoAlt1}
-                LogoImage2={LogoImage2}
                 LogoAlt2={LogoAlt2}
-                LogoImage3={LogoImage3}
                 LogoAlt3={LogoAlt3}
-                LogoImage4={LogoImage4}
                 LogoAlt4={LogoAlt4}
-                LogoImage5={LogoImage5}
                 LogoAlt5={LogoAlt5}
 
                 Link1 = ""

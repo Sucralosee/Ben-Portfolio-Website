@@ -8,15 +8,10 @@ import Accordion from "../Accordion/accordion";
 import Overview from "../Overview/overview";
 
 const LH = ({ 
-    LogoImage1 = "/image/Tools/Figma.webp",
-    LogoAlt1 = "figma",
-    LogoImage2 = "",
+    LogoAlt1 = "Figma",
     LogoAlt2 = "",
-    LogoImage3 = "",
     LogoAlt3 = "",
-    LogoImage4 = "",
     LogoAlt4 = "",
-    LogoImage5 = "",
     LogoAlt5 = "",
 
     RightImage = "",
@@ -77,15 +72,10 @@ const LH = ({
             Top3 = "Checkout Pages"
             Content3 = "A simplified, step-by-step flow enhances the checkout experience. Adaptive payment options, error-resistant forms, and transparent feedback improve usability, while a mobile-first approach ensures accessibility across devices."
 
-            LogoImage1 = {LogoImage1}
             LogoAlt1={LogoAlt1}
-            LogoImage2={LogoImage2}
             LogoAlt2={LogoAlt2}
-            LogoImage3={LogoImage3}
             LogoAlt3={LogoAlt3}
-            LogoImage4={LogoImage4}
             LogoAlt4={LogoAlt4}
-            LogoImage5={LogoImage5}
             LogoAlt5={LogoAlt5}
 
             Link1 = "https://www.figma.com/file/yIqwI8dJfG659K9I6YGTfB/Local-Harvest-Overview?node-id=0%3A1"

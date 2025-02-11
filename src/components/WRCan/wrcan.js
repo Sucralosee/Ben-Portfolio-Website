@@ -7,16 +7,6 @@ import "./wrcan.css";
 import Overview from "../Overview/overview";
 
 const WRCan = ({ 
-    LogoImage1 = "/image/Tools/PS.png",
-    LogoAlt1 = "Photoshop",
-    LogoImage2 = "/image/Tools/AI.png",
-    LogoAlt2 = "illustrator",
-    LogoImage3 = "",
-    LogoAlt3 = "",
-    LogoImage4 = "",
-    LogoAlt4 = "",
-    LogoImage5 = "",
-    LogoAlt5 = "",
 }) => {
     const fadeRefs = useRef([]);
     const tertiaryContainerRef = useRef(null);
@@ -90,15 +80,10 @@ const WRCan = ({
                 Content2=""
                 Top3=""
                 Content3=""
-                LogoImage1 = {LogoImage1}
-                LogoAlt1={LogoAlt1}
-                LogoImage2={LogoImage2}
-                LogoAlt2={LogoAlt2}
-                LogoImage3={LogoImage3}
-                LogoAlt3={LogoAlt3}
-                LogoImage4={LogoImage4}
+                LogoAlt1="Adobe Indesign"
+                LogoAlt2="Adobe Photoshop"
+                LogoAlt3="Adobe Illustrator"
                 LogoAlt4={LogoAlt4}
-                LogoImage5={LogoImage5}
                 LogoAlt5={LogoAlt5}
 
                 Link1 = ""
@@ -116,7 +101,7 @@ const WRCan = ({
                     </div>                
                 </div>
             </div>
-            
+
         </>
     )
 }

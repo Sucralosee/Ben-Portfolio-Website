@@ -189,6 +189,11 @@
     height: 2px;
     bottom: -0.1rem;
 }
+
+.underline-animation.thick::after {
+    height: 2px;
+    bottom: -0.1rem;
+}
   
 .underline-animation.thick::after {
     height: 3px;

@@ -17,15 +17,10 @@ export default function Overview({
     Content2 = "Content2",
     Top3 = "Top3",
     Content3 = "Content3",
-    LogoImage1 = "LogoImage1",
     LogoAlt1 = "LogoAlt1",
-    LogoImage2 = "LogoImage2",
     LogoAlt2 = "LogoAlt2",
-    LogoImage3 = "LogoImage3",
     LogoAlt3 = "LogoAlt3",
-    LogoImage4 = "LogoImage4",
     LogoAlt4 = "LogoAlt4",
-    LogoImage5 = "LogoImage5",
     LogoAlt5 = "LogoAlt5",
     
     Link1 = "Link1",
@@ -120,11 +115,11 @@ export default function Overview({
                 <div className="logos-container" ref={el => fadeRefs.current[9] = el}>
                     <p className="SubHead">Tools used</p>
                     <div className="logos">
-                        {LogoImage1 && <img src={LogoImage1} alt={LogoAlt1} width={75} height={75} className="logo" ref={el => fadeRefs.current[10] = el} />}
-                        {LogoImage2 && <img src={LogoImage2} alt={LogoAlt2} width={75} height={75} className="logo" ref={el => fadeRefs.current[11] = el} />}
-                        {LogoImage3 && <img src={LogoImage3} alt={LogoAlt3} width={75} height={75} className="logo" ref={el => fadeRefs.current[12] = el} />}
-                        {LogoImage4 && <img src={LogoImage4} alt={LogoAlt4} width={75} height={75} className="logo" ref={el => fadeRefs.current[13] = el} />}
-                        {LogoImage5 && <img src={LogoImage5} alt={LogoAlt5} width={75} height={75} className="logo" ref={el => fadeRefs.current[14] = el} />}
+                        {LogoAlt1 && <p className="logo Pop20" ref={el => fadeRefs.current[10] = el}>{LogoAlt1}</p>}
+                        {LogoAlt2 && <p className="logo Pop20" ref={el => fadeRefs.current[11] = el}>{LogoAlt2}</p>}
+                        {LogoAlt3 && <p className="logo Pop20" ref={el => fadeRefs.current[12] = el}>{LogoAlt3}</p>}
+                        {LogoAlt4 && <p className="logo Pop20" ref={el => fadeRefs.current[13] = el}>{LogoAlt4}</p>}
+                        {LogoAlt5 && <p className="logo Pop20" ref={el => fadeRefs.current[14] = el}>{LogoAlt5}</p>}
                     </div>
                 </div>
                 {Link1 && <div className="links-container">

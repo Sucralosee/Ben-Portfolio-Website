@@ -197,6 +197,7 @@ h1 sup{
     font-family: 'Poppins', sans-serif;
     font-size: 1.25rem;
     color: var(--color-D-Copy);
+    line-height: 1.7rem;
 }
 
 .Light-Text{

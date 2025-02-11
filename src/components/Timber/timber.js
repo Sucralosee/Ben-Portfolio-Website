@@ -9,17 +9,6 @@ import Overview from "../Overview/overview";
 
 const Timber = ({
 
-    LogoImage1 = "/image/Tools/ID.png",
-    LogoAlt1 = "indesign",
-    LogoImage2 = "/image/Tools/PS.png",
-    LogoAlt2 = "photoshop",
-    LogoImage3 = "/image/Tools/AI.png",
-    LogoAlt3 = "illsutrator",
-    LogoImage4 = "/image/Tools/Figma.webp",
-    LogoAlt4 = "",
-    LogoImage5 = "",
-    LogoAlt5 = "",
-
 }) => {
 
     const [isMobile, setIsMobile] = useState(false);
@@ -93,15 +82,10 @@ const Timber = ({
                 Content2 = "The color palette employs a warm blue to evoke calmness, stability, and trust - qualities that reflect the endurance of wooden structures and the natural world. Light orange accents represent energy, warmth, and urgency, speaking to the threat of wildfires. This blue-orange complementary pairing, frequently found in nature, creates a striking visual balance and delivers strong emotional impact."
                 Top3 = "Layout Design"
                 Content3 = "The page layouts balance aesthetic appeal with functional readability through clean, structured design principles. A carefully crafted framework seamlessly integrates textual and visual elements, creating an immersive magazine experience that serves both form and function."
-                LogoImage1 = {LogoImage1}
-                LogoAlt1={LogoAlt1}
-                LogoImage2={LogoImage2}
-                LogoAlt2={LogoAlt2}
-                LogoImage3={LogoImage3}
-                LogoAlt3={LogoAlt3}
-                LogoImage4={LogoImage4}
+                LogoAlt1="Adobe Indesign"
+                LogoAlt2="Adobe Photoshop"
+                LogoAlt3="Adobe Illustrator"
                 LogoAlt4={LogoAlt4}
-                LogoImage5={LogoImage5}
                 LogoAlt5={LogoAlt5}
 
                 Link1 = ""

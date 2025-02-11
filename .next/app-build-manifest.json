@@ -78,10 +78,11 @@
       "static/css/app/Contact/page.css",
       "static/chunks/app/Contact/page.js"
     ],
-    "/_not-found/page": [
+    "/About/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/_not-found/page.js"
+      "static/css/app/About/page.css",
+      "static/chunks/app/About/page.js"
     ]
   }
 }
