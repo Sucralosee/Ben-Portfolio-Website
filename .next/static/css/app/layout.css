@@ -550,17 +550,11 @@ video {
 .mt-24 {
   margin-top: 6rem;
 }
-.mt-6 {
-  margin-top: 1.5rem;
-}
-.ml-2 {
-  margin-left: 0.5rem;
-}
-.mt-12 {
-  margin-top: 3rem;
-}
 .mt-4 {
   margin-top: 1rem;
+}
+.mt-6 {
+  margin-top: 1.5rem;
 }
 .flex {
   display: flex;
@@ -611,14 +605,11 @@ video {
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
-.rounded-lg {
-  border-radius: 0.5rem;
-}
 .rounded {
   border-radius: 0.25rem;
 }
-.border {
-  border-width: 1px;
+.rounded-lg {
+  border-radius: 0.5rem;
 }
 .border-b-2 {
   border-bottom-width: 2px;
@@ -642,26 +633,19 @@ video {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 .pb-2 {
   padding-bottom: 0.5rem;
 }
 .pl-6 {
   padding-left: 1.5rem;
-}
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-.font-bold {
-  font-weight: 700;
 }
 .leading-relaxed {
   line-height: 1.625;
@@ -733,6 +717,8 @@ body {
     background-position: 50% 50%;
     background-size: cover;
     background-color: var(--color-D-BG);
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+
 }
 
 a,
@@ -774,6 +760,7 @@ p{
     display: none;
 }
 
+
 /* For Firefox */
 * {
     scrollbar-width: thin;
@@ -813,7 +800,12 @@ h1 sup{
     font-size: 1.5vw;
     letter-spacing: 0;
 }
-
+.xxlHead{
+    font-family: 'Supreme', sans-serif;
+    font-size: 14rem;
+    color: var(--color-D-Header);
+    letter-spacing: 0.4rem;
+}
 .SuprHead{
     font-family: 'Supreme', sans-serif;
     font-size: 6rem;

@@ -56,6 +56,8 @@ body {
     background-position: 50% 50%;
     background-size: cover;
     background-color: var(--color-D-BG);
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+
 }
 
 a,
@@ -97,6 +99,7 @@ p{
     display: none;
 }
 
+
 /* For Firefox */
 * {
     scrollbar-width: thin;
@@ -136,7 +139,12 @@ h1 sup{
     font-size: 1.5vw;
     letter-spacing: 0;
 }
-
+.xxlHead{
+    font-family: 'Supreme', sans-serif;
+    font-size: 14rem;
+    color: var(--color-D-Header);
+    letter-spacing: 0.4rem;
+}
 .SuprHead{
     font-family: 'Supreme', sans-serif;
     font-size: 6rem;

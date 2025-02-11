@@ -4,6 +4,7 @@ import Header from "@/components/Header/header";
 import styles from "./page.css";
 import { gsap } from "gsap";
 import Card from "@/components/Card/card";
+import { ScrollTrigger } from 'gsap/all';
 
 export default function Home() {
   const tl = useRef(null);
@@ -56,6 +57,40 @@ export default function Home() {
     };
   }, []);
 
+  const firstText = useRef(null);
+  const secondText = useRef(null);
+  const slider = useRef(null);
+  let xPercent = 0;
+  let direction = 1;
+
+  useEffect( () => {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.to(slider.current, {
+      scrollTrigger: {
+        trigger: document.documentElement,
+        scrub: 0.25,
+        start: 0,
+        end: window.innerHeight,
+        onUpdate: e => direction = e.direction * -1
+      },
+      x: "-500px",
+    })
+    requestAnimationFrame(animate);
+  }, [])
+
+  const animate = () => {
+    if(xPercent < -100){
+      xPercent = 0;
+    }
+    else if(xPercent > 0){
+      xPercent = -100;
+    }
+    gsap.set(firstText.current, {xPercent: xPercent})
+    gsap.set(secondText.current, {xPercent: xPercent})
+    requestAnimationFrame(animate);
+    xPercent += 0.3 * direction;
+  }
+
   return (
     <>
       {/* <Menu/> */}
@@ -64,11 +99,12 @@ export default function Home() {
         <div className="intro-container">
           <div className="intro-content">
             <h1 className="SuprHead" ref={el => fadeRefs.current[1] = el}>Hello, I'm Ben</h1>
-            <h3 className="Head home-extra-text " ref={el => fadeRefs.current[3] = el}>
+            {/* <h3 className="Head home-extra-text " ref={el => fadeRefs.current[3] = el}>
               multidisciplinary
               <br/>
-              designer
-            </h3>
+              designer Freelance Photographer
+            </h3> */}
+
             {/* <h5 className="mt-10 SubSub home-extra-text" ref={el => fadeRefs.current[3] = el}>
               I've gained a versatile skillset from working on a variety  
               <br />
@@ -79,10 +115,17 @@ export default function Home() {
             <h5 className="mt-24 SubSub" ref={el => fadeRefs.current[4] = el}>Explore my work and get in touch with me!</h5>
             <svg ref={el => fadeRefs.current[5] = el} xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-down scroll mt-6"><path d="M8 18L12 22L16 18"/><path d="M12 2V22"/></svg>
           </div>
+          <div className="slider-container">
+              <div ref={slider} className="slider">
+                <p className="xxlHead" ref={firstText} >Designer - Developer - </p>
+                <p className="xxlHead" ref={secondText}>Designer - Developer - </p>
+              </div>
+          </div>
+
         </div>
 
         <div className="scrolled">
-          <Card 
+          {/* <Card 
             titleItem="Japanese Classics"
             subTitleItem="Magazine Design"
             cardYear="2024"
@@ -91,7 +134,7 @@ export default function Home() {
             
             linkPath="/Designs"
             className="scroll-Card"
-          />
+          /> */}
         </div>
       </div>
     </>
