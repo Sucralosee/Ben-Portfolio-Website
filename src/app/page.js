@@ -60,36 +60,57 @@ export default function Home() {
   const firstText = useRef(null);
   const secondText = useRef(null);
   const slider = useRef(null);
-  let xPercent = 0;
-  let direction = 1;
+  const xPercent = useRef(0);
+  const direction = useRef(1);
+  const animationFrameId = useRef(null);
 
-  useEffect( () => {
+  const animate = () => {
+    if (!firstText.current || !secondText.current) return;
+
+    if (xPercent.current < -100) {
+      xPercent.current = 0;
+    } else if (xPercent.current > 0) {
+      xPercent.current = -100;
+    }
+
+    gsap.set(firstText.current, { xPercent: xPercent.current });
+    gsap.set(secondText.current, { xPercent: xPercent.current });
+    xPercent.current += 0.05 * direction.current;
+    
+    animationFrameId.current = requestAnimationFrame(animate);
+  };
+
+  useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-    gsap.to(slider.current, {
-      scrollTrigger: {
+    
+    if (slider.current && firstText.current && secondText.current) {
+      // Initialize slider position
+      gsap.set([firstText.current, secondText.current], { xPercent: 0 });
+      
+      // Create the scroll trigger animation
+      const scrollTrigger = ScrollTrigger.create({
         trigger: document.documentElement,
         scrub: 0.25,
         start: 0,
         end: window.innerHeight,
-        onUpdate: e => direction = e.direction * -1
-      },
-      x: "-500px",
-    })
-    requestAnimationFrame(animate);
-  }, [])
+        onUpdate: (e) => {
+          direction.current = e.direction * -1;
+        }
+      });
 
-  const animate = () => {
-    if(xPercent < -100){
-      xPercent = 0;
+      // Start the infinite scroll animation
+      animate();
+
+      // Cleanup
+      return () => {
+        if (animationFrameId.current) {
+          cancelAnimationFrame(animationFrameId.current);
+        }
+        scrollTrigger.kill();
+      };
     }
-    else if(xPercent > 0){
-      xPercent = -100;
-    }
-    gsap.set(firstText.current, {xPercent: xPercent})
-    gsap.set(secondText.current, {xPercent: xPercent})
-    requestAnimationFrame(animate);
-    xPercent += 0.1 * direction;
-  }
+  }, []); // Empty dependency array since we're using refs
+
 
   return (
     <>
@@ -107,7 +128,7 @@ export default function Home() {
           </div>
           <div className="intro-next">
             <h5 className="mt-4 SubSub" ref={el => fadeRefs.current[5] = el}>Explore my work and get in touch with me!</h5>
-            <svg ref={el => fadeRefs.current[5] = el} xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-down scroll mt-6"><path d="M8 18L12 22L16 18"/><path d="M12 2V22"/></svg>
+            <svg ref={el => fadeRefs.current[6] = el} xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-down scroll mt-6"><path d="M8 18L12 22L16 18"/><path d="M12 2V22"/></svg>
           </div>
           <div className="slider-container">
               <div ref={slider} className="slider">

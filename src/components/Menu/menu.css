@@ -59,7 +59,7 @@
     left: 0;
     width: 100vw;
     height: 105vh;
-    padding: 2rem;
+    padding: 2rem 8rem;
     background-color: var(--color-primary);
     z-index: 999;
     display: flex;
