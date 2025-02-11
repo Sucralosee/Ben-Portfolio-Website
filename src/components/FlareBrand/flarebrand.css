@@ -1,3 +1,26 @@
-.lottie-container{
-    width: 30rem;
+.overview-flare-container{
+    margin: 2rem 8rem 0 8rem;
+    display: flex;
+}
+
+.flare-left{
+    width: 60%;
+}
+
+.flare-right{
+    width: 40%;
+}
+
+.lottie-container {
+    /* width: 40rem; 
+    height: 30rem; 
+    overflow: hidden; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lottie-container > * {
+    transform: scale(3); 
+    margin-top: -50px;
 }

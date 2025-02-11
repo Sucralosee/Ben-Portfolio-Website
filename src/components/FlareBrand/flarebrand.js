@@ -10,18 +10,7 @@ import Overview from "../Overview/overview";
 const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
 
-const FlareBrand = ({ 
-    LogoImage1 = "/image/Tools/PS.png",
-    LogoAlt1 = "Photoshop",
-    LogoImage2 = "/image/Tools/AI.png",
-    LogoAlt2 = "illustrator",
-    LogoImage3 = "",
-    LogoAlt3 = "",
-    LogoImage4 = "",
-    LogoAlt4 = "",
-    LogoImage5 = "",
-    LogoAlt5 = "",
-}) => {
+const FlareBrand = ({ }) => {
     const fadeRefs = useRef([]);
     const tertiaryContainerRef = useRef(null);
 
@@ -84,49 +73,56 @@ const FlareBrand = ({
                 Head3="Brand Design" 
                 Head4="" 
             />
-            <div className="lottie-container">
-                <Lottie
-                    animationData={logoAnim}
-                    loop={true}
-                />
+            <div className="overview-flare-container">
+                <div className="flare-left">
+                    <p className="SubHead">The branding for Flare was a exciting process in understanding the design evolution of how logos can transform a brand. Into a core part of the design process of the product.</p>
+                </div>
+                <div className="flare-right">
+                    <div className="lottie-container" ref={el => fadeRefs.current[8] = el}>
+                        <Lottie
+                            animationData={logoAnim}
+                            loop={true}
+                            style={{ width: 400, height: 300, overflow: "hidden" }}
+                        />
+                    </div>  
+                </div>
+                <p className=""></p>
             </div>
             <Overview
-                Head="Overview"
-                HeadContent="The branding for Flare was a exciting process in understanding the design evolution of how logos can transform a brand."
+                Head="Design Process"
+                HeadContent="Initally Flare was known as Lighthouse representing a protective object that can protect against natural disaters. But as time went on Flare emerged and came to represent a guiding light for people in wildfire prone areas."
                 SubHead=""
-                Top1="Process"
-                Content1="Initally Flare was known as Lighthouse representing a protective object that can protect against natural disaters. But as time went on Flare emerged and came to represent a guiding light for people in wildfire prone areas."
-                Top2="Color Selection"
-                Content2="The color palette serves as a fundamental storytelling element. Purple underscores the RX-7's legendary status, while the yellowish-orange reflects the Suzuki Carry's utilitarian charm and workmanlike character. The deep red chosen for the Skyline embodies its mysterious allure and performance heritage."
-                Top3="Technical Execution"
-                Content3="The design process in Photoshop prioritizes clean, precise linework that harmonizes with the carefully chosen color schemes. The resulting compositions resonate with both casual observers and dedicated car enthusiasts, effectively communicating the unique appeal of these iconic vehicles."
-                LogoImage1 = {LogoImage1}
-                LogoAlt1={LogoAlt1}
-                LogoImage2={LogoImage2}
-                LogoAlt2={LogoAlt2}
-                LogoImage3={LogoImage3}
-                LogoAlt3={LogoAlt3}
-                LogoImage4={LogoImage4}
-                LogoAlt4={LogoAlt4}
-                LogoImage5={LogoImage5}
-                LogoAlt5={LogoAlt5}
+                Top1=""
+                Content1=""
+                Top2=""
+                Content2=""
+                Top3=""
+                Content3=""
+                LogoImage1 = "/image/Tools/PS.png"
+                LogoAlt1="Photoshop"
+                LogoImage2="/image/Tools/AI.png"
+                LogoAlt2="illustrator"
+                LogoImage3=""
+                LogoAlt3=""
+                LogoImage4=""
+                LogoAlt4=""
+                LogoImage5= ""
+                LogoAlt5=""
 
                 Link1 = ""
                 LinkContent1= ""
                 Link2=""
                 LinkContent2=""
 
-                RightImage = ""
+                RightImage = "/image/LogoFlare/FWordmark.svg"
                 RightVideo= ""
             />
-        <div className="poster-container">
-            <div className="tertiary-container" ref={tertiaryContainerRef}>
-                <div  ref={el => fadeRefs.current[8] = el}>
-                </div>                
-                <div  ref={el => fadeRefs.current[9] = el}>
+  
+            <div className="poster-container">
+                <div className="tertiary-container" ref={tertiaryContainerRef}>
+                
                 </div>
             </div>
-        </div>
         </>
     )
 }

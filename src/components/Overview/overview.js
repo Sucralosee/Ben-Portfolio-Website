@@ -61,7 +61,7 @@ export default function Overview({
         const handleScroll = () => {
             fadeRefs.current.forEach((ref, index) => {
                 const rect = ref.getBoundingClientRect();
-                if (rect.bottom < 100) {
+                if (rect.bottom < 75) {
                     gsap.to(ref, {
                         y: -75,
                         opacity: 0,
@@ -120,11 +120,11 @@ export default function Overview({
                 <div className="logos-container" ref={el => fadeRefs.current[9] = el}>
                     <p className="SubHead">Tools used</p>
                     <div className="logos">
-                        {LogoImage1 && <img src={LogoImage1} alt={LogoAlt1} width={100} height={100} className="logo" ref={el => fadeRefs.current[10] = el} />}
-                        {LogoImage2 && <img src={LogoImage2} alt={LogoAlt2} width={100} height={100} className="logo" ref={el => fadeRefs.current[11] = el} />}
-                        {LogoImage3 && <img src={LogoImage3} alt={LogoAlt3} width={100} height={100} className="logo" ref={el => fadeRefs.current[12] = el} />}
-                        {LogoImage4 && <img src={LogoImage4} alt={LogoAlt4} width={100} height={100} className="logo" ref={el => fadeRefs.current[13] = el} />}
-                        {LogoImage5 && <img src={LogoImage5} alt={LogoAlt5} width={100} height={100} className="logo" ref={el => fadeRefs.current[14] = el} />}
+                        {LogoImage1 && <img src={LogoImage1} alt={LogoAlt1} width={75} height={75} className="logo" ref={el => fadeRefs.current[10] = el} />}
+                        {LogoImage2 && <img src={LogoImage2} alt={LogoAlt2} width={75} height={75} className="logo" ref={el => fadeRefs.current[11] = el} />}
+                        {LogoImage3 && <img src={LogoImage3} alt={LogoAlt3} width={75} height={75} className="logo" ref={el => fadeRefs.current[12] = el} />}
+                        {LogoImage4 && <img src={LogoImage4} alt={LogoAlt4} width={75} height={75} className="logo" ref={el => fadeRefs.current[13] = el} />}
+                        {LogoImage5 && <img src={LogoImage5} alt={LogoAlt5} width={75} height={75} className="logo" ref={el => fadeRefs.current[14] = el} />}
                     </div>
                 </div>
                 {Link1 && <div className="links-container">
