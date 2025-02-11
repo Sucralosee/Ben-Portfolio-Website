@@ -85,8 +85,8 @@ const Timber = ({
                 LogoAlt1="Adobe Indesign"
                 LogoAlt2="Adobe Photoshop"
                 LogoAlt3="Adobe Illustrator"
-                LogoAlt4={LogoAlt4}
-                LogoAlt5={LogoAlt5}
+                LogoAlt4=""
+                LogoAlt5=""
 
                 Link1 = ""
                 LinkContent1=""
