@@ -12,12 +12,13 @@ import { usePathname } from 'next/navigation';
 const menuLinks = [
   { path: "/", label: "Home" },
   { path: "/Designs", label: "Designs" },
-  { path: "/Coding", label: "Coding" },
   { path: "/Projects", label: "Projects" },
   { path: "/Production", label: "Production" },
   { path: "/Contact", label: "Contact" },
   { path: "/About", label: "About" },
 ];
+// { path: "/Coding", label: "Coding" },
+
 
 const Menu = () => {
   const container = useRef();
@@ -46,7 +47,7 @@ const Menu = () => {
     tl.current = gsap.timeline({ paused: true })
       .to(".menu-overlay", {
         clipPath: "polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)", // Reverse direction
-        duration: 1.25,
+        duration: 1.75,
         ease: "power4.inOut"
       })
       .to(".menu-link-item-holder", {
