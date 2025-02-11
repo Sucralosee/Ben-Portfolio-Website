@@ -88,7 +88,7 @@ export default function Home() {
     gsap.set(firstText.current, {xPercent: xPercent})
     gsap.set(secondText.current, {xPercent: xPercent})
     requestAnimationFrame(animate);
-    xPercent += 0.3 * direction;
+    xPercent += 0.1 * direction;
   }
 
   return (
@@ -117,8 +117,8 @@ export default function Home() {
           </div>
           <div className="slider-container">
               <div ref={slider} className="slider">
-                <p className="xxlHead" ref={firstText} >Designer - Developer - </p>
-                <p className="xxlHead" ref={secondText}>Designer - Developer - </p>
+                <p className="xxlHead" ref={firstText} >Designer - Developer - Marketer - </p>
+                <p className="xxlHead" ref={secondText}>Designer - Developer - Marketer - </p>
               </div>
           </div>
 

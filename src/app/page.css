@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 0vh;
+    height: 90vh;
     margin-top: 5rem;
 }
 
@@ -20,7 +20,7 @@
 
 .sliderContainer{
     position: absolute;
-    top: calc(100vh - 10rem);
+    top: calc(100vh - 15rem);
     overflow: hidden;
     width: 100%;
   }
