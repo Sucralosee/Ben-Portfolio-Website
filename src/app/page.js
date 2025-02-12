@@ -75,7 +75,7 @@ export default function Home() {
 
     gsap.set(firstText.current, { xPercent: xPercent.current });
     gsap.set(secondText.current, { xPercent: xPercent.current });
-    xPercent.current += 0.05 * direction.current;
+    xPercent.current += 0.1 * direction.current;
     
     animationFrameId.current = requestAnimationFrame(animate);
   };

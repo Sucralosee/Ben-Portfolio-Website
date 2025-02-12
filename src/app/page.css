@@ -86,6 +86,21 @@
 .scrolled .card-container{
     opacity: 100%;
 }
+@media (max-width: 1400px){
+
+
+}
+
+@media (max-width: 900px){
+    .intro-content{
+        margin: 6rem 1rem 1rem;
+        left: 1.5rem;
+    }
+
+    .intro-next{
+        margin-top: 7rem;
+    }
+}
 
 @media (max-width:450px){
     .SuprHead{
@@ -97,4 +112,7 @@
         margin: 1rem;
     }
 
+    .intro-next{
+        margin-top: 1rem;
+    }
 }

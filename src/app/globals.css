@@ -212,23 +212,13 @@ h1 sup{
     margin-left: 1rem;
 }
 
-@media(max-width: 900px){
-    /* .page-content h1 {
-        font-size: 10vw;
+@media (max-width: 1400px){
+    .xxlHead{
+        font-size: 9rem;
     }
-    .page-content h2 {
-        font-size: 6vw;
-    }
-    .page-content h3 {
-        font-size: 4vw;
-    }
-    .page-content h4 {
-        font-size: 3vw;
-    }
-    .page-content h5 {
-        font-size: 3vw;
-    } */
+}
 
+@media(max-width: 900px){
     h1 sup{
         font-size: 4vw;
     }
@@ -291,6 +281,9 @@ h1 sup{
 }
 
 @media(max-width: 450px){ 
+    .xxlHead{
+        font-size: 3.5rem;
+    }
     .SuprHead{
         font-size: 1.5rem;
     }
