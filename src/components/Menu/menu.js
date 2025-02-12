@@ -82,7 +82,7 @@ const Menu = () => {
             </Link>
           </div>
           <div className="menu-open underline-animation thin" onClick={toggleMenu}>
-            {/* <AlignJustify className="hamburger" width={48}/> */}
+            <AlignJustify className="hamburger" width={48}/>
               <p className="extra">MENU</p>
           </div>
       </div>
