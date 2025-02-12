@@ -69,6 +69,7 @@
 
 .scroll{
     color: var(--color-white);
+    height: 4rem;
 }
 
 .scrolled{
@@ -86,9 +87,27 @@
 .scrolled .card-container{
     opacity: 100%;
 }
-@media (max-width: 1400px){
+@media (max-height: 1000px){
+    .intro-container{
+        margin-top: 3rem;
+    }
+    .intro-content{
+        margin: 5rem 3rem 0 3rem;
+    }
+    .intro-ben{
+        margin-top: 4rem;
+    }
+}
 
+@media (max-width: 1100px){
+    .intro-content{
+        margin: 6rem 1rem 1rem;
+        left: 1.5rem;
+    }
 
+    .intro-next{
+        margin-top: 7rem;
+    }
 }
 
 @media (max-width: 900px){

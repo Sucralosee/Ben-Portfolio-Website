@@ -7,6 +7,7 @@ import Image from "next/image";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { usePathname } from 'next/navigation'; 
+import { AlignJustify } from 'lucide-react';
 
 
 const menuLinks = [
@@ -81,11 +82,7 @@ const Menu = () => {
             </Link>
           </div>
           <div className="menu-open underline-animation thin" onClick={toggleMenu}>
-              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-menu hamburger">
-                  <line x1="4" x2="20" y1="12" y2="12"/>
-                  <line x1="4" x2="20" y1="6" y2="6"/>
-                  <line x1="4" x2="20" y1="18" y2="18"/>
-              </svg>
+            {/* <AlignJustify className="hamburger" width={48}/> */}
               <p className="extra">MENU</p>
           </div>
       </div>

@@ -217,6 +217,12 @@ h1 sup{
         font-size: 9rem;
     }
 }
+@media (max-height: 1000px){
+    .xxlHead{
+        font-size: 11rem;
+    }
+}
+
 
 @media(max-width: 900px){
     h1 sup{

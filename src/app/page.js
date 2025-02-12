@@ -5,6 +5,7 @@ import styles from "./page.css";
 import { gsap } from "gsap";
 import Card from "@/components/Card/card";
 import { ScrollTrigger } from 'gsap/all';
+import { MoveDown } from 'lucide-react';
 
 export default function Home() {
   const tl = useRef(null);
@@ -90,7 +91,7 @@ export default function Home() {
       // Create the scroll trigger animation
       const scrollTrigger = ScrollTrigger.create({
         trigger: document.documentElement,
-        scrub: 0.25,
+        scrub: 0.75,
         start: 0,
         end: window.innerHeight,
         onUpdate: (e) => {
@@ -128,7 +129,7 @@ export default function Home() {
           </div>
           <div className="intro-next">
             <h5 className="mt-4 SubSub" ref={el => fadeRefs.current[5] = el}>Explore my work and get in touch with me!</h5>
-            <svg ref={el => fadeRefs.current[6] = el} xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-down scroll mt-6"><path d="M8 18L12 22L16 18"/><path d="M12 2V22"/></svg>
+            <MoveDown className="scroll mt-6" size={64} ref={el => fadeRefs.current[6] = el}/>
           </div>
           <div className="slider-container">
               <div ref={slider} className="slider">
