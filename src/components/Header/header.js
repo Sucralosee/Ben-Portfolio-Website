@@ -57,7 +57,7 @@ const Header = ({ title = "Header" }) => {
   return (
     <div className="header-container">
     <Link href={`/${title}`} className="header-title">
-      <h1 ref={titleRef}>{title}</h1>
+      <p className="SuprHead header-title-thing" ref={titleRef}>{title}</p>
     </Link>
   </div>
   );

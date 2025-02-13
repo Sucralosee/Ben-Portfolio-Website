@@ -3,11 +3,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 90vh;
-    margin-top: 5rem;
+    height: 80vh;
+    width: 100%;
+    /* margin-top: 5rem; */
 
-    /* position: relative;
-    top: 10rem; */
+    position: relative;
+    top: 10rem;
 }
 
 .intro-content{
@@ -15,7 +16,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 6rem 8rem 0 8rem;
+    margin: 3rem 8rem 0 8rem;
     position: relative;
     left: 7rem;
 }
@@ -87,6 +88,12 @@
 .scrolled .card-container{
     opacity: 100%;
 }
+@media (min-width: 2000px){
+    /* .intro-container{
+        height: 80vh;
+    } */
+}
+
 @media (max-height: 1000px){
     .intro-container{
         margin-top: 3rem;

@@ -58,6 +58,13 @@ body {
     background-color: var(--color-D-BG);
     overflow-x: hidden; /* Hide horizontal scrollbar */
 
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
 }
 
 a,
@@ -76,8 +83,12 @@ p{
 
 .page-content{
     width: 100%;
-    height: 100%;
-    height: 600vh;
+    height: auto;
+}
+
+.page-content, .hero{
+    width: 100%;
+    height: 300vh;
 }
 
 /* Scrollbar styling */
@@ -216,14 +227,24 @@ h1 sup{
     .xxlHead{
         font-size: 9rem;
     }
+    
 }
 @media (max-height: 1000px){
     .xxlHead{
         font-size: 11rem;
     }
 }
+@media (max-width: 900px){
+    .xxlHead{
+    font-size: 6rem;
+    }
+}
 
-
+@media (max-width: 450px){
+    .xxlHead{
+    font-size: 3.5rem;
+    }
+}
 @media(max-width: 900px){
     h1 sup{
         font-size: 4vw;
@@ -287,9 +308,7 @@ h1 sup{
 }
 
 @media(max-width: 450px){ 
-    .xxlHead{
-        font-size: 3.5rem;
-    }
+
     .SuprHead{
         font-size: 1.5rem;
     }
@@ -325,30 +344,3 @@ h1 sup{
     margin: 2rem 8rem 0 8rem;
 }
 
-
-
-/* .page-content .hero{
-    background: url(../../public/image/woods.jpg) no-repeat 50% 100%;
-    background-size: contain;
-} */
-/* 
-.page-content.hero-about{
-    background: url(../../public/image/edge.jpg) no-repeat 50% 100%;
-    background-size: contain;     
-}
-.page-content.hero-contact{
-    background: url(../../public/image/F-painter.jpg) no-repeat 50% 100%;
-    background-size: contain;
-}
-.page-content.hero-designs{
-    background: url(../../public/image/mountain.jpg) no-repeat 50% 100%;
-    background-size: contain;
-}
-.page-content.hero-development{
-    background: url(../../public/image/falltime.jpg) no-repeat 50% 100%;
-    background-size: contain;
-}
-.page-content.hero-projects{
-    background: url(../../public/image/falltime.jpg) no-repeat 50% 100%;
-    background-size: contain;
-} */

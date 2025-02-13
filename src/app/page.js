@@ -6,6 +6,7 @@ import { gsap } from "gsap";
 import Card from "@/components/Card/card";
 import { ScrollTrigger } from 'gsap/all';
 import { MoveDown } from 'lucide-react';
+import Foot from "@/components/Foot/foot";
 
 export default function Home() {
   const tl = useRef(null);

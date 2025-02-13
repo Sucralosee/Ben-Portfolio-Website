@@ -81,15 +81,15 @@ const Menu = () => {
               <Image src="/white-BL.svg" alt="logo" width={50} height={50} className="menu-logo"/>
             </Link>
           </div>
-          <div className="menu-open underline-animation thin" onClick={toggleMenu}>
+          <div className="menu-open " onClick={toggleMenu}>
             <AlignJustify className="hamburger" width={48}/>
-              <p className="extra">MENU</p>
+            <p className="extra underline-animation thin">MENU</p>
           </div>
       </div>
       <div className="menu-overlay">
         <div className="menu-overlay-bar">
-          <div className="menu-close underline-animation thin" onClick={toggleMenu}>
-              <p className="extra">CLOSE</p>
+          <div className="menu-close" onClick={toggleMenu}>
+              <p className="extra underline-animation thin">CLOSE</p>
               <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-x hamburger"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
           </div>
         </div>
