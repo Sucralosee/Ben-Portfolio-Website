@@ -310,9 +310,9 @@
 .back-to-top {
     margin-top: 1rem;
     padding-top: 1rem;
-  }
+}
   
-  .back-to-top-button {
+.back-to-top-button {
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -321,15 +321,15 @@
     cursor: pointer;
     color: inherit;
     padding: 0;
-  }
+}
   
-  .back-to-top-icon {
+.back-to-top-icon {
     transition: transform 0.3s ease;
-  }
+}
   
-  .back-to-top-button:hover .back-to-top-icon {
+.back-to-top-button:hover .back-to-top-icon {
     transform: translateY(-0.5rem);
-  }
+}
 
 @media (max-width: 1400px){
     .footer-outer-container{
@@ -343,5 +343,17 @@
     }
 }
 @media (max-width: 450px){
+    .footer-outer-container{
+        flex-direction: column;
+        height: 40rem;
+    }
+    .footer-right-container{
+        width: 10rem;
+        margin-top: 2rem;
+        align-items: flex-start;
+    }
+    .footer-links{
+        align-items: flex-start;
+    }
 
 }
