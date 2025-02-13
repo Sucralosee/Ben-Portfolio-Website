@@ -9,7 +9,6 @@ import { useGSAP } from "@gsap/react";
 import { usePathname } from 'next/navigation'; 
 import { AlignJustify } from 'lucide-react';
 
-
 const menuLinks = [
   { path: "/", label: "Home" },
   { path: "/Designs", label: "Designs" },
@@ -18,14 +17,10 @@ const menuLinks = [
   { path: "/Contact", label: "Contact" },
   { path: "/About", label: "About" },
 ];
-// { path: "/Coding", label: "Coding" },
-
 
 const Menu = () => {
   const container = useRef();
-
   const pathname = usePathname();
-
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const tl = useRef();
 
@@ -34,38 +29,75 @@ const Menu = () => {
   };
 
   useGSAP(() => {
-    // Initial state
     gsap.set(".menu-overlay", {
       clipPath: "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)"
     });
   
     gsap.set(".menu-link-item-holder", {
-      y: 75,
-      opacity: 0
+      y: 100,
+      opacity: 0,
+      scale: 0.8
+    });
+
+    gsap.set(".menu-info", {
+      y: 50,
+      opacity: 0,
+      scale: 0.9
     });
   
-    // Create timeline
     tl.current = gsap.timeline({ paused: true })
       .to(".menu-overlay", {
-        clipPath: "polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)", // Reverse direction
+        clipPath: "polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)",
         duration: 1.75,
         ease: "power4.inOut"
       })
       .to(".menu-link-item-holder", {
         y: 0,
         opacity: 1,
-        duration: 1,
+        scale: 1,
+        duration: 1.2,
         stagger: 0.1,
         ease: "power4.out"
-      }, "-=0.75");
+      }, "-=1")
+      .to(".menu-info", {
+        y: 0,
+        opacity: 1,
+        scale: 1,
+        duration: 1,
+        ease: "power3.out"
+      }, "-=1");
+
+    // Update hover animations to only target the text content
+    gsap.utils.toArray(".menu-link").forEach(link => {
+      const textContent = link.firstChild; // Target only the text node
+      
+      link.addEventListener("mouseenter", () => {
+        gsap.to(textContent, {
+          scale: 1.1,
+          duration: 0.3,
+          ease: "power2.out",
+          transformOrigin: "left center"
+        });
+      });
+      
+      link.addEventListener("mouseleave", () => {
+        gsap.to(textContent, {
+          scale: 1,
+          duration: 0.3,
+          ease: "power2.in"
+        });
+      });
+    });
   
   }, { scope: container });
 
   useEffect(() => {
     if (isMenuOpen) {
       tl.current.play();
+      document.body.style.overflow = 'hidden';
     } else {
       tl.current.reverse();
+      document.body.style.overflow = 'unset';
     }
   }, [isMenuOpen]);
 
@@ -81,7 +113,7 @@ const Menu = () => {
               <Image src="/white-BL.svg" alt="logo" width={50} height={50} className="menu-logo"/>
             </Link>
           </div>
-          <div className="menu-open " onClick={toggleMenu}>
+          <div className="menu-open" onClick={toggleMenu}>
             <AlignJustify className="hamburger" width={48}/>
             <p className="extra underline-animation thin">MENU</p>
           </div>
@@ -104,7 +136,7 @@ const Menu = () => {
                       pathname === link.path ? 'active' : ''
                     }`}
                   >
-                    {link.label}
+                    <span>{link.label}</span>
                     <div className="label-underline"></div>
                   </Link>
                 </div>
@@ -126,16 +158,12 @@ const Menu = () => {
                     <p className="contact-links">Reach me here directly</p>
                 </div>
                 <div>
-                    <a className="contact-links" href="mailto:benlouis.contact@gmail.com" >benlouis.contact@gmail.com</a>
+                    <a className="contact-links" href="mailto:benlouis.contact@gmail.com">benlouis.contact@gmail.com</a>
                 </div>
             </div>
           </div>
         </div>
         <div className="menu-preview">
-            <h2 className="menu-project-head"></h2>
-            {/* <p>item</p>
-            <p>item</p>
-            <p>item</p> */}
         </div>
       </div>
     </div>

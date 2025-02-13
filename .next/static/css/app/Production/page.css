@@ -135,7 +135,7 @@
     left: 0;
     width: 100vw;
     height: 105vh;
-    padding: 2rem 8rem;
+    padding: 2rem 12rem 0 8rem;
     background-color: var(--color-primary);
     z-index: 999;
     display: flex;
@@ -145,7 +145,7 @@
 
 .menu-overlay-bar{
     display: flex;
-    flex:1.5;
+    flex:1;
     justify-content: flex-end;
 }
 
@@ -176,7 +176,7 @@
 }
 
 .menu-preview{
-    flex: 3;
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -192,6 +192,7 @@
 .menu-link{
     font-family: 'Chillax', sans-serif;
     margin-top: 0.5rem;
+    padding: 1rem;
     
 }
 
@@ -292,6 +293,12 @@
 
 .menu-project-head{
     color: var(--color-L-header);
+}
+
+@media (max-width > 2000) {
+    .menu-copy{
+        height: 40vh;
+    }
 }
 
 @media(max-width: 1200px){
