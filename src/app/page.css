@@ -89,9 +89,11 @@
 }
 
 .feature-container{
-    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: auto;
     margin: 4rem 8rem;
-    /* background-color: var(--color-L-BG-25); */
 
 }
 

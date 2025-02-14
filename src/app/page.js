@@ -2,7 +2,7 @@
 import React, { useEffect, useRef } from "react";
 import "./page.css";
 import { gsap } from "gsap";
-import Card from "@/components/Card/card";
+import BigCard from "@/components/BigCard/bigCard";
 import { ScrollTrigger } from 'gsap/all';
 import { MoveDown } from 'lucide-react';
 import Foot from "@/components/Foot/foot";
@@ -85,10 +85,8 @@ export default function Home() {
     gsap.registerPlugin(ScrollTrigger);
     
     if (slider.current && firstText.current && secondText.current) {
-      // Initialize slider position
       gsap.set([firstText.current, secondText.current], { xPercent: 0 });
-      
-      // Create the scroll trigger animation
+
       const scrollTrigger = ScrollTrigger.create({
         trigger: document.documentElement,
         scrub: 0.75,
@@ -99,10 +97,8 @@ export default function Home() {
         }
       });
 
-      // Start the infinite scroll animation
       animate();
 
-      // Cleanup
       return () => {
         if (animationFrameId.current) {
           cancelAnimationFrame(animationFrameId.current);
@@ -110,21 +106,21 @@ export default function Home() {
         scrollTrigger.kill();
       };
     }
-  }, []); // Empty dependency array since we're using refs
-
+  }, []);
 
   return (
     <div className="page-container">
       <div className="page-content hero-page">
         <div className="intro-container">
           <div className="intro-content">
-            <h1 className="xxlHead intro-ben" ref={el => fadeRefs.current[1] = el}>Hello, I'm Ben<span className="small-bullet">*</span></h1>
+            <h1 className="xxlHead intro-ben" ref={el => fadeRefs.current[1] = el}>
+              Hello, I'm Ben<span className="small-bullet">*</span>
+            </h1>
             <div className="intro-beneath">
               <div className="intro-joke">
                 <p className="Pop24">*actually this is my portfolio</p>
                 <p className="Pop24">made by ben louis</p>
                 <p className="Pop24">0.o</p>
-
               </div>
               <div className="intro-sum">
                 <p className="Pop24" ref={el => fadeRefs.current[2] = el}>Designer</p>
@@ -134,28 +130,48 @@ export default function Home() {
             </div>
           </div>
           <div className="intro-next">
-            <h5 className="mt-4 SubSub" ref={el => fadeRefs.current[5] = el}>Explore my work and get in touch with me!</h5>
-            <MoveDown className="scroll mt-6" size={64} ref={el => fadeRefs.current[6] = el}/>
+            <h5 className="mt-4 SubSub" ref={el => fadeRefs.current[5] = el}>
+              Explore my work and get in touch with me!
+            </h5>
+            <MoveDown className="scroll mt-6" size={64} ref={el => fadeRefs.current[6] = el} />
           </div>
           <div className="slider-container">
-              <div ref={slider} className="slider">
-                <p className="xxlHead" ref={firstText} >Marketer &#8226; Developer &#8226; Designer &#8226; </p>
-                <p className="xxlHead" ref={secondText}>Marketer &#8226; Developer &#8226; Designer &#8226; </p>
-              </div>
+            <div ref={slider} className="slider">
+              <p className="xxlHead" ref={firstText}>Marketer &#8226; Developer &#8226; Designer &#8226; </p>
+              <p className="xxlHead" ref={secondText}>Marketer &#8226; Developer &#8226; Designer &#8226; </p>
+            </div>
           </div>
-
         </div>
 
         <div className="feature-container">
-          <Card 
+          <p className="Head">Featured Work</p>
+          <p className="Pop20">A lil appetizer</p>
+          <BigCard 
             titleItem="Japanese Classics"
+            subTitleItem="Poster Design"
+            cardYear="2024"
+            cardImage="./image/Posters/ThreeFence.png"
+            linkPath="/Designs/JapaneseClassics"
+            isRightImage={false} 
+            className="scroll-BigCard"
+          />
+          <BigCard 
+            titleItem="Flare"
+            subTitleItem="BCIT - IDSP Project"
+            cardYear="2024"
+            cardImage="./image/Flare/VarietyScreens.png"
+            linkPath="/Projects/FlareIDSP"
+            isRightImage={true} 
+            className="scroll-BigCard"
+          />
+           <BigCard 
+            titleItem="Timber"
             subTitleItem="Magazine Design"
             cardYear="2024"
-
-            cardImage="./image/Posters/Poster-Skyline.png"
-            
-            linkPath="/Designs/JapaneseClassics"
-            className="scroll-Card"
+            cardImage="./image/Timber/TimberSpreadMag.png"
+            linkPath="/Designs/TimberMag"
+            isRightImage={false} 
+            className="scroll-BigCard"
           />
         </div>
       </div>

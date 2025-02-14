@@ -92,9 +92,11 @@
 }
 
 .feature-container{
-    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: auto;
     margin: 4rem 8rem;
-    /* background-color: var(--color-L-BG-25); */
 
 }
 
@@ -172,81 +174,59 @@
         bottom: 0.9rem;
     }
 }
-/*!**************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/components/Card/card.css ***!
-  \**************************************************************************************************************************************************************************************************************************************************************************/
-.containerOfCards {
-    margin: 2rem 8rem;
+/*!********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/components/BigCard/bigCard.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************/
+.bc-container{
+    width: 100%; 
+    height: 40rem;
 }
 
-.card-container a{
+.bc-inner-container{
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    /* background-color: var(--color-L-BG-25); */
+    border: 2px solid var(--color-D-Copy-25);
+}
+
+.bc-left{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.bc-right{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.bc-words{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.bc-shift-left{
     width: 100%;
-    height: 8rem;
-    margin: 2rem 0;
-
-    border: 2px solid var(--color-D-Copy);
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-}
-
-.card-inner-container {
-    object-fit: cover;
-    /* overflow: hidden;  */
-
-    padding: 1rem;
-    display: flex;
-    justify-content: space-between;
-
-}
-
-.card-image{
-    height: 30rem;
-    width: auto;
-}
-
-.glow {
-    display: inline-block; 
-    /* border-radius: 10px; */
-    box-shadow: 0 0 2rem 1rem var(--color-L-BG-25); /* Adjust color and intensity */
-  }
-  
-
-.card-extra{
-    display: flex;
-    flex-direction: column;
     align-items: flex-end;
-    justify-content: space-between;
-    
 }
 
-.card-title{
+
+.bc-shift-right{
+    width: 100%;
+    align-items: flex-start;
 }
 
-.card-subTitle{
-}
-
-.relative {
-    position: relative;
-}
-  
-.absolute {
-    position: absolute;
-}
-  
-.pointer-events-none {
-    pointer-events: none;
-}
-  
-.z-10 {
-    z-index: 10;
-}
-
-@media (max-width>1200) {
+.bc-image{
+    height: 40rem;
+    width: auto;
 
 }
+
 /*!**************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/components/Foot/foot.css ***!
   \**************************************************************************************************************************************************************************************************************************************************************************/
