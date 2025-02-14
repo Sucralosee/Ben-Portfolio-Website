@@ -67,10 +67,10 @@ export default function Flare() {
                 <p className="Pop32">3. Collaboration</p>
                 <p className="Pop20">Managed the entire design and development process within a sprint-based workflow, balancing tight deadlines while prioritizing tasks to ensure efficient execution. Took on a leadership role within a diverse, seven-member team, fostering clear communication and collaboration across different specializations. By coordinating efforts, addressing challenges proactively, and streamlining workflows, I helped maintain project momentum and deliver high-quality results on time.</p>
             </div>
-            <div className="case-right-image">
+            <div className="case-right-image case-card-link">
                 <Card 
-                    titleItem= "Flare"
-                    subTitleItem= "Graphic Design"
+                    titleItem= "Style Guide "
+                    subTitleItem= "Flare Branding"
                     cardYear= "2024"
                     cardImage= "/image/Flare/FlareIcon.png"
                     linkPath= "/Designs/FlareLogo"
