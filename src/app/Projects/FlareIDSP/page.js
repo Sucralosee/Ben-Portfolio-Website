@@ -2,6 +2,7 @@
 import Header from "@/components/Header/header";
 import Back from "@/components/Back/back";
 import Flare from "@/components/Flare/flare";
+import Foot from "@/components/Foot/foot";
 
 export default function FlareIDSP() {
 
