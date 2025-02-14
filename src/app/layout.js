@@ -2,7 +2,6 @@ import "./globals.css";
 import "../components/PageChange/page-Change.css";
 
 import Menu from "@/components/Menu/menu";
-import PageChange from '../components/PageChange/page-Change.js';
 import Foot from "@/components/Foot/foot";
 
 export const metadata = {
@@ -16,12 +15,12 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="shortcut icon" href="/favicon.ico" sizes="any"/>
       </head>
-      <body>
+      <body >
         <Menu />
         <main>
           {children}
         </main>
-        <Foot />
+        {/* <Foot /> */}
       </body>
     </html>
   );

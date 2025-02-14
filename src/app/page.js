@@ -1,7 +1,6 @@
 "use client";
 import React, { useEffect, useRef } from "react";
-import Header from "@/components/Header/header";
-import styles from "./page.css";
+import "./page.css";
 import { gsap } from "gsap";
 import Card from "@/components/Card/card";
 import { ScrollTrigger } from 'gsap/all';
@@ -115,10 +114,8 @@ export default function Home() {
 
 
   return (
-    <>
-      {/* <Menu/> */}
-      {/* <Header title="Home" /> */}
-      <div className="page-content hero">
+    <div className="page-container">
+      <div className="page-content hero-page">
         <div className="intro-container">
           <div className="intro-content">
             <h1 className="xxlHead intro-ben" ref={el => fadeRefs.current[1] = el}>Hello, I'm Ben<span className="small-bullet">*</span></h1>
@@ -149,19 +146,20 @@ export default function Home() {
 
         </div>
 
-        <div className="scrolled">
-          {/* <Card 
+        <div className="feature-container">
+          <Card 
             titleItem="Japanese Classics"
             subTitleItem="Magazine Design"
             cardYear="2024"
 
             cardImage="./image/Posters/Poster-Skyline.png"
             
-            linkPath="/Designs"
+            linkPath="/Designs/JapaneseClassics"
             className="scroll-Card"
-          /> */}
+          />
         </div>
       </div>
-    </>
+      <Foot />
+    </div>
   );
 }

@@ -1,11 +1,10 @@
 .footer-outer-container {
-    margin-top: auto; /* Changed from margin-top: 8rem */
+    margin-top: 10rem;
     padding: 2rem 8rem;
     height: 30rem;
     width: 100%;
     background-color: var(--color-L-BG);
     display: flex;
-    /* Remove position: absolute */
   }
 
 .footer-left-container{

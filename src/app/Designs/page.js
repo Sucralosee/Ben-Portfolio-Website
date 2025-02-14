@@ -2,6 +2,7 @@
 import { useEffect } from "react";
 import Header from "@/components/Header/header";
 import Card from "@/components/Card/card";
+import Foot from "@/components/Foot/foot";
 
 const cardsData = [
   {
@@ -37,7 +38,7 @@ const cardsData = [
 
 export default function Designs() {
   return (
-    <>
+    <div className="page-container">
       <Header title="Designs" />
       <div className="page-content hero-designs">
         <div className="containerOfCards">
@@ -53,6 +54,7 @@ export default function Designs() {
           ))}
         </div>
       </div>
-    </>
+      <Foot />
+    </div>
   );
 }

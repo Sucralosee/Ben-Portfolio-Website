@@ -1,88 +1,19 @@
-/*!******************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/components/Header/header.css ***!
-  \******************************************************************************************************************************************************************************************************************************************************************************/
-.header-container{
-    position: relative;
-    top: 0;
-    /* width: 100%; */
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-    padding-top: 11rem;
-    color: #fff;
-    /* z-index: 2;*/
-    /* border: red 4px solid; */
-
-    margin: 0 8rem;
-}
-
-.header-title{
-    position: relative;
-    left: -2.6rem;
-    margin: 0;
-}
-
-.header-title-thing{
-    margin: 0;
-}
-
-.my-logo{
-    /* Add styles for your logo if needed */
-}
-
-@media (width>2560px) {
-    .header-container{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        margin: 0 auto;
-        width: 60%;
-    }
-    
-}
-
-@media(max-width: 1200px){
-    .header-container{
-        margin: 0;
-        padding-bottom: 0;
-    }
-
-    .header-title{
-        margin-top: 1rem;
-        left: 0;
-    }
-}
-
-@media(max-width: 600px){
-    .header-title{
-        margin-top: 0.5rem;
-        left: 0;
-        font-size: 2.5rem;
-    }
-}
-@media(max-width: 450px){
-    .header-container{
-        margin: 0;
-        padding: 7rem 1rem 0rem;
-    }        
-
-    .header-title{
-        margin: 0;
-    }
-}
 /*!**************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/app/page.css ***!
   \**************************************************************************************************************************************************************************************************************************************************************/
+.hero-page{
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+}
+
 .intro-container{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 80vh;
+    height: auto;
     width: 100%;
-    /* margin-top: 5rem; */
-
     position: relative;
     top: 10rem;
 }
@@ -128,6 +59,7 @@
     top: calc(100vh - 15rem);
     overflow: hidden;
     width: 100%;
+    height: auto;
   }
   
   .slider{
@@ -159,14 +91,11 @@
     height: 4rem;
 }
 
-.scrolled{
-    position: relative;
-    background-color: var(--color-L-BG-25);
-    top: 100vh;
-    width: 100vw;
-    border-radius: 2rem 2rem 0 0 ;
+.feature-container{
+    height: 50rem;
+    margin: 4rem 8rem;
+    /* background-color: var(--color-L-BG-25); */
 
-    padding: 2rem 8rem 0 8rem;
 }
 
 
@@ -247,55 +176,72 @@
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/components/Card/card.css ***!
   \**************************************************************************************************************************************************************************************************************************************************************************/
 .containerOfCards {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin: 2rem 8rem 0 8rem;
+    margin: 2rem 8rem;
 }
 
+.card-container a{
+    width: 100%;
+    height: 8rem;
+    margin: 2rem 0;
 
-.containerOfCards a {
-    display: inline-block;
-    width: 23rem; /* Set fixed width instead of auto */
-}
+    border: 2px solid var(--color-D-Copy);
 
-/* Update card-container to be more strict */
-.card-container {
-    background-color: var(--color-L-BG);
-    border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
-    padding: 0 0 1rem;
-    width: 23rem; 
-    height: auto;
-    object-fit: cover;
-    overflow: hidden; 
+    justify-content: space-between;
 
 }
 
-.card-image-container{
-    margin: 2rem 2rem 0rem;
+.card-inner-container {
+    object-fit: cover;
+    /* overflow: hidden;  */
+
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+
 }
 
 .card-image{
-    width: 100%;
-    height: 100%;
-    border-radius: 0.5rem;
-
+    height: 30rem;
+    width: auto;
 }
+
+.glow {
+    display: inline-block; 
+    /* border-radius: 10px; */
+    box-shadow: 0 0 2rem 1rem var(--color-L-BG-25); /* Adjust color and intensity */
+  }
+  
 
 .card-extra{
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    
 }
 
 .card-title{
-    margin: 0.3rem 2rem 0;
 }
 
 .card-subTitle{
-    margin: 0.25rem 2rem;
+}
+
+.relative {
+    position: relative;
+}
+  
+.absolute {
+    position: absolute;
+}
+  
+.pointer-events-none {
+    pointer-events: none;
+}
+  
+.z-10 {
+    z-index: 10;
 }
 
 @media (max-width>1200) {
@@ -305,13 +251,12 @@
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/components/Foot/foot.css ***!
   \**************************************************************************************************************************************************************************************************************************************************************************/
 .footer-outer-container {
-    margin-top: auto; /* Changed from margin-top: 8rem */
+    margin-top: 10rem;
     padding: 2rem 8rem;
     height: 30rem;
     width: 100%;
     background-color: var(--color-L-BG);
     display: flex;
-    /* Remove position: absolute */
   }
 
 .footer-left-container{

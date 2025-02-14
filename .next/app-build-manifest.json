@@ -36,6 +36,42 @@
       "static/css/app/Designs/LHpage/page.css",
       "static/chunks/app/Designs/LHpage/page.js"
     ],
+    "/Designs/WhiteRabbit/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/Designs/WhiteRabbit/page.css",
+      "static/chunks/app/Designs/WhiteRabbit/page.js"
+    ],
+    "/Designs/JapaneseClassics/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/Designs/JapaneseClassics/page.css",
+      "static/chunks/app/Designs/JapaneseClassics/page.js"
+    ],
+    "/Projects/FlareIDSP/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/Projects/FlareIDSP/page.css",
+      "static/chunks/app/Projects/FlareIDSP/page.js"
+    ],
+    "/Designs/TimberMag/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/Designs/TimberMag/page.css",
+      "static/chunks/app/Designs/TimberMag/page.js"
+    ],
+    "/Contact/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/Contact/page.css",
+      "static/chunks/app/Contact/page.js"
+    ],
+    "/About/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/About/page.css",
+      "static/chunks/app/About/page.js"
+    ],
     "/_not-found/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",

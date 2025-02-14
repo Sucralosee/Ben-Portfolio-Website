@@ -6,13 +6,13 @@ import Flare from "@/components/Flare/flare";
 export default function FlareIDSP() {
 
   return (
-    <>
+    <div className="page-container">
       <Header title="" />
-        <div className="page-content hero-designs">
-            <Flare/>
-            <Back title="Back to Projects" route="Projects" />
-
-        </div>
-    </>
+      <div className="page-content hero-designs">
+        <Flare />
+        <Back title="Back to Projects" route="Projects" />
+      </div>
+      <Foot />
+    </div>
   );
 }

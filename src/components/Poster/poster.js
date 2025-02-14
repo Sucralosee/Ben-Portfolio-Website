@@ -7,14 +7,7 @@ import "./poster.css";
 import Overview from "../Overview/overview";
 
 const Poster = ({ 
-    LogoAlt1 = "Adobe Photoshop",
-    LogoAlt2 = "Adove Illustrator",
-    LogoAlt3 = "",
-    LogoAlt4 = "",
-    LogoAlt5 = "",
 
-    RightImage = "/image/Posters/SingleRX7.png",
-    RightVideo = ""
 }) => {
     const fadeRefs = useRef([]);
     const tertiaryContainerRef = useRef(null);
@@ -88,19 +81,19 @@ const Poster = ({
                 Content2="The color palette serves as a fundamental storytelling element. Purple underscores the RX-7's legendary status, while the yellowish-orange reflects the Suzuki Carry's utilitarian charm and workmanlike character. The deep red chosen for the Skyline embodies its mysterious allure and performance heritage."
                 Top3="Technical Execution"
                 Content3="The design process in Photoshop prioritizes clean, precise linework that harmonizes with the carefully chosen color schemes. The resulting compositions resonate with both casual observers and dedicated car enthusiasts, effectively communicating the unique appeal of these iconic vehicles."
-                LogoAlt1={LogoAlt1}
-                LogoAlt2={LogoAlt2}
-                LogoAlt3={LogoAlt3}
-                LogoAlt4={LogoAlt4}
-                LogoAlt5={LogoAlt5}
+                LogoAlt1 = "Adobe Photoshop"
+                LogoAlt2 = "Adobe Illustrator"
+                LogoAlt3 = ""
+                LogoAlt4 = ""
+                LogoAlt5 = ""
 
                 Link1 = ""
                 LinkContent1= ""
                 Link2=""
                 LinkContent2=""
 
-                RightImage = {RightImage}
-                RightVideo={RightVideo}
+                RightImage = "/image/Posters/SingleRX7.png"
+                RightVideo = ""
             />
         <div className="poster-container">
             <div className="tertiary-container" ref={tertiaryContainerRef}>

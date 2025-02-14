@@ -2,6 +2,7 @@ import Image from "next/image";
 import Header from "@/components/Header/header";
 
 import Menu from "@/components/Menu/menu";
+import Foot from "@/components/Foot/foot";
 
 export const metadata = {
   title: "BL Porfolio | About",
@@ -11,7 +12,7 @@ export const metadata = {
 
 export default function About() {
   return (
-    <>
+    <div className="page-container">
       <Header title="About Me" />
       <div className="page-content hero-about">
         <div class="max-w-3xl mx-auto px-6 py-8 bg-white">
@@ -77,6 +78,7 @@ export default function About() {
         </section>
         </div>
       </div>
-    </>
+      <Foot />
+    </div>
   );
 }
