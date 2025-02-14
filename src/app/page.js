@@ -121,11 +121,19 @@ export default function Home() {
       <div className="page-content hero">
         <div className="intro-container">
           <div className="intro-content">
-            <h1 className="xxlHead intro-ben" ref={el => fadeRefs.current[1] = el}>Hello, I'm Ben</h1>
-            <div className="intro-sum">
-              <p className="Pop24" ref={el => fadeRefs.current[2] = el}>Designer</p>
-              <p className="Pop24" ref={el => fadeRefs.current[3] = el}>Developer</p>
-              <p className="Pop24" ref={el => fadeRefs.current[4] = el}>Marketer</p>
+            <h1 className="xxlHead intro-ben" ref={el => fadeRefs.current[1] = el}>Hello, I'm Ben<span className="small-bullet">*</span></h1>
+            <div className="intro-beneath">
+              <div className="intro-joke">
+                <p className="Pop24">*actually this is my portfolio</p>
+                <p className="Pop24">Made by Ben Louis!</p>
+                {/* <p className="Pop24">0.o</p> */}
+
+              </div>
+              <div className="intro-sum">
+                <p className="Pop24" ref={el => fadeRefs.current[2] = el}>Designer</p>
+                <p className="Pop24" ref={el => fadeRefs.current[3] = el}>Developer</p>
+                <p className="Pop24" ref={el => fadeRefs.current[4] = el}>Marketer</p>
+              </div>
             </div>
           </div>
           <div className="intro-next">

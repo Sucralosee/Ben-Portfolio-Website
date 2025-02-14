@@ -100,9 +100,19 @@
 .intro-ben{
     height: auto;
 }
-.intro-sum{
+.small-bullet{
+    font-size: 5rem;
+    position: relative;
+    bottom: 3rem;
+}
+
+.intro-beneath{
+    display: flex;
     width: 85vw;
     height: auto;
+    justify-content: space-between;
+}
+.intro-sum{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -191,6 +201,10 @@
     .intro-next{
         margin: 7rem 1rem;
     }
+
+    .small-bullet{
+        bottom: 1rem;
+    }
 }
 
 @media (max-width: 900px){
@@ -201,6 +215,11 @@
 
     .intro-next{
         margin-top: 7rem;
+    }
+
+    .small-bullet{
+        font-size: 3rem;
+        bottom: 1rem;
     }
 }
 
@@ -217,10 +236,25 @@
     .intro-next{
         margin-top: 1rem;
     }
+
+
+    .small-bullet{
+        font-size: 1.5rem;
+        bottom: 0.9rem;
+    }
 }
 /*!**************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/components/Card/card.css ***!
   \**************************************************************************************************************************************************************************************************************************************************************************/
+.containerOfCards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 2rem 8rem 0 8rem;
+}
+
+
 .containerOfCards a {
     display: inline-block;
     width: 23rem; /* Set fixed width instead of auto */
