@@ -118,3 +118,8 @@
     width: 100%;
     object-fit:cover;
 }
+
+.case-seb{
+    object-fit: cover;
+    background-color: white;
+}
