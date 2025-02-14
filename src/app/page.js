@@ -125,8 +125,8 @@ export default function Home() {
             <div className="intro-beneath">
               <div className="intro-joke">
                 <p className="Pop24">*actually this is my portfolio</p>
-                <p className="Pop24">Made by Ben Louis!</p>
-                {/* <p className="Pop24">0.o</p> */}
+                <p className="Pop24">made by ben louis</p>
+                <p className="Pop24">0.o</p>
 
               </div>
               <div className="intro-sum">

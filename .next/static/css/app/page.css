@@ -182,13 +182,13 @@
 
 @media (max-height: 1000px){
     .intro-container{
-        margin-top: 3rem;
+        margin-top: 1rem;
     }
     .intro-content{
-        margin: 5rem 3rem 0 3rem;
+        margin: 1rem 3rem 0 3rem;
     }
     .intro-ben{
-        margin-top: 4rem;
+        margin-top: 1rem;
     }
 }
 
