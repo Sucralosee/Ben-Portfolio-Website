@@ -227,6 +227,18 @@ h1 sup{
     margin-left: 1rem;
 }
 
+/* highlighting */
+::selection {
+    background: var(--color-L-BG);
+    color: var(--color-L-Copy);
+}
+::-moz-selection { /* For Firefox */
+    background: var(--color-L-BG);
+    color: var(--color-L-Copy);
+}
+  
+
+
 @media (max-width: 1400px){
     .xxlHead{
         font-size: 9rem;
