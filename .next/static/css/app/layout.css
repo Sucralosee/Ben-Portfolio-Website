@@ -1030,6 +1030,7 @@ h1 sup{
 .footer-left-container{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     width: 50%;
 }
 
@@ -1047,7 +1048,7 @@ h1 sup{
     align-items: flex-end;
 
     gap: 1rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
   }
   
 .footer-link-item {

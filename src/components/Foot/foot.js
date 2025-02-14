@@ -29,26 +29,30 @@ export default function Foot() {
     <>
       <div className="footer-outer-container">
         <div className="footer-left-container">
-          <p className="SuprHead Light-Text">Let's Get in Touch!</p>
-          <div className="menu-info">
-            <div className="menu-info-col">
-              <a href="https://www.instagram.com/bl.graphic/" className="underline-animation thin contact-links social-link" target="_blank" rel="noopener noreferrer">
-                Instagram<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M13 5H19V11"/><path d="M19 5L5 19"/></svg>
-              </a>
-              <div></div>
-              <a href="https://www.linkedin.com/in/ben-louis-001116308/" className="underline-animation thin contact-links social-link" target="_blank" rel="noopener noreferrer">
-                LinkedIn<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M13 5H19V11"/><path d="M19 5L5 19"/></svg>
-              </a>
-            </div>
-            <div className="menu-info-col">
-              <div>
-                <p className="contact-links">Reach me here directly</p>
-              </div>
-              <div>
-                <a className="contact-links" href="mailto:benlouis.contact@gmail.com">benlouis.contact@gmail.com</a>
-              </div>
+          <div>
+            <p className="SuprHead Light-Text">Let's Get in Touch!</p>
+            <div className="menu-info">
+                <div className="menu-info-col">
+                <a href="https://www.instagram.com/bl.graphic/" className="underline-animation thin contact-links social-link" target="_blank" rel="noopener noreferrer">
+                    Instagram<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M13 5H19V11"/><path d="M19 5L5 19"/></svg>
+                </a>
+                <div></div>
+                <a href="https://www.linkedin.com/in/ben-louis-001116308/" className="underline-animation thin contact-links social-link" target="_blank" rel="noopener noreferrer">
+                    LinkedIn<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M13 5H19V11"/><path d="M19 5L5 19"/></svg>
+                </a>
+                </div>
+                <div className="menu-info-col">
+                <div>
+                    <p className="contact-links">Reach me here directly</p>
+                </div>
+                <div>
+                    <a className="contact-links" href="mailto:benlouis.contact@gmail.com">benlouis.contact@gmail.com</a>
+                </div>
+                </div>
             </div>
           </div>
+          
+          <p className="Light-Text ">© {new Date().getFullYear()} Ben Louis. All rights reserved.</p>
         </div>
         <div className="footer-right-container">
           <p className="SuprHead Light-Text">Site Map</p>
