@@ -559,6 +559,9 @@ video {
 .mt-6 {
   margin-top: 1.5rem;
 }
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
 .flex {
   display: flex;
 }
@@ -732,7 +735,7 @@ video {
     font-family: 'Pally';
     src: url('/fonts/Pally.otf') format('opentype');
     font-family: 'Supreme';
-    src: url('/fonts/Supreme.otf') format('opentype');
+    src: url('/fonts/Supreme-Medium.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -897,6 +900,7 @@ h1 sup{
     color: var(--color-D-Header);
 
     margin: 1.5rem 0 1rem;
+    line-height: 2.3rem;
 
 }
 

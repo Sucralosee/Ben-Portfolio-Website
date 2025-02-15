@@ -1,5 +1,5 @@
 .bc-container {
-    width: 100vw;  /* Full viewport width */
+    width: 100vw;
     max-width: 100%;
     max-height: 40rem;
     display: flex;
@@ -11,10 +11,10 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 100%; /* Ensures it stretches fully */
-    max-width: 100%; /* No artificial constraints */
+    width: 100%;
+    max-width: 100%; 
     /* border: 2px solid var(--color-D-Copy-25); */
-    gap: 0; /* No extra space between text & image */
+    gap: 0; 
 }
 
 .flex-row-reverse {
@@ -31,13 +31,13 @@
 
 .bc-image img {
     width: 100%;
-    height: auto; /* Prevents stretching */
+    height: auto; 
     object-fit: cover;
 }
 
 
 .bc-text {
-    flex: 1; /* Ensures text section takes up remaining space */
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;

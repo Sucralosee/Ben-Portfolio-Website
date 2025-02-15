@@ -1,0 +1,34 @@
+.tert-container{
+    width: 85vw;
+    margin: 2rem 8rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.tert-video{
+    width: 85vw;
+}
+
+.tert-mockup{
+    width: 100%;
+    height: auto;
+}
+
+.tert-triple{
+    /* background-color: var(--color-D-BG); */
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tert-image{
+    width: auto;
+    object-fit: cover;
+}
+
+.tert-image-40{
+    width: 40%;
+}

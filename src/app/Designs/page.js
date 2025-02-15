@@ -27,7 +27,7 @@ const cardsData = [
     linkPath: "/Designs/LHpage",
   },  
   {
-    titleItem: "White Rabbit Liquer",
+    titleItem: "White Rabbit Liqueur",
     subTitleItem: "Can Design",
     cardYear: "2024",
     cardImage: "./image/Can/WRCan.png",

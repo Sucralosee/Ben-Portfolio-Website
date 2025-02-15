@@ -1,21 +1,46 @@
-import Image from "next/image";
+"use client"
+
 import Header from "@/components/Header/header";
-
-import Menu from "@/components/Menu/menu";
 import Foot from "@/components/Foot/foot";
+import Card from "@/components/Card/card";
 
-export const metadata = {
-  title: "BL Porfolio | Production",
-  description: "A page to contact Ben Louis",
-};
-
+const cardsData = [
+  {
+    titleItem: "Flare Promotional Video",
+    subTitleItem: "Video / Audio / Color Editing",
+    cardYear: "2024",
+    cardImage: "./image/Flare/HomeScreen.png",
+    linkPath: "/Production/FlareVideo"
+  },
+  {
+    titleItem: "James Web Space Telescope ",
+    subTitleItem: "Motion Graphics / Asset Creation",
+    cardYear: "2024",
+    cardImage: "./image/JWST/JWST-AE.png",
+    linkPath: "/Production/JWST"
+  },
+  
+  
+];
 
 export default function Production() {
   return (
     <div className="page-container">
       <Header title="Production" />
       <div className="page-content hero-contact">
-            
+        <div className="containerOfCards">
+            {cardsData.map((card, index) => (
+              <Card
+                key={index}
+                titleItem={card.titleItem}
+                subTitleItem={card.subTitleItem}
+                cardYear={card.cardYear}
+                cardImage={card.cardImage}
+                linkPath={card.linkPath}
+              />
+            ))}
+
+          </div>
 
       </div>
       <Foot />
