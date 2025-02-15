@@ -119,8 +119,8 @@ export default function Home() {
             <div className="intro-beneath">
               <div className="intro-joke">
                 <p className="Pop24">*actually this is my portfolio</p>
-                <p className="Pop24">made by ben louis</p>
-                <p className="Pop24">0.o</p>
+                <p className="Pop24">but i was made by ben louis</p>
+                <p className="Pop24">anyways, </p>
               </div>
               <div className="intro-sum">
                 <p className="Pop24" ref={el => fadeRefs.current[2] = el}>Designer</p>
@@ -131,7 +131,7 @@ export default function Home() {
           </div>
           <div className="intro-next">
             <h5 className="mt-4 SubSub" ref={el => fadeRefs.current[5] = el}>
-              Explore my work and get in touch with me!
+              explore my work and get in touch with me!
             </h5>
             <MoveDown className="scroll mt-6" size={64} ref={el => fadeRefs.current[6] = el} />
           </div>
@@ -146,30 +146,34 @@ export default function Home() {
         <div className="feature-container">
           <p className="Head">Featured Work</p>
           <p className="Pop20">A lil appetizer</p>
-          <BigCard 
-            titleItem="Japanese Classics"
-            subTitleItem="Poster Design"
-            cardYear="2024"
-            cardImage="./image/Posters/ThreeFence.png"
-            linkPath="/Designs/JapaneseClassics"
-            isRightImage={false} 
-            className="scroll-BigCard"
-          />
+
           <BigCard 
             titleItem="Flare"
             subTitleItem="BCIT - IDSP Project"
             cardYear="2024"
+            bcDesc=""
             cardImage="./image/Flare/VarietyScreens.png"
             linkPath="/Projects/FlareIDSP"
-            isRightImage={true} 
+            isRightImage={false} 
             className="scroll-BigCard"
           />
            <BigCard 
             titleItem="Timber"
             subTitleItem="Magazine Design"
             cardYear="2024"
+            bcDesc=""
             cardImage="./image/Timber/TimberSpreadMag.png"
             linkPath="/Designs/TimberMag"
+            isRightImage={true} 
+            className="scroll-BigCard"
+          />
+          <BigCard 
+            titleItem="Japanese Classics"
+            subTitleItem="Poster Design"
+            cardYear="2024"
+            bcDesc="hi yt"
+            cardImage="./image/Posters/ThreeFence.png"
+            linkPath="/Designs/JapaneseClassics"
             isRightImage={false} 
             className="scroll-BigCard"
           />

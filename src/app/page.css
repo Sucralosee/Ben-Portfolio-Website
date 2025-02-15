@@ -103,9 +103,9 @@
     opacity: 100%;
 }
 @media (min-width: 2000px){
-    /* .intro-container{
-        height: 80vh;
-    } */
+    .intro-container{
+        height: 85vh;
+    }
 }
 
 @media (max-height: 1000px){
