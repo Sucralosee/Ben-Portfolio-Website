@@ -9,7 +9,7 @@ const cardsData = [
     titleItem: "Flare Promotional Video",
     subTitleItem: "Video / Audio / Color Editing",
     cardYear: "2024",
-    cardImage: "./image/Flare/HomeScreen.png",
+    cardImage: "./image/Flare/Flare-PP.png",
     linkPath: "/Production/FlareVideo"
   },
   {

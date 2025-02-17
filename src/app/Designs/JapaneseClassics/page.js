@@ -9,7 +9,7 @@ export default function JapaneseClassics() {
 
   return (
     <div className="page-container">
-      <Header title="" />
+      <Back title="Back to Designs" route="Designs" />
         <div className="page-content hero-designs">
         <Poster/>
         <Back title="Back to Designs" route="Designs" />

@@ -1,17 +1,16 @@
 "use client"
-
 import Link from 'next/link';
-import "./back.css";
-import gsap from 'gsap';
 import { useEffect, useRef } from 'react';
+import gsap from 'gsap';
+import "./back.css"
 
 const Back = ({ title, route }) => {
   const titleRef = useRef(null);
   const timelineRef = useRef(null);
-
+  
   useEffect(() => {
     if (!titleRef.current) return;
-
+    
     // Split text into spans
     const text = titleRef.current;
     const chars = text.textContent.split('');
@@ -40,11 +39,10 @@ const Back = ({ title, route }) => {
     // Add hover events
     const handleEnter = () => timelineRef.current.play();
     const handleLeave = () => timelineRef.current.reverse();
-
+    
     text.addEventListener('mouseenter', handleEnter);
     text.addEventListener('mouseleave', handleLeave);
 
-    // Cleanup
     return () => {
       text.removeEventListener('mouseenter', handleEnter);
       text.removeEventListener('mouseleave', handleLeave);
@@ -53,12 +51,12 @@ const Back = ({ title, route }) => {
   }, [title]);
 
   return (
-    <div className="w-full py-4">
-      <Link href={`/${route}`} className="arrow-container group">
+    <div className="arrow-container">
+      <Link href={`/${route}`} className="group relative flex items-center gap-2">
+      <span className="arrowBackLeft transform -translate-x-6 group-hover:-translate-x-7 transition-transform duration-200">
+            ←
+          </span>
         <h1 className="SubHead" ref={titleRef}>{title}</h1>
-        <span className="arrowBack transform group-hover:translate-x-1 transition-transform duration-200">
-          →
-        </span>
       </Link>
     </div>
   );

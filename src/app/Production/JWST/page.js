@@ -9,7 +9,7 @@ export default function JWST() {
 
   return (
     <div className="page-container">
-      <Header title="" />
+        <Back title="Back to Production" route="Production" />
         <div className="page-content hero-designs">
           <JamesWebb />
           <Back title="Back to Production" route="Production" />

@@ -8,8 +8,8 @@ export default function FlareIDSP() {
 
   return (
     <div className="page-container">
-      <Header title="" />
-      <div className="page-content hero-designs">
+            <Back title="Back to Designs" route="Projects" />
+            <div className="page-content hero-designs">
         <Flare />
         <Back title="Back to Projects" route="Projects" />
       </div>

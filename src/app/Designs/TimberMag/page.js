@@ -8,8 +8,8 @@ export default function TimberMag() {
 
   return (
     <div className="page-container">
-      <Header title="" />
-        <div className="page-content hero-designs">
+            <Back title="Back to Designs" route="Designs" />
+            <div className="page-content hero-designs">
             <Timber/>
             <Back title="Back to Designs" route="Designs" />
 

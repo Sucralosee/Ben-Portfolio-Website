@@ -7,7 +7,6 @@ import Overview from "../Overview/overview";
 import Project1 from "../Project1/project1";
 
 const JamesWebb = () => {
-  // Register ScrollTrigger plugin
   gsap.registerPlugin(ScrollTrigger);
   
   const fadeRefs = useRef([]);
@@ -16,13 +15,11 @@ const JamesWebb = () => {
   const tripleRef = useRef(null);
 
   useEffect(() => {
-    // Initial state for fade elements
     gsap.set(fadeRefs.current, {
       y: 75,
       opacity: 0
     });
 
-    // Create a timeline for the main content
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".tert-container",
@@ -32,7 +29,6 @@ const JamesWebb = () => {
       }
     });
 
-    // Video container animation
     tl.from(".tert-top-container", {
       scale: 0.9,
       opacity: 0,
@@ -40,7 +36,6 @@ const JamesWebb = () => {
       ease: "power3.out"
     });
 
-    // Video play/pause based on visibility
     ScrollTrigger.create({
       trigger: videoRef.current,
       start: "top 80%",
@@ -51,7 +46,6 @@ const JamesWebb = () => {
       onLeaveBack: () => videoRef.current?.pause(),
     });
 
-    // Mockup section animation
     gsap.from(".tert-mockup", {
       scrollTrigger: {
         trigger: ".tert-mockup",
@@ -64,7 +58,6 @@ const JamesWebb = () => {
       ease: "power2.out"
     });
 
-    // Triple images staggered animation
     gsap.from(".tert-triple img", {
       scrollTrigger: {
         trigger: ".tert-triple",
@@ -78,7 +71,6 @@ const JamesWebb = () => {
       ease: "back.out(1.2)"
     });
 
-    // Text animations
     gsap.from(".Pop32", {
       scrollTrigger: {
         trigger: ".Pop32",
@@ -91,7 +83,6 @@ const JamesWebb = () => {
       ease: "power2.out"
     });
 
-    // Original scroll-based fade animations
     const handleScroll = () => {
       fadeRefs.current.forEach((ref) => {
         if (!ref) return;
@@ -117,7 +108,6 @@ const JamesWebb = () => {
 
     window.addEventListener("scroll", handleScroll);
 
-    // Cleanup
     return () => {
       window.removeEventListener("scroll", handleScroll);
       ScrollTrigger.getAll().forEach(trigger => trigger.kill());
@@ -165,7 +155,7 @@ const JamesWebb = () => {
             className="tert-video" 
             autoPlay 
             controls
-            muted // Added muted to allow autoplay
+            muted 
           />
         </div>
         <div className="tert-mockup" ref={mockupRef}>

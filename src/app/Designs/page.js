@@ -27,12 +27,19 @@ const cardsData = [
     linkPath: "/Designs/LHpage",
   },  
   {
+    titleItem: "Flare Branding",
+    subTitleItem: "Brand Design",
+    cardYear: "2024",
+    cardImage: "./image/LogoFlare/FlareLogoMockup.png",
+    linkPath: "/Designs/FlareLogo"
+  },
+  {
     titleItem: "White Rabbit Liqueur",
     subTitleItem: "Can Design",
     cardYear: "2024",
     cardImage: "./image/Can/WRCan.png",
     linkPath: "/Designs/WhiteRabbit"
-  },
+  }
   
 ];
 

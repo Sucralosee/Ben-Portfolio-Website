@@ -393,14 +393,23 @@
   \**************************************************************************************************************************************************************************************************************************************************************************/
 .arrow-container{
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
+    margin: 8rem 10rem 0;
 }
 
-.arrowBack{
+/* .arrowBackRight{
     position: relative;
     top:0.4rem;
     left: 2rem;
+    font-size: 3rem;
+    color: var(--color-D-Copy);
+} */
+
+.arrowBackLeft{
+    position: relative;
+    top:0.4rem;
+    left: -0.5rem;
     font-size: 3rem;
     color: var(--color-D-Copy);
 }

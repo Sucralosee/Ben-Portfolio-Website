@@ -9,8 +9,8 @@ export default function LHpage() {
 
   return (
     <div className="page-container">
-      <Header title="" />
-        <div className="page-content hero-designs">
+            <Back title="Back to Designs" route="Designs" />
+            <div className="page-content hero-designs">
             <WRCan/>
             <Back title="Back to Designs" route="Designs" />
         </div>

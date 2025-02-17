@@ -76,14 +76,23 @@
   \**************************************************************************************************************************************************************************************************************************************************************************/
 .arrow-container{
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
+    margin: 8rem 10rem 0;
 }
 
-.arrowBack{
+/* .arrowBackRight{
     position: relative;
     top:0.4rem;
     left: 2rem;
+    font-size: 3rem;
+    color: var(--color-D-Copy);
+} */
+
+.arrowBackLeft{
+    position: relative;
+    top:0.4rem;
+    left: -0.5rem;
     font-size: 3rem;
     color: var(--color-D-Copy);
 }
@@ -369,7 +378,6 @@
 
 .glow {
     display: inline-block; 
-    /* border-radius: 10px; */
     box-shadow: 0 0 2rem 1rem var(--color-L-BG-25); /* Adjust color and intensity */
   }
   
