@@ -32,7 +32,7 @@ export default function Foot() {
           <div>
             <p className="SuprHead Light-Text">Let's Get in Touch!</p>
             <div className="menu-info">
-                <div className="menu-info-col">
+                <div className="menu-info-col Light-Text">
                 <a href="https://www.instagram.com/bl.graphic/" className="underline-animation thin contact-links social-link" target="_blank" rel="noopener noreferrer">
                     Instagram<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M13 5H19V11"/><path d="M19 5L5 19"/></svg>
                 </a>

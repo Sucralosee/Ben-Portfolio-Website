@@ -146,6 +146,41 @@
 @media (max-width>1200) {
 
 }
+
+@media (max-width: 1200px) {
+    .containerOfCards{
+        width: 95vw;
+        margin: 2rem;
+    }
+
+    .card-container a{
+        height: auto;
+    }
+
+    .card-inner-container{
+        flex-direction: column;
+
+    }
+}
+
+@media (max-width: 450px) {
+    .containerOfCards{
+        width: 95vw;
+        margin: 1rem;
+        flex-direction: column;
+    }
+
+    .card-container a{
+        height: auto;
+    }
+
+    .card-inner-container{
+        flex-direction: column;
+
+    }
+}
+
+
 /*!**************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/components/Foot/foot.css ***!
   \**************************************************************************************************************************************************************************************************************************************************************************/

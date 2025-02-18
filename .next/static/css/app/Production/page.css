@@ -236,3 +236,38 @@
 @media (max-width>1200) {
 
 }
+
+@media (max-width: 1200px) {
+    .containerOfCards{
+        width: 95vw;
+        margin: 2rem;
+    }
+
+    .card-container a{
+        height: auto;
+    }
+
+    .card-inner-container{
+        flex-direction: column;
+
+    }
+}
+
+@media (max-width: 450px) {
+    .containerOfCards{
+        width: 95vw;
+        margin: 1rem;
+        flex-direction: column;
+    }
+
+    .card-container a{
+        height: auto;
+    }
+
+    .card-inner-container{
+        flex-direction: column;
+
+    }
+}
+
+

@@ -26,11 +26,15 @@ export default function BigCard({
     const text = textRef.current;
 
     if (container && image && text) {
+      // Reset any existing animations
+      gsap.set([image, text], { clearProps: "all" });
+
+      // Initial states
       gsap.set(image, {
         clipPath: 'inset(0 100% 0 0)',
         opacity: 0
       });
-      
+
       gsap.set(text, {
         opacity: 0,
         x: isRightImage ? -50 : 50
@@ -50,12 +54,12 @@ export default function BigCard({
         duration: 1.2,
         ease: "expo.out"
       })
-      .to(text, {
-        opacity: 1,
-        x: 0,
-        duration: 0.8,
-        ease: "power2.out"
-      }, "-=0.8");
+        .to(text, {
+          opacity: 1,
+          x: 0,
+          duration: 0.8,
+          ease: "power2.out"
+        }, "-=0.8");
     }
 
     return () => {
@@ -65,25 +69,19 @@ export default function BigCard({
 
   return (
     <div className="bc-container" ref={containerRef}>
-      <div 
-        className={`bc-inner-container ${isRightImage ? "flex-row-reverse" : "flex-row"}`}
-        style={{ flexDirection: isRightImage ? 'row-reverse' : 'row' }}
-      >
+      <div className="bc-inner-container" data-right-image={isRightImage}>
         <div className="bc-image" ref={imageRef}>
-          <img 
-            src={cardImage} 
+          <img
+            src={cardImage}
             alt={titleItem}
-            className="w-full h-full object-cover"
+            className="bc-img"
           />
         </div>
-        <div 
-          className={`bc-text ${isRightImage ? "items-end text-right" : "items-start text-left"}`}
-          ref={textRef}
-        >
-          <p className="Headless">{titleItem}</p>
+        <div className="bc-text" ref={textRef} data-right-image={isRightImage}>
+          <h2 className="Headless">{titleItem}</h2>
           <p className="Pop32">{subTitleItem} - {cardYear}</p>
           <p className="Pop20">{bcDesc}</p>
-          <div className={`bc-link ${isRightImage ? "self-end" : "self-start"}`}>
+          <div className="bc-link" data-right-image={isRightImage}>
             <Link href={linkPath}>
               <p className="Pop20 Light-Text bc-upper">Let's Check It Out</p>
             </Link>

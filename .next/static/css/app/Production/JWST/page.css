@@ -198,6 +198,19 @@
 .tert-image-40{
     width: 40%;
 }
+
+@media (max-width: 1200px) {
+    .tert-container{
+        width: 95vw;
+        margin: 2rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .tert-container{
+        margin: 1rem;
+    }
+}
 /*!**********************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/components/Overview/overview.css ***!
   \**********************************************************************************************************************************************************************************************************************************************************************************/
@@ -466,6 +479,7 @@
         flex-direction: column;
         align-items: flex-start;
         width: 100vw;
+        height: 3rem;
     }
 
     .name-head{
@@ -505,4 +519,17 @@
     left: -0.5rem;
     font-size: 3rem;
     color: var(--color-D-Copy);
+}
+
+
+@media (max-width: 1200px) {
+    .arrow-container{
+        margin: 3rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .arrow-container{
+        margin: 3rem;
+    }
 }

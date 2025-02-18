@@ -242,6 +242,10 @@ h1 sup{
     color: var(--color-L-Header);
 }
 
+.reddd{
+    color: red;
+}
+
 .bold{
     font-weight: bold;
 }
@@ -280,6 +284,9 @@ h1 sup{
 }
 
 @media (max-width: 450px){
+    .Headless{
+        font-size: 1.75rem;
+    }
     .xxlHead{
     font-size: 3.5rem;
     }

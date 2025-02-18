@@ -32,3 +32,16 @@
 .tert-image-40{
     width: 40%;
 }
+
+@media (max-width: 1200px) {
+    .tert-container{
+        width: 95vw;
+        margin: 2rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .tert-container{
+        margin: 1rem;
+    }
+}

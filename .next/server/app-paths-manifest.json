@@ -1,7 +1,7 @@
 {
-  "/Production/JWST/page": "app/Production/JWST/page.js",
-  "/Designs/WhiteRabbit/page": "app/Designs/WhiteRabbit/page.js",
-  "/Designs/JapaneseClassics/page": "app/Designs/JapaneseClassics/page.js",
+  "/page": "app/page.js",
+  "/Contact/page": "app/Contact/page.js",
   "/Designs/page": "app/Designs/page.js",
-  "/Production/page": "app/Production/page.js"
+  "/About/page": "app/About/page.js",
+  "/Production/FlareVideo/page": "app/Production/FlareVideo/page.js"
 }

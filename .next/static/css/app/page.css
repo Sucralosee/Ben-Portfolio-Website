@@ -168,90 +168,146 @@
         margin-top: 1rem;
     }
 
-
     .small-bullet{
         font-size: 1.5rem;
         bottom: 0.9rem;
+    }
+
+    .feature-container{
+        width: 100%;
+        margin: 0;
     }
 }
 /*!********************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/components/BigCard/bigCard.css ***!
   \********************************************************************************************************************************************************************************************************************************************************************************/
 .bc-container {
-    width: 100vw;
-    max-width: 100%;
-    max-height: 40rem;
+    width: 100%;
+    max-width: 100vw;
+    min-height: 400px;
     display: flex;
     justify-content: center;
     overflow: hidden;
-}
-
-.bc-inner-container {
+    padding: 2rem 1rem;
+  }
+  
+  .bc-inner-container {
     display: flex;
-    flex-direction: row;
     align-items: center;
     width: 100%;
-    max-width: 100%; 
-    /* border: 2px solid var(--color-D-Copy-25); */
-    gap: 0; 
-}
-
-.flex-row-reverse {
+    max-width: 1200px;
+    gap: 2rem;
+  }
+  
+  .bc-inner-container[data-right-image="true"] {
     flex-direction: row-reverse;
-}
-
-.bc-image {
-    flex: 1; 
+  }
+  
+  .bc-image {
+    flex: 1;
     max-width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.bc-image img {
+    aspect-ratio: 16/9;
+    overflow: hidden;
+  }
+  
+  .bc-img {
     width: 100%;
-    height: auto; 
+    height: 100%;
     object-fit: cover;
-}
-
-
-.bc-text {
+  }
+  
+  .bc-text {
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 1rem;
-    padding: 0;
-    margin: 2rem; 
-}
-
-.bc-link {
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+  
+  .bc-text[data-right-image="true"] {
+    align-items: flex-end;
+    text-align: right;
+  }
+  
+  .bc-link {
     display: flex;
     align-items: center;
+    gap: 0.5rem;
     background-color: var(--color-L-BG);
     border-radius: 0.5rem;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem;
     width: fit-content;
     cursor: pointer;
-}
-
-
-.bc-upper{
+    transition: transform 0.2s ease;
+  }
+  
+  .bc-link:hover {
+    transform: translateX(5px);
+  }
+  
+  .bc-text[data-right-image="true"] .bc-link {
+    flex-direction: row-reverse;
+  }
+  
+  .bc-upper {
     padding: 0.6rem 1rem;
-}
-
-/* Responsive: Stack text below image on smaller screens */
-@media (max-width: 768px) {
-    .bc-inner-container {
-        flex-direction: column;
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .bc-container {
+      padding: 1rem;
+      min-height: auto;
     }
-
+  
+    .bc-inner-container,
+    .bc-inner-container[data-right-image="true"] {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+  
     .bc-image {
-        max-width: 100%;
-        height: 20rem;
+      max-width: 100%;
+      aspect-ratio: 16/10;
     }
-}
+  
+    .bc-text,
+    .bc-text[data-right-image="true"] {
+      align-items: flex-start;
+      text-align: left;
+      padding: 0;
+    }
+  
+    .bc-text[data-right-image="true"] .bc-link {
+      flex-direction: row;
+    }
+  }
+  
+  @media (max-width: 450px) {
+    .bc-container{
+        margin: 1rem;
+      margin: 1rem 0.5rem;
+    }
+  
+    .bc-text {
+      gap: 1rem;
+    }
+  
+    .Pop32 {
+      font-size: 24px;
+    }
+  
+    .Pop20 {
+      font-size: 16px;
+    }
+  
+    .bc-link {
+      width: 100%;
+      justify-content: space-between;
+    }
 
+  }
 /*!**************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/components/Foot/foot.css ***!
   \**************************************************************************************************************************************************************************************************************************************************************************/

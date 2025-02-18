@@ -1,0 +1,23 @@
+.about-container{
+    width: 85vw;
+    margin: 2rem 8rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-left{
+    width: 45%;
+}
+
+.about-right{
+    width: 45%;
+}
+
+.about-profile{
+    width: auto;
+    height: 30rem;
+}
+
+.tert-container{
+    
+}

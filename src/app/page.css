@@ -165,9 +165,13 @@
         margin-top: 1rem;
     }
 
-
     .small-bullet{
         font-size: 1.5rem;
         bottom: 0.9rem;
+    }
+
+    .feature-container{
+        width: 100%;
+        margin: 0;
     }
 }
