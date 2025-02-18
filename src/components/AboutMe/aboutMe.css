@@ -20,5 +20,12 @@
 }
 
 .tert-container{
-    
+    display: flex;
+}
+
+.about-skills-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 2rem;
 }

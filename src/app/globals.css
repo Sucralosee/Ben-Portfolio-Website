@@ -216,6 +216,8 @@ h1 sup{
     font-family: 'Poppins', sans-serif;
     font-size: 2rem;
     color: var(--color-D-Copy);
+    line-height: 2.2rem;
+
 }
 .Pop28{
     font-family: 'Poppins', sans-serif;

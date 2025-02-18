@@ -555,20 +555,20 @@ video {
 .mt-6 {
   margin-top: 1.5rem;
 }
+.block {
+  display: block;
+}
 .flex {
   display: flex;
 }
 .grid {
   display: grid;
 }
+.list-item {
+  display: list-item;
+}
 .hidden {
   display: none;
-}
-.h-full {
-  height: 100%;
-}
-.w-full {
-  width: 100%;
 }
 .-translate-x-6 {
   --tw-translate-x: -1.5rem;
@@ -580,20 +580,8 @@ video {
 .resize {
   resize: both;
 }
-.flex-row {
-  flex-direction: row;
-}
-.flex-row-reverse {
-  flex-direction: row-reverse;
-}
 .flex-wrap {
   flex-wrap: wrap;
-}
-.items-start {
-  align-items: flex-start;
-}
-.items-end {
-  align-items: flex-end;
 }
 .items-center {
   align-items: center;
@@ -610,23 +598,11 @@ video {
 .gap-8 {
   gap: 2rem;
 }
-.self-start {
-  align-self: flex-start;
-}
-.self-end {
-  align-self: flex-end;
-}
 .rounded {
   border-radius: 0.25rem;
 }
 .object-cover {
   object-fit: cover;
-}
-.text-left {
-  text-align: left;
-}
-.text-right {
-  text-align: right;
 }
 .opacity-0 {
   opacity: 0;
@@ -852,6 +828,8 @@ h1 sup{
     font-family: 'Poppins', sans-serif;
     font-size: 2rem;
     color: var(--color-D-Copy);
+    line-height: 2.2rem;
+
 }
 .Pop28{
     font-family: 'Poppins', sans-serif;
