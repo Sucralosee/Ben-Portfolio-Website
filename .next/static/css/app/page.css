@@ -195,7 +195,7 @@
     display: flex;
     align-items: center;
     width: 100%;
-    max-width: 1200px;
+    max-width: 85vw;
     gap: 2rem;
   }
   
@@ -205,7 +205,7 @@
   
   .bc-image {
     flex: 1;
-    max-width: 50%;
+    max-width: auto;
     aspect-ratio: 16/9;
     overflow: hidden;
   }

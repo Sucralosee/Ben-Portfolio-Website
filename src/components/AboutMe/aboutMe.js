@@ -116,7 +116,7 @@ const AboutMe = () => {
   return (
     <>
         <div className="about-container">
-            <div className="about-left">
+            <div className="">
                 <img
                     src="./image/About/profile.png"
                     alt="picture of ben louis"
@@ -126,13 +126,9 @@ const AboutMe = () => {
                 />
             </div>
             <div className="about-right">
-                <img
-                    src="./image/About/profile.png"
-                    alt="picture of ben louis"
-                    width={100}
-                    height={100}
-                    className="about-profile"
-                />
+              <p className="Pop32">A little bit about me,</p>
+              <p className="Head">I'm Ben Louis</p>
+              <p className="Pop32">A skilled web designer and developer with a passion for sustainable design while being user friendly, as well as lover of the great outdoors. I strive to create visually captivating and solutions for all users while leaving a positive impact. From ideation to designing and marketing the final product I enjoy working collaboratively to find creative solutions to complex problems.</p>
             </div>
         </div>
 

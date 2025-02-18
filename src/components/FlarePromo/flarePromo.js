@@ -117,7 +117,7 @@ const FlarePromo = () => {
   return (
     <>
       <Project1
-        Head1="James Webb Space Telescope"
+        Head1="Flare Promotional Video"
         Head2="2024"
         Head3=""
         Head4="Motion Graphics / Asset Creation"

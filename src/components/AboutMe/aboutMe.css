@@ -2,7 +2,8 @@
     width: 85vw;
     margin: 2rem 8rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 2rem;
 }
 
 .about-left{
