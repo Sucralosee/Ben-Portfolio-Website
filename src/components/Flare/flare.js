@@ -72,7 +72,7 @@ export default function Flare() {
                     titleItem= "Style Guide "
                     subTitleItem= "Flare Branding"
                     cardYear= "2024"
-                    cardImage= "/image/Flare/FlareIcon.png"
+                    cardImage= "/image/LogoFlare/FlareLogoMockup.png"
                     linkPath= "/Production/FlareLogo"
                 />
             </div>

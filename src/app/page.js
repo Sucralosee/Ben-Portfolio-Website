@@ -113,13 +113,13 @@ export default function Home() {
       <div className="page-content hero-page">
         <div className="intro-container">
           <div className="intro-content">
-            <h1 className="xxlHead intro-ben" ref={el => fadeRefs.current[1] = el}>
+            <h1 className="xxlHead intro-ben" ref={el => fadeRefs.current[0] = el}>
               Hello, I'm Ben<span className="small-bullet">*</span>
             </h1>
             <div className="intro-beneath">
-              <div className="intro-joke">
-                <p className="Pop24">*actually this is my portfolio</p>
-                <p className="Pop24">but i was made by ben louis</p>
+              <div className="intro-joke" ref={el => fadeRefs.current[1] = el}>
+                <p className="Pop24">*actually this is a portfolio</p>
+                <p className="Pop24">but was made by ben louis</p>
                 <p className="Pop24">anyways, </p>
               </div>
               <div className="intro-sum">

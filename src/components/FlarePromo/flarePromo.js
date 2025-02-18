@@ -125,7 +125,7 @@ const FlarePromo = () => {
       <Overview
         Head=""
         HeadContent=""
-        SubHead="A promotional video to give a brief introduction to Flare - a wildfire preperation app. Using various editing techniques such as sharp cuts to highlight the anxiety of a wildfire scenario and the benefits that Flare could provide."
+        SubHead="A promotional video to give a brief introduction to Flare - a wildfire preperation app. Using various editing techniques t such as sharp cuts to highlight the anxiety of a wildfire scenario and the benefits that Flare could provide."
         Top1=""
         Content1=""
         Top2=""
