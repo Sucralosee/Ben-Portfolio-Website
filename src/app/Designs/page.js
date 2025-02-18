@@ -16,7 +16,7 @@ const cardsData = [
     titleItem: "Timber",
     subTitleItem: "Magazine Design",
     cardYear: "2024",
-    cardImage: "./image/Timber/TimberHandMag.png",
+    cardImage: "./image/Timber/timberMockup-S.png",
     linkPath: "/Designs/TimberMag"
   },
   {
@@ -37,7 +37,7 @@ const cardsData = [
     titleItem: "White Rabbit Liqueur",
     subTitleItem: "Can Design",
     cardYear: "2024",
-    cardImage: "./image/Can/WRCan.png",
+    cardImage: "./image/Can/WRCan-S.png",
     linkPath: "/Designs/WhiteRabbit"
   }
   

@@ -162,7 +162,7 @@ export default function Home() {
             subTitleItem="Magazine Design"
             cardYear="2024"
             bcDesc=""
-            cardImage="./image/Timber/TimberSpreadMag.png"
+            cardImage="./image/Timber/TimberSpreadMag.jpg"
             linkPath="/Designs/TimberMag"
             isRightImage={true} 
             className="scroll-BigCard"

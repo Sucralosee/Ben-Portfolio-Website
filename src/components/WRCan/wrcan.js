@@ -97,7 +97,7 @@ const WRCan = ({
             <div className="poster-container">
                 <div className="tertiary-container" ref={tertiaryContainerRef}>
                     <div  ref={el => fadeRefs.current[8] = el}>
-                        <img src="/image/Can/WRCan.png" alt="?" width={100} height={100} className="tertiary-poster"/>
+                        <img src="/image/Can/WRCan-L.png" alt="?" width={100} height={100} className="tertiary-poster"/>
                     </div>                
                 </div>
             </div>

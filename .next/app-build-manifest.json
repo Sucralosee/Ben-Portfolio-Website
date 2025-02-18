@@ -78,6 +78,18 @@
       "static/css/app/About/page.css",
       "static/chunks/app/About/page.js"
     ],
+    "/Designs/TimberMag/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/Designs/TimberMag/page.css",
+      "static/chunks/app/Designs/TimberMag/page.js"
+    ],
+    "/Designs/LHpage/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/Designs/LHpage/page.css",
+      "static/chunks/app/Designs/LHpage/page.js"
+    ],
     "/_not-found/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",

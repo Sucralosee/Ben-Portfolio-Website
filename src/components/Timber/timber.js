@@ -93,7 +93,7 @@ const Timber = ({
                 Link2 = ""
                 LinkContent2 = ""
 
-                RightImage="/image/Timber/TimberHandMag.png"
+                RightImage="/image/Timber/timberMockup-L.png"
                 RightVideo=""
             />
 
@@ -111,7 +111,7 @@ const Timber = ({
             <div className="timber-container">
                 <h4 className="SubHead">Spreads of the Print Version</h4>
                 <img 
-                    src="/image/Timber/TimberSpreadMag.png"
+                    src="/image/Timber/TimberSpreadMag.jpg"
                     width={400} height={400}
                     className="timber-spread"
                 />
