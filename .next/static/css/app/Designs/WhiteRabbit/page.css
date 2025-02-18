@@ -153,7 +153,7 @@
 
 @media(max-width: 450px){
     .project-container{
-        margin: 1rem;
+        margin: 1.5rem 1rem;
         flex-direction: column;
     }
 
@@ -168,7 +168,7 @@
         flex-direction: column;
         align-items: flex-start;
         width: 100vw;
-        height: 3rem;
+        height: auto;
     }
 
     .name-head{
@@ -176,13 +176,14 @@
         flex-direction: column;
     }
 
-    .bot-head{
-        /* border: 1px solid red; */
+    .bot-head, .SubHead{
+        margin-top: 0;
     }
 
     .place-head{    
         margin: 0;
     }
+
 }
 /*!****************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/components/WRCan/wrcan.css ***!

@@ -84,15 +84,15 @@ export default function Flare() {
                 <p className="Pop20">Was done to understand market gaps and more specifically user needs.</p>
                 <p className="Pop20 mt-4">Two personas were created to reflect the typical user that would potentially find value in Flare as useful tool.</p>
             </div> 
-            <div className="flex justify-between">
+            <div className="flex justify-between personas">
                 <img className="case-half" src="/image/Flare/FlarePersona-1.png"></img>
                 <img className="case-half" src="/image/Flare/FlarePersona-2.png"></img>
             </div>
         </div>
 
         <div className="case-container-mock"> 
-            <p className="Pop32">5. Prototyping</p>
-            <div className="flex justify-between">
+            <p className="Pop32">5. Site-Map / Lo-Fi Mockup</p>
+            <div className="flex justify-between mock-cont">
                 <div className="case-half">
                     <p className="Pop20">A sitemap was created to understand how the flow of the features. With the essential features outlined and how users navigate between.</p>
                     <img className="case-figma" src="/image/Flare/Sitemap.png"></img>

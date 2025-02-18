@@ -171,7 +171,7 @@ export default function Home() {
             titleItem="Japanese Classics"
             subTitleItem="Poster Design"
             cardYear="2024"
-            bcDesc="hi yt"
+            bcDesc=""
             cardImage="./image/Posters/ThreeFence.png"
             linkPath="/Designs/JapaneseClassics"
             isRightImage={false} 

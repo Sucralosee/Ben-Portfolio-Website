@@ -241,6 +241,51 @@
     object-fit: cover;
     background-color: white;
 }
+
+@media (max-width:450px){
+    .case-container{
+        margin: 1rem;
+        width: 100%;
+    
+    }
+    .case-container-top, .case-container-problem,.case-container-link, .mock-cont, .case-container-showcase{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+    .case-left-content{
+        width: 90%;
+    }
+    .case-right-image{
+        width: 80%;
+        margin: 0;
+    }
+
+    .links-container {
+        width: 50%;
+    }
+
+    .case-container-triple{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .case-third{
+        width: 80%;
+    }
+
+    .personas{
+        display: flex;
+        flex-direction: column;
+    }
+    .case-half{
+        width: auto;
+    }
+
+    .case-image-wide{
+        height: auto;
+    }
+}
 /*!**********************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/components/Project1/project1.css ***!
   \**********************************************************************************************************************************************************************************************************************************************************************************/
@@ -323,7 +368,7 @@
 
 @media(max-width: 450px){
     .project-container{
-        margin: 1rem;
+        margin: 1.5rem 1rem;
         flex-direction: column;
     }
 
@@ -338,7 +383,7 @@
         flex-direction: column;
         align-items: flex-start;
         width: 100vw;
-        height: 3rem;
+        height: auto;
     }
 
     .name-head{
@@ -346,13 +391,14 @@
         flex-direction: column;
     }
 
-    .bot-head{
-        /* border: 1px solid red; */
+    .bot-head, .SubHead{
+        margin-top: 0;
     }
 
     .place-head{    
         margin: 0;
     }
+
 }
 /*!**************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/components/Card/card.css ***!

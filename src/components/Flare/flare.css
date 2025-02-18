@@ -127,3 +127,51 @@
     object-fit: cover;
     background-color: white;
 }
+
+@media (max-width:450px){
+    .case-container{
+        margin: 1rem;
+        width: 100%;
+    
+    }
+    .case-container-top, .case-container-problem,.case-container-link, .mock-cont, .case-container-showcase{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+    .case-left-content{
+        width: 90%;
+    }
+    .case-right-image{
+        width: 80%;
+    }
+
+    .case-right-image{
+        margin: 0;
+    }
+
+    .links-container {
+        width: 50%;
+    }
+
+    .case-container-triple{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .case-third{
+        width: 80%;
+    }
+
+    .personas{
+        display: flex;
+        flex-direction: column;
+    }
+    .case-half{
+        width: auto;
+    }
+
+    .case-image-wide{
+        height: auto;
+    }
+}
