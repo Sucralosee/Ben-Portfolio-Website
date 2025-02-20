@@ -5,6 +5,7 @@ import gsap from "gsap";
 import logoAnim from "../../../public/image/Flare/LottieRaw.json"; 
 import dynamic from "next/dynamic";
 import "./flarebrand.css";
+import "../Flare/flare.css"
 import Overview from "../Overview/overview";
 import FlareRationale from "../FlareRationale/flareRationale";
 

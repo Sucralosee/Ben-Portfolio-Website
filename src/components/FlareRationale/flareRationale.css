@@ -5,7 +5,7 @@
     padding: 3rem 2rem;
 }
   
-.slider-container {
+.ration-slider-container {
     display: flex;
     background: var(--color-L-BG);
     border-radius: 12px;

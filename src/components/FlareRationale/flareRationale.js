@@ -106,7 +106,7 @@ const FlareRationale = () => {
 
   return (
     <div className="logo-rationale-slider" ref={sliderRef}>
-      <div className="slider-container">
+      <div className="ration-slider-container">
         <div className="logo-image-section">
           {rationalePoints.map((point) => (
             <div key={point.id} className="logo-image-container">
