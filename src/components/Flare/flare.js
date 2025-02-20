@@ -23,7 +23,7 @@ export default function Flare() {
         </div>
         <img src="/image/Flare/VarietyScreens.png" className="case-image-wide"></img>
         <div className="case-container-problem">
-            <p className="Pop28 case-left-content">
+            <div className="Pop28 case-left-content">
                 <span>Flare was designed to tackle key challenges in wildfire preparedness, emphasizing accessibility, clarity, and usability.</span>{" "}
                 <span className="highlight-issue">The lack of a centralized platform</span> for wildfire resources left users struggling to find clear, reliable information.{" "}
                 <span className="highlight-issue">Emergency planning felt overwhelming</span>, with complex steps discouraging proactive action.{" "}
@@ -46,7 +46,7 @@ export default function Flare() {
                     {/* <p className="Pop32">2. Quick and Easy Information</p>
                     <p className="Pop20">The app was designed based on the bento method to ensure information was given in clear and distinct areas.</p> */}
                 </div>
-            </p>
+            </div>
 
             <div className="case-right-image">
                 <img src="/image/Flare/HomeScreen.png"></img>
@@ -73,7 +73,7 @@ export default function Flare() {
                     subTitleItem= "Flare Branding"
                     cardYear= "2024"
                     cardImage= "/image/LogoFlare/FlareLogoMockup.png"
-                    linkPath= "/Production/FlareLogo"
+                    linkPath= "/Projects/FlareLogo"
                 />
             </div>
         </div>
@@ -116,6 +116,7 @@ export default function Flare() {
                 </div>
             </div>
             <div className="case-right-image">
+                <p className="Pop32">The landing page was designed to act as the blog to showcase the </p>
                 <img src="/image/Flare/FlareTeam.png"></img>
             </div>
         </div>

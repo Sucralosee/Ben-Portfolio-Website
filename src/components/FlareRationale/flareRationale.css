@@ -1,0 +1,138 @@
+.logo-rationale-slider {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+  
+.slider-container {
+    display: flex;
+    background: var(--color-L-BG);
+    border-radius: 12px;
+    box-shadow: 0 5px 30px rgba(0,0,0,0.08);
+    overflow: hidden;
+}
+  
+.logo-image-section {
+    flex: 1;
+    position: relative;
+    background-color: var(--color-D-BG-25);
+    min-height: 500px;
+}
+  
+.logo-image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.logo-image-container img {
+    max-width: 80%;
+    max-height: 80%;
+    width: auto;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+  
+.rationale-section {
+    flex: 1;
+    padding: 2rem;
+    position: relative;
+}
+  
+.rationale-section h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 30px;
+    position: relative;
+}
+  
+.rationale-section h2:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: var(--color-primary);
+}
+  
+.rationale-points-container {
+    height: 200px;
+    position: relative;
+}
+  
+.rationale-point {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+  
+.rationale-point h3 {
+    color: #ff5722;
+    margin-bottom: 15px;
+}
+  
+.rationale-point p {
+    color: #555;
+    line-height: 1.6;
+    font-size: 16px;
+}
+  
+.navigation-dots {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    display: flex;
+    gap: 8px;
+}
+  
+.nav-dot {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--color-D-BG-25);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 12px;
+    color: #555;
+}
+  
+.nav-dot:hover {
+    border: 2px solid var(--color-D-BG-25);
+    background-color: var(--color-L-BG);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+  
+@media (max-width: 768px) {
+    .slider-container {
+        flex-direction: column;
+}
+    
+    .logo-image-section {
+        min-height: 300px;
+}
+    
+    .rationale-section {
+        padding: 30px 20px;
+}
+    
+.navigation-dots {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        margin-top: 30px;
+        justify-content: center;
+    }
+}

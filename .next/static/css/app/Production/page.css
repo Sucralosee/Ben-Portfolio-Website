@@ -1,0 +1,273 @@
+/*!******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/components/Header/header.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************/
+.header-container{
+    position: relative;
+    top: 0;
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    padding-top: 11rem;
+    color: #fff;
+    /* z-index: 2;*/
+    /* border: red 4px solid; */
+
+    margin: 0 8rem;
+}
+
+.header-title{
+    position: relative;
+    left: -2.6rem;
+    margin: 0;
+}
+
+.header-title-thing{
+    margin: 0;
+}
+
+.my-logo{
+    /* Add styles for your logo if needed */
+}
+
+@media (width>2560px) {
+    .header-container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin: 0 auto;
+        width: 60%;
+    }
+    
+}
+
+@media(max-width: 1200px){
+    .header-container{
+        margin: 0;
+        padding-bottom: 0;
+    }
+
+    .header-title{
+        margin-top: 1rem;
+        left: 0;
+    }
+}
+
+@media(max-width: 600px){
+    .header-title{
+        margin-top: 0.5rem;
+        left: 0;
+        font-size: 2.5rem;
+    }
+}
+@media(max-width: 450px){
+    .header-container{
+        margin: 0;
+        padding: 7rem 1rem 0rem;
+    }        
+
+    .header-title{
+        margin: 0;
+    }
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/components/Foot/foot.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************/
+.footer-outer-container {
+    margin-top: 10rem;
+    padding: 2rem 8rem;
+    height: 30rem;
+    width: 100%;
+    background-color: var(--color-L-BG);
+    display: flex;
+  }
+
+.footer-left-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.footer-right-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 50%;
+    position: relative;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+.footer-link-item {
+    position: relative;
+
+}
+.back-to-top {
+    margin-top: 1rem;
+    padding-top: 1rem;
+}
+  
+.back-to-top-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: inherit;
+    padding: 0;
+}
+  
+.back-to-top-icon {
+    transition: transform 0.3s ease;
+}
+  
+.back-to-top-button:hover .back-to-top-icon {
+    transform: translateY(-0.5rem);
+}
+
+@media (max-width: 1400px){
+    .footer-outer-container{
+        padding: 2rem 4rem;
+    }
+}
+
+@media (max-width: 900px){
+    .footer-outer-container{
+        padding: 1rem;
+    }
+}
+@media (max-width: 450px){
+    .footer-outer-container{
+        flex-direction: column;
+        height: 40rem;
+    }
+    .footer-right-container{
+        width: 10rem;
+        margin-top: 2rem;
+        align-items: flex-start;
+    }
+    .footer-links{
+        align-items: flex-start;
+    }
+
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/components/Card/card.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************/
+.containerOfCards {
+    margin: 2rem 8rem;
+    height: 100vh;
+}
+
+.card-container a{
+    width: 100%;
+    height: 8rem;
+    margin: 2rem 0;
+
+    border: 2px solid var(--color-D-Copy-25);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.card-inner-container {
+    object-fit: cover;
+    /* overflow: hidden;  */
+
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.card-image{
+    height: 30rem;
+    width: auto;
+}
+
+.glow {
+    display: inline-block; 
+    box-shadow: 0 0 2rem 1rem var(--color-L-BG-25); /* Adjust color and intensity */
+  }
+  
+
+.card-extra{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    
+}
+
+.card-title{
+}
+
+.card-subTitle{
+}
+
+.relative {
+    position: relative;
+}
+  
+.absolute {
+    position: absolute;
+}
+  
+.pointer-events-none {
+    pointer-events: none;
+}
+  
+.z-10 {
+    z-index: 10;
+}
+
+@media (max-width>1200) {
+
+}
+
+@media (max-width: 1200px) {
+    .containerOfCards{
+        width: 95vw;
+        margin: 2rem;
+    }
+
+    .card-container a{
+        height: auto;
+    }
+
+    .card-inner-container{
+        flex-direction: column;
+
+    }
+}
+
+@media (max-width: 450px) {
+    .containerOfCards{
+        width: 95vw;
+        margin: 1rem;
+        flex-direction: column;
+    }
+
+    .card-container a{
+        height: auto;
+    }
+
+    .card-inner-container{
+        flex-direction: column;
+
+    }
+}
+
+

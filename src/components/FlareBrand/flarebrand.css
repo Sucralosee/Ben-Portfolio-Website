@@ -24,3 +24,17 @@
     transform: scale(3); 
     margin-top: -50px;
 }
+
+@media (max-width: 450px){
+    .overview-flare-container{
+        flex-direction: column;
+        margin: 1rem;
+
+    }
+    .flare-left{
+        width: 95%;
+    }
+    .flare-right{
+        width: 95%;
+    }
+}

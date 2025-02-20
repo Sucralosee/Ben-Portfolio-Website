@@ -6,6 +6,7 @@ import logoAnim from "../../../public/image/Flare/LottieRaw.json";
 import dynamic from "next/dynamic";
 import "./flarebrand.css";
 import Overview from "../Overview/overview";
+import FlareRationale from "../FlareRationale/flareRationale";
 
 const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
@@ -78,7 +79,7 @@ const FlareBrand = ({ }) => {
                     <p className="SubHead">The branding for Flare was a exciting process in understanding the design evolution of how logos can transform a brand. Into a core part of the design process of the product.</p>
                 </div>
                 <div className="flare-right">
-                    <div className="lottie-container" ref={el => fadeRefs.current[8] = el}>
+                    <div className="lottie-container" ref={el => fadeRefs.current[1] = el}>
                         <Lottie
                             animationData={logoAnim}
                             loop={true}
@@ -90,7 +91,7 @@ const FlareBrand = ({ }) => {
             </div>
             <Overview
                 Head="Design Process"
-                HeadContent="Initally Flare was known as Lighthouse representing a protective object that can protect against natural disaters. But as time went on Flare emerged and came to represent a guiding light for people in wildfire prone areas."
+                HeadContent="Initally Flare was known as Lighthouse representing a protective object that can protect against natural disaters. But as time went on Flare emerged and came to represent a guiding light for people in wildfire prone areas. By providing crucial information in a concise manner."
                 SubHead=""
                 Top1=""
                 Content1=""
@@ -112,12 +113,15 @@ const FlareBrand = ({ }) => {
                 RightImage = "/image/LogoFlare/FWordmark.svg"
                 RightVideo= ""
             />
+            <div className="tert-container">
+                <FlareRationale />
+            </div>
   
-            <div className="poster-container">
+            {/* <div className="poster-container">
                 <div className="tertiary-container" ref={tertiaryContainerRef}>
                 
                 </div>
-            </div>
+            </div> */}
         </>
     )
 }
