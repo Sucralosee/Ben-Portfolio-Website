@@ -15,7 +15,7 @@ const LH = ({
     LogoAlt5 = "",
 
     RightImage = "",
-    RightVideo = "./video/lhlogging.mp4"
+    RightVideo = "../video/lhlogging.mp4"
 }) => {
     const fadeRefs = useRef([]);
 
