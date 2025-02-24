@@ -1,7 +1,8 @@
 {
-  "/Projects/FlareIDSP/page": "app/Projects/FlareIDSP/page.js",
-  "/Projects/page": "app/Projects/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
   "/page": "app/page.js",
-  "/About/page": "app/About/page.js",
-  "/Designs/LHpage/page": "app/Designs/LHpage/page.js"
+  "/Projects/FlareIDSP/page": "app/Projects/FlareIDSP/page.js",
+  "/Designs/LHpage/page": "app/Designs/LHpage/page.js",
+  "/Projects/page": "app/Projects/page.js",
+  "/About/page": "app/About/page.js"
 }

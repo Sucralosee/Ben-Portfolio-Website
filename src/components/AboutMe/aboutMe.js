@@ -29,7 +29,7 @@ const AboutMe = () => {
         <div className="about-container">
             <div className="">
                 <img
-                    src="../image/About/profile.png"
+                    src="/image/About/profile.png"
                     alt="picture of ben louis"
                     width={100}
                     height={100}
