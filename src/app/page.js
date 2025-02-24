@@ -118,7 +118,7 @@ export default function Home() {
             </h1>
             <div className="intro-beneath">
               <div className="intro-joke" ref={el => fadeRefs.current[1] = el}>
-                <p className="Pop24">Portfolio website</p>
+                <p className="Pop24">My Portfolio website</p>
                 {/* <p className="Pop24">*actually this is a portfolio</p>
                 <p className="Pop24">but was made by ben louis</p>
                 <p className="Pop24">anyways, </p> */}
@@ -146,7 +146,7 @@ export default function Home() {
 
         <div className="feature-container">
           <p className="Head">Featured Work</p>
-          <p className="Pop20">A lil appetizer</p>
+          {/* <p className="Pop20">A lil appetizer</p> */}
 
           <BigCard 
             titleItem="Flare"

@@ -233,9 +233,13 @@
 }
 
 .case-image-wide{
-    height: 50rem;
+    max-height: 50rem;
     width: 100%;
     object-fit:cover;
+}
+
+.flare-figma{
+    height: 40rem;
 }
 
 .case-seb{

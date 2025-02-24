@@ -92,12 +92,12 @@ export default function Flare() {
 
         <div className="case-container-mock"> 
             <p className="Pop32">5. Site-Map / Lo-Fi Mockup</p>
-            <div className="flex justify-between mock-cont">
-                <div className="case-half">
+            <div className="flex flex-col gap-10 mock-cont">
+                <div className=".case-image-wide">
                     <p className="Pop20">A sitemap was created to understand how the flow of the features. With the essential features outlined and how users navigate between.</p>
                     <img className="case-figma" src="/image/Flare/Sitemap.png"></img>
                 </div>
-                <div className="case-half">
+                <div className=".case-image-wide flare-figma">
                     <p className="Pop20">This culminated in a hi-fi mockup to test and prototype the features before we started the coding process.</p>
                     <iframe className="case-figma" width="800" height="600" src="https://embed.figma.com/design/ZVhJP3JiZJq8jlvfgpW2LF/Flare-Overview?node-id=0-1&embed-host=share" allowfullscreen></iframe>
                 </div>

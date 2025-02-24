@@ -6,53 +6,17 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/About/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/About/page.css",
-      "static/chunks/app/About/page.js"
-    ],
     "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/page.css",
       "static/chunks/app/page.js"
     ],
-    "/Production/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/Production/page.css",
-      "static/chunks/app/Production/page.js"
-    ],
-    "/Projects/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/Projects/page.css",
-      "static/chunks/app/Projects/page.js"
-    ],
     "/Projects/FlareIDSP/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/Projects/FlareIDSP/page.css",
       "static/chunks/app/Projects/FlareIDSP/page.js"
-    ],
-    "/Projects/FlareLogo/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/Projects/FlareLogo/page.css",
-      "static/chunks/app/Projects/FlareLogo/page.js"
-    ],
-    "/Designs/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/Designs/page.css",
-      "static/chunks/app/Designs/page.js"
-    ],
-    "/Designs/FlareLogo/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/Designs/FlareLogo/page.css",
-      "static/chunks/app/Designs/FlareLogo/page.js"
     ],
     "/_not-found/page": [
       "static/chunks/webpack.js",
