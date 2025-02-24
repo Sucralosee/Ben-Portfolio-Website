@@ -286,18 +286,22 @@ export default function Flare() {
         </div>
 
         <div className="case-container-mock"> 
-          <p className="Pop32" ref={el => contentSectionRefs.current[4] = el}>5. Site-Map / Lo-Fi Mockup</p>
+          <p className="Pop32" ref={el => contentSectionRefs.current[4] = el}>5. Site-Map</p>
           <div className="flex flex-col gap-10 mock-cont">
             <div className=".case-image-wide">
               <p className="Pop20" ref={el => contentSectionRefs.current[5] = el}>A sitemap was created to understand how the flow of the features. With the essential features outlined and how users navigate between.</p>
               <img className="case-figma" src="/image/Flare/Sitemap.png" ref={el => sitemapRef.current = el}></img>
             </div>
             <div className=".case-image-wide flare-figma">
-              <p className="Pop20" ref={el => contentSectionRefs.current[6] = el}>This culminated in a hi-fi mockup to test and prototype the features before we started the coding process.</p>
+                <p className="Pop32" ref={el => contentSectionRefs.current[6] = el}>6. Hi-Fi Mockup</p>
+              <p className="Pop20" ref={el => contentSectionRefs.current[7] = el}>This culminated in a hi-fi mockup to test and prototype the features before we started the coding process.</p>
               <iframe className="case-figma" width="800" height="600" src="https://embed.figma.com/design/ZVhJP3JiZJq8jlvfgpW2LF/Flare-Overview?node-id=0-1&embed-host=share" allowFullScreen ref={el => figmaRef.current = el}></iframe>
             </div>
           </div>
         </div>
+
+        <img src="/image/Flare/VarietyScreens.png" className="case-image-wide" ref={el => imageRefs.current[0] = el}></img>
+
 
         <div className="case-container-showcase"> 
           <div className="case-left-content" ref={el => showcaseRefs.current[0] = el}>
@@ -315,6 +319,7 @@ export default function Flare() {
             <img src="/image/Flare/FlareTeam.png"></img>
           </div>
         </div>
+        
 
         <img src="/image/Flare/FlareBlog.png" className="case-image-wide" ref={el => showcaseRefs.current[2] = el}></img>
         <img src="/image/Flare/MockupPhoneFlareCropped.png" className="case-image-wide mt-6" ref={el => showcaseRefs.current[3] = el}></img>
