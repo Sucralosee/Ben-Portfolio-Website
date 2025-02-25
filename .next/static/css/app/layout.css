@@ -834,7 +834,8 @@ h1 sup{
     font-family: 'Poppins', sans-serif;
     font-size: 2rem;
     color: var(--color-D-Copy);
-    line-height: 2.2rem;
+    line-height: 2.4rem;
+    
 
 }
 .Pop28{
@@ -849,13 +850,15 @@ h1 sup{
     font-family: 'Poppins', sans-serif;
     font-size: 1.5rem;
     color: var(--color-D-Copy);
+    line-height: 1.7rem;
+
 }
 
 .Pop20{
     font-family: 'Poppins', sans-serif;
     font-size: 1.25rem;
     color: var(--color-D-Copy);
-    line-height: 1.7rem;
+    line-height: 1.8rem;
 }
 
 .Light-Text{
@@ -1094,6 +1097,9 @@ h1 sup{
         flex-direction: column;
         height: 40rem;
     }
+    .footer-left-container{
+        gap: 1rem;
+    }
     .footer-right-container{
         width: 10rem;
         margin-top: 2rem;
@@ -1114,6 +1120,7 @@ h1 sup{
 
 .menu-bar{
     margin: 2rem 8rem;
+    mix-blend-mode: exclusion;
 }
 
 .menu-bar, .menu-overlay{
@@ -1150,6 +1157,7 @@ h1 sup{
     gap: 0.5rem;
     cursor: pointer;
     color: var(--color-D-Header);
+    
 }
 
 .menu-open svg {

@@ -1,6 +1,6 @@
 .about-container{
     width: 85vw;
-    margin: 2rem 8rem;
+    margin: 1rem 8rem;
     display: flex;
     justify-content: flex-start;
     gap: 2rem;
@@ -16,7 +16,7 @@
 
 .about-profile{
     width: auto;
-    height: 30rem;
+    max-height: 30rem;
 }
 
 .tert-container{
@@ -24,8 +24,28 @@
 }
 
 .about-skills-container{
+
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     gap: 2rem;
+
+    display: none;
+}
+
+@media (max-width: 850px){
+    .about-container{
+        margin: 2rem;
+        flex-direction: column;
+    }
+    .about-right{
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 450px){
+    .about-container{
+        margin: 1rem;
+    }
 }

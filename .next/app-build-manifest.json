@@ -6,41 +6,17 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/page.css",
-      "static/chunks/app/page.js"
-    ],
-    "/Projects/FlareIDSP/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/Projects/FlareIDSP/page.css",
-      "static/chunks/app/Projects/FlareIDSP/page.js"
-    ],
-    "/Projects/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/Projects/page.css",
-      "static/chunks/app/Projects/page.js"
-    ],
     "/About/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/About/page.css",
       "static/chunks/app/About/page.js"
     ],
-    "/Designs/page": [
+    "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/Designs/page.css",
-      "static/chunks/app/Designs/page.js"
-    ],
-    "/Designs/LHpage/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/Designs/LHpage/page.css",
-      "static/chunks/app/Designs/LHpage/page.js"
+      "static/css/app/page.css",
+      "static/chunks/app/page.js"
     ]
   }
 }

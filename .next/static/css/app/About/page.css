@@ -53,7 +53,7 @@
   \********************************************************************************************************************************************************************************************************************************************************************************/
 .about-container{
     width: 85vw;
-    margin: 2rem 8rem;
+    margin: 1rem 8rem;
     display: flex;
     justify-content: flex-start;
     gap: 2rem;
@@ -69,7 +69,7 @@
 
 .about-profile{
     width: auto;
-    height: 30rem;
+    max-height: 30rem;
 }
 
 .tert-container{
@@ -77,10 +77,30 @@
 }
 
 .about-skills-container{
+
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     gap: 2rem;
+
+    display: none;
+}
+
+@media (max-width: 850px){
+    .about-container{
+        margin: 2rem;
+        flex-direction: column;
+    }
+    .about-right{
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 450px){
+    .about-container{
+        margin: 1rem;
+    }
 }
 /*!******************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/components/Lister/lister.css ***!
@@ -167,6 +187,9 @@
     .footer-outer-container{
         flex-direction: column;
         height: 40rem;
+    }
+    .footer-left-container{
+        gap: 1rem;
     }
     .footer-right-container{
         width: 10rem;
@@ -261,6 +284,7 @@
 
 .menu-bar{
     margin: 2rem 8rem;
+    mix-blend-mode: exclusion;
 }
 
 .menu-bar, .menu-overlay{
@@ -297,6 +321,7 @@
     gap: 0.5rem;
     cursor: pointer;
     color: var(--color-D-Header);
+    
 }
 
 .menu-open svg {

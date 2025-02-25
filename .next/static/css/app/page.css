@@ -388,6 +388,9 @@
         flex-direction: column;
         height: 40rem;
     }
+    .footer-left-container{
+        gap: 1rem;
+    }
     .footer-right-container{
         width: 10rem;
         margin-top: 2rem;
