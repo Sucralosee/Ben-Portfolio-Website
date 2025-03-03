@@ -1,8 +1,7 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
-  "/Production/page": "app/Production/page.js",
   "/Production/JWST/page": "app/Production/JWST/page.js",
-  "/Projects/page": "app/Projects/page.js",
   "/Projects/FlareIDSP/page": "app/Projects/FlareIDSP/page.js",
+  "/Projects/page": "app/Projects/page.js",
+  "/Production/page": "app/Production/page.js",
   "/Designs/FlareLogo/page": "app/Designs/FlareLogo/page.js"
 }
