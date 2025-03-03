@@ -1,15 +1,24 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Project1 from "../Project1/project1";
 import gsap from "gsap";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 import "./wrcan.css";
 import Overview from "../Overview/overview";
 
-const WRCan = ({ 
-}) => {
+const WRCan = () => {
     const fadeRefs = useRef([]);
     const tertiaryContainerRef = useRef(null);
+    const carouselRef = useRef(null);
+    const [currentSlide, setCurrentSlide] = useState(0);
+    
+    // Array of image paths for the carousel
+    const carouselImages = [
+        "/image/Can/WRClassic.png",
+        "/image/Can/WRPeach.png",  // You'll need to replace with your actual image paths
+        "/image/Can/WRMatcha.png"   // You'll need to replace with your actual image paths
+    ];
 
     useEffect(() => {
         gsap.set(fadeRefs.current, {
@@ -19,6 +28,7 @@ const WRCan = ({
 
         const handleScroll = () => {
             fadeRefs.current.forEach((ref) => {
+                if (!ref) return;
                 const rect = ref.getBoundingClientRect();
                 if (rect.top < window.innerHeight && rect.bottom > 0) {
                     gsap.to(ref, {
@@ -62,9 +72,54 @@ const WRCan = ({
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
+    // Handle carousel transitions
+    const nextSlide = () => {
+        const nextIndex = (currentSlide + 1) % carouselImages.length;
+        
+        if (carouselRef.current) {
+            // Animate out current slide
+            gsap.to(carouselRef.current, {
+                opacity: 0,
+                x: -50,
+                duration: 0.5,
+                ease: "power2.out",
+                onComplete: () => {
+                    setCurrentSlide(nextIndex);
+                    // Animate in next slide
+                    gsap.fromTo(carouselRef.current, 
+                        { opacity: 0, x: 50 },
+                        { opacity: 1, x: 0, duration: 0.5, ease: "power2.out" }
+                    );
+                }
+            });
+        }
+    };
+
+    const prevSlide = () => {
+        const prevIndex = (currentSlide - 1 + carouselImages.length) % carouselImages.length;
+        
+        if (carouselRef.current) {
+            // Animate out current slide
+            gsap.to(carouselRef.current, {
+                opacity: 0,
+                x: 50,
+                duration: 0.5,
+                ease: "power2.out",
+                onComplete: () => {
+                    setCurrentSlide(prevIndex);
+                    // Animate in next slide
+                    gsap.fromTo(carouselRef.current, 
+                        { opacity: 0, x: -50 },
+                        { opacity: 1, x: 0, duration: 0.5, ease: "power2.out" }
+                    );
+                }
+            });
+        }
+    };
+
     return (
         <>  
-             <Project1
+            <Project1
                 Head1="White Rabbit Liquer"
                 Head2="2024"
                 Head3="Can Design" 
@@ -96,14 +151,88 @@ const WRCan = ({
             />
             <div className="poster-container">
                 <div className="tertiary-container" ref={tertiaryContainerRef}>
-                    <div  ref={el => fadeRefs.current[8] = el}>
-                        <img src="/image/Can/WRCan-L.png" alt="?" width={100} height={100} className="tertiary-poster"/>
+                    <div ref={el => fadeRefs.current[8] = el}>
+                        <img src="/image/Can/WRCan-L.png" alt="White Rabbit Can Design" width={100} height={100} className="tertiary-poster"/>
                     </div>                
                 </div>
             </div>
-
+            
+            <div className="poster-container">
+                <div className="tertiary-container">
+                    <div className="carousel-container" ref={el => fadeRefs.current[9] = el}>
+                        <button 
+                            className="carousel-button carousel-button-prev" 
+                            onClick={prevSlide}
+                            aria-label="Previous slide"
+                        >
+                            <ChevronLeft size={24} />
+                        </button>
+                        
+                        <div className="carousel-image-container" ref={carouselRef}>
+                            <img 
+                                src={carouselImages[currentSlide]} 
+                                alt={`White Rabbit Can Design ${currentSlide + 1}`} 
+                                width={100} 
+                                height={100} 
+                                className="tertiary-poster rabbit"
+                            />
+                        </div>
+                        
+                        <button 
+                            className="carousel-button carousel-button-next" 
+                            onClick={nextSlide}
+                            aria-label="Next slide"
+                        >
+                            <ChevronRight size={24} />
+                        </button>
+                    </div>
+                    
+                    <div className="carousel-indicators">
+                        {carouselImages.map((_, index) => (
+                            <button
+                                key={index}
+                                className={`carousel-dot ${index === currentSlide ? 'active' : ''}`}
+                                onClick={() => {
+                                    if (index !== currentSlide) {
+                                        if (index > currentSlide) {
+                                            gsap.to(carouselRef.current, {
+                                                opacity: 0,
+                                                x: -50,
+                                                duration: 0.5,
+                                                ease: "power2.out",
+                                                onComplete: () => {
+                                                    setCurrentSlide(index);
+                                                    gsap.fromTo(carouselRef.current, 
+                                                        { opacity: 0, x: 50 },
+                                                        { opacity: 1, x: 0, duration: 0.5, ease: "power2.out" }
+                                                    );
+                                                }
+                                            });
+                                        } else {
+                                            gsap.to(carouselRef.current, {
+                                                opacity: 0,
+                                                x: 50,
+                                                duration: 0.5,
+                                                ease: "power2.out",
+                                                onComplete: () => {
+                                                    setCurrentSlide(index);
+                                                    gsap.fromTo(carouselRef.current, 
+                                                        { opacity: 0, x: -50 },
+                                                        { opacity: 1, x: 0, duration: 0.5, ease: "power2.out" }
+                                                    );
+                                                }
+                                            });
+                                        }
+                                    }
+                                }}
+                                aria-label={`Go to slide ${index + 1}`}
+                            />
+                        ))}
+                    </div>
+                </div>
+            </div>
         </>
-    )
-}
+    );
+};
 
 export default WRCan;

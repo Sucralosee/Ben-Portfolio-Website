@@ -6,17 +6,23 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/About/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/About/page.css",
-      "static/chunks/app/About/page.js"
-    ],
     "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/page.css",
       "static/chunks/app/page.js"
+    ],
+    "/Designs/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/Designs/page.css",
+      "static/chunks/app/Designs/page.js"
+    ],
+    "/Designs/WhiteRabbit/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/Designs/WhiteRabbit/page.css",
+      "static/chunks/app/Designs/WhiteRabbit/page.js"
     ]
   }
 }

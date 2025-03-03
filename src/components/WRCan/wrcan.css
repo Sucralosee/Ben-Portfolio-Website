@@ -17,6 +17,73 @@
     width: 100%;
     height: auto;
 }
+ 
+.tertiary-poster .rabbit{
+    width: 60vw;
+}
+
+.carousel-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+  
+.carousel-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70vw;
+}
+  
+.carousel-button {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 10;
+}
+  
+.carousel-button:hover {
+    background-color: var(--color-L-BG);
+}
+  
+  .carousel-button-prev {
+    left: 10px;
+  }
+  
+  .carousel-button-next {
+    right: 10px;
+  }
+  
+  .carousel-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 8px;
+  }
+  
+  .carousel-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--color-L-BG-25);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .carousel-dot.active {
+    background-color: var(--color-L-BG);
+  }
 
 @media(max-width: 1200px) {
     .poster-container{
