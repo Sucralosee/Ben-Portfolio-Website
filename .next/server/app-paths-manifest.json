@@ -1,5 +1,7 @@
 {
-  "/Designs/WhiteRabbit/page": "app/Designs/WhiteRabbit/page.js",
   "/page": "app/page.js",
-  "/Designs/page": "app/Designs/page.js"
+  "/Designs/page": "app/Designs/page.js",
+  "/Designs/WhiteRabbit/page": "app/Designs/WhiteRabbit/page.js",
+  "/Production/page": "app/Production/page.js",
+  "/Production/JWST/page": "app/Production/JWST/page.js"
 }

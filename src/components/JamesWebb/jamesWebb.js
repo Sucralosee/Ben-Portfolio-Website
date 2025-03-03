@@ -58,18 +58,7 @@ const JamesWebb = () => {
       ease: "power2.out"
     });
 
-    gsap.from(".tert-triple img", {
-      scrollTrigger: {
-        trigger: ".tert-triple",
-        start: "top center+=100",
-        toggleActions: "play none none reverse"
-      },
-      y: 50,
-      opacity: 0,
-      duration: 0.8,
-      stagger: 0.2,
-      ease: "back.out(1.2)"
-    });
+    // Removed GSAP animation for .tert-triple img
 
     gsap.from(".Pop32", {
       scrollTrigger: {
