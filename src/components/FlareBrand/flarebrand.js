@@ -117,12 +117,22 @@ const FlareBrand = ({ }) => {
             <div className="tert-container">
                 <FlareRationale />
             </div>
-  
-            {/* <div className="poster-container">
-                <div className="tertiary-container" ref={tertiaryContainerRef}>
-                
+            <div className="case-container">
+                <img src="/image/LogoFlare/FlareStyleguide.png" className="case-half" ></img>
+                <img src="/image/Flare/VarietyScreens.png" className="case-half" ></img>
+            </div>
+
+            <div className="case-container-testing"> 
+                <div className="case-left-content" ref={el => contentSectionRefs.current[3] = el}>
+                    <p className="Pop32">4. User Reaseach / Testing</p>
+                    <p className="Pop20">Was done to understand market gaps and more specifically user needs.</p>
+                    <p className="Pop20 mt-4">Two personas were created to reflect the typical user that would potentially find value in Flare as useful tool.</p>
+                </div> 
+                <div className="flex justify-between personas">
+                    <img className="case-half" src="/image/Flare/FlarePersona-1.png" ref={el => personasRefs.current[0] = el}></img>
+                    <img className="case-half" src="/image/Flare/FlarePersona-2.png" ref={el => personasRefs.current[1] = el}></img>
                 </div>
-            </div> */}
+            </div>
         </>
     )
 }

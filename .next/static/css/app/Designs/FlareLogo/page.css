@@ -1,0 +1,861 @@
+/*!******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/components/Header/header.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************/
+.header-container{
+    position: relative;
+    top: 0;
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    padding-top: 11rem;
+    color: #fff;
+    /* z-index: 2;*/
+    /* border: red 4px solid; */
+
+    margin: 0 8rem;
+}
+
+.header-title{
+    position: relative;
+    left: -2.6rem;
+    margin: 0;
+}
+
+.header-title-thing{
+    margin: 0;
+}
+
+.my-logo{
+    /* Add styles for your logo if needed */
+}
+
+@media (width>2560px) {
+    .header-container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin: 0 auto;
+        width: 60%;
+    }
+    
+}
+
+@media(max-width: 1200px){
+    .header-container{
+        margin: 0;
+        padding-bottom: 0;
+    }
+
+    .header-title{
+        margin-top: 1rem;
+        left: 0;
+    }
+}
+
+@media(max-width: 600px){
+    .header-title{
+        margin-top: 0.5rem;
+        left: 0;
+        font-size: 2.5rem;
+    }
+}
+@media(max-width: 450px){
+    .header-container{
+        margin: 0;
+        padding: 7rem 1rem 0rem;
+    }        
+
+    .header-title{
+        margin: 0;
+    }
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/components/Back/back.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************/
+.arrow-container{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin: 8rem 10rem 0;
+}
+
+/* .arrowBackRight{
+    position: relative;
+    top:0.4rem;
+    left: 2rem;
+    font-size: 3rem;
+    color: var(--color-D-Copy);
+} */
+
+.arrowBackLeft{
+    position: relative;
+    top:0.4rem;
+    left: -0.5rem;
+    font-size: 3rem;
+    color: var(--color-D-Copy);
+}
+
+
+@media (max-width: 1200px) {
+    .arrow-container{
+        margin: 3rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .arrow-container{
+        margin: 3rem;
+    }
+}
+/*!**********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/components/Project1/project1.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************/
+.project-container{
+    /* border: green 2px solid; */
+
+    display: flex;
+    flex-direction: column;
+    height: 10rem;
+    margin:0 8rem;
+}
+
+.top-head{
+    width: 85vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+}
+
+.bot-head{
+    width: 85vw;
+    border-bottom: 0.25rem solid var(--color-primary);
+
+    margin-bottom: 0.5rem;
+}
+
+.top-head-pad{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.name-head{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.head-date{
+    margin: 4rem 0 0 2rem;
+    padding-bottom: 0.9rem;
+}
+
+@media (width>2560px){
+    .project-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        width: 60%;
+    }
+    .top-head{
+        width: 100%;
+    }
+    .bot-head{
+        width: 100%;
+    }
+}
+
+
+@media(max-width: 1200px){
+    .project-container{
+        width: 95vw;
+        height: auto;
+        margin: 0 2rem;
+    }
+
+    .top-head{
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .place-head{    
+        margin: 0;
+    }
+}
+
+@media(max-width: 450px){
+    .project-container{
+        margin: 1.5rem 1rem;
+        flex-direction: column;
+    }
+
+    .head-date{
+        padding-bottom: 0.4rem;
+        font-size: 0.75rem;
+        margin: 0 0 0 2rem;
+
+    }
+
+    .top-head{
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100vw;
+        height: auto;
+    }
+
+    .name-head{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bot-head, .SubHead{
+        margin-top: 0;
+    }
+
+    .place-head{    
+        margin: 0;
+    }
+
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/components/FlareBrand/flarebrand.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************/
+.overview-flare-container{
+    margin: 2rem 8rem 0 8rem;
+    display: flex;
+}
+
+.flare-left{
+    width: 60%;
+}
+
+.flare-right{
+    width: 40%;
+}
+
+.lottie-container {
+    /* width: 40rem; 
+    height: 30rem; 
+    overflow: hidden; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lottie-container > * {
+    transform: scale(3); 
+    margin-top: -50px;
+}
+
+@media (max-width: 450px){
+    .overview-flare-container{
+        flex-direction: column;
+        margin: 1rem;
+
+    }
+    .flare-left{
+        width: 95%;
+    }
+    .flare-right{
+        width: 95%;
+    }
+}
+/*!****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/components/Flare/flare.css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************/
+.case-container{
+    margin: 2rem 8rem 0 8rem;
+    width: 85vw;
+
+}
+
+.case-container-top{
+    margin: 5rem 0 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.case-left-content{
+    width: 60%;
+}
+
+.case-right-image{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-left: 2rem;
+}
+
+.case-links{
+    display: flex;
+    gap: 2rem;
+}
+
+.links-container {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 1rem;
+    background-color: var(--color-L-BG);
+    border: 0.2rem solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.links-container:hover {
+    background-color: var(--color-D-BG-25);
+    border: 0.2rem solid var(--color-D-Copy);
+    color: var(--color-D-Copy);
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.links-container:hover a{
+    color: var(--color-L-copy);
+}
+
+.case-container-problem{
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.highlight-issue {
+    color: var(--color-primary);
+    font-weight: 500;
+}
+
+.case-issues{
+    margin: 4rem 0 1rem;
+}
+
+.case-container-triple{
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.case-container-link{
+    margin: 2rem 0;
+    gap: 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.case-left-arrow{
+    display: flex;
+    justify-content: flex-end;
+    margin: 1rem 0 2rem;
+}
+
+.case-card-link{
+    padding-top: 4rem;
+}
+
+.case-container-testing{
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.case-container-showcase{
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.case-container-mock{
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.case-figma{
+    width: 100%;
+    height: 90%;
+}
+
+.case-half{
+    width: 40vw;
+}
+.case-third{
+    width: 32%;
+}
+
+.case-image-wide{
+    max-height: 50rem;
+    width: 100%;
+    object-fit:cover;
+}
+
+.flare-figma{
+    height: 40rem;
+}
+
+.case-seb{
+    object-fit: cover;
+    background-color: white;
+}
+
+.userStory{
+    background-color: var(--color-L-BG);
+}
+
+@media (max-width:450px){
+    .case-container{
+        margin: 1rem;
+        width: 100%;
+    
+    }
+    .case-container-top, .case-container-problem,.case-container-link, .mock-cont, .case-container-showcase{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+    .case-left-content{
+        width: 90%;
+    }
+    .case-right-image{
+        width: 80%;
+        margin: 0;
+    }
+
+    .links-container {
+        width: 50%;
+    }
+
+    .case-container-triple{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .case-third{
+        width: 80%;
+    }
+
+    .personas{
+        display: flex;
+        flex-direction: column;
+    }
+    .case-half{
+        width: auto;
+    }
+
+    .case-image-wide{
+        height: auto;
+    }
+}
+/*!**********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/components/Overview/overview.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************/
+.overview-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    margin: 2rem 8rem 0 8rem;
+    
+    width: 85vw;
+}
+
+.left-overview{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    margin-right: 2rem;
+}
+
+.logos{
+    display: flex;
+    gap: 1rem;
+}
+
+.role-overview{
+    margin-top: 1rem;
+}
+
+.right-overview{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 45%;
+    margin-top: 2rem;
+}
+
+.right-image{
+    height: 100%;
+    max-height: 60rem;
+    width: fit-content;
+}
+
+.figma-container{
+    display: flex;
+    justify-content: flex-end;
+}
+.figma{
+    width: 100%;
+    height: 44rem;
+}
+
+.links-container {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 1rem;
+    background-color: var(--color-L-BG);
+    border: 0.2rem solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.links-container:hover {
+    background-color: var(--color-D-BG-25);
+    border: 0.2rem solid var(--color-D-Copy);
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.links-container:hover a{
+    color: var(--color-L-copy);
+}
+
+@media (width>2560px){
+    .overview-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 2rem auto;
+        width: 60%;
+    }
+}
+
+@media (max-width: 1800px){
+    .overview-container{
+
+    }
+
+    .right-image{
+        height: auto;
+        width: auto;
+        
+    }
+
+    .left-overview{
+        color: rebeccapurple
+    }
+}
+
+@media (max-width: 1200px) {
+    .overview-container{
+        width: 95vw;
+        margin: 2rem;
+    }
+
+    .right-overview{
+        justify-content: flex-start;
+    }
+
+
+    .right-image{
+    }
+
+}
+
+@media (max-width: 800px) {
+    .overview-container{
+        margin: 0;
+        flex-direction: column;
+        width: 100vw;
+    }
+    .left-overview{
+        width: 90vw;
+        margin: 2rem;
+    }
+
+    .right-overview{
+        margin: 0 2rem;
+        width: auto;
+    }
+
+    .right-image{
+        /* height: 30rem; */
+    }
+}
+
+@media (max-width: 450px) {
+    .overview-container{
+        margin: 0;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .left-overview{
+        width: 90vw;
+        height: auto;
+        margin-top: 0;
+    }
+
+    .logos{
+        gap: 0.5rem;
+    }
+
+    .logo{
+        width: 5rem;
+        margin: 0;
+    }
+
+    .links-container{
+        width: 10rem;
+        padding: 0.5rem 0.4rem 0.4rem;
+        margin: 0.5rem;
+    }
+
+}
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/components/FlareRationale/flareRationale.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************/
+.logo-rationale-slider {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+  
+.ration-slider-container {
+    display: flex;
+    background: var(--color-L-BG);
+    border-radius: 12px;
+    box-shadow: 0 5px 30px rgba(0,0,0,0.08);
+    overflow: hidden;
+}
+  
+.logo-image-section {
+    flex: 1;
+    position: relative;
+    background-color: var(--color-D-BG-25);
+    min-height: 500px;
+}
+  
+.logo-image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.logo-image-container img {
+    max-width: 80%;
+    max-height: 80%;
+    width: auto;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+  
+.rationale-section {
+    flex: 1;
+    padding: 2rem;
+    position: relative;
+}
+  
+.rationale-section h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 30px;
+    position: relative;
+}
+  
+.rationale-section h2:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: var(--color-primary);
+}
+  
+.rationale-points-container {
+    height: 200px;
+    position: relative;
+}
+  
+.rationale-point {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+  
+.rationale-point h3 {
+    color: #ff5722;
+    margin-bottom: 15px;
+}
+  
+.rationale-point p {
+    color: #555;
+    line-height: 1.6;
+    font-size: 16px;
+}
+  
+.navigation-dots {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    display: flex;
+    gap: 8px;
+}
+  
+.nav-dot {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--color-D-BG-25);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 12px;
+    color: #555;
+}
+  
+.nav-dot:hover {
+    border: 2px solid var(--color-D-BG-25);
+    background-color: var(--color-L-BG);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+  
+@media (max-width: 768px) {
+    .slider-container {
+        flex-direction: column;
+}
+    
+    .logo-image-section {
+        min-height: 300px;
+}
+    
+    .rationale-section {
+        padding: 30px 20px;
+}
+    
+.navigation-dots {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        margin-top: 30px;
+        justify-content: center;
+    }
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./src/components/Foot/foot.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************/
+.footer-outer-container {
+    margin-top: 10rem;
+    padding: 2rem 8rem;
+    height: 30rem;
+    width: 100%;
+    background-color: var(--color-L-BG);
+    display: flex;
+  }
+
+.footer-left-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.footer-right-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 50%;
+    position: relative;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+.footer-link-item {
+    position: relative;
+
+}
+.back-to-top {
+    margin-top: 1rem;
+    padding-top: 1rem;
+}
+  
+.back-to-top-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: inherit;
+    padding: 0;
+}
+  
+.back-to-top-icon {
+    transition: transform 0.3s ease;
+}
+  
+.back-to-top-button:hover .back-to-top-icon {
+    transform: translateY(-0.5rem);
+}
+
+@media (max-width: 1400px){
+    .footer-outer-container{
+        padding: 2rem 4rem;
+    }
+}
+
+@media (max-width: 900px){
+    .footer-outer-container{
+        padding: 1rem;
+    }
+}
+@media (max-width: 450px){
+    .footer-outer-container{
+        flex-direction: column;
+        height: 40rem;
+    }
+    .footer-left-container{
+        gap: 1rem;
+    }
+    .footer-right-container{
+        width: 10rem;
+        margin-top: 2rem;
+        align-items: flex-start;
+    }
+    .footer-links{
+        align-items: flex-start;
+    }
+
+}

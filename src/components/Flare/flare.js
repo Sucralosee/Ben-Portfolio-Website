@@ -275,7 +275,7 @@ export default function Flare() {
 
         <div className="case-container-testing"> 
           <div className="case-left-content" ref={el => contentSectionRefs.current[3] = el}>
-            <p className="Pop32">4. User Reaseach / Testing</p>
+            <p className="Pop32">4. User Reaseach / Flow</p>
             <p className="Pop20">Was done to understand market gaps and more specifically user needs.</p>
             <p className="Pop20 mt-4">Two personas were created to reflect the typical user that would potentially find value in Flare as useful tool.</p>
           </div> 
@@ -283,18 +283,22 @@ export default function Flare() {
             <img className="case-half" src="/image/Flare/FlarePersona-1.png" ref={el => personasRefs.current[0] = el}></img>
             <img className="case-half" src="/image/Flare/FlarePersona-2.png" ref={el => personasRefs.current[1] = el}></img>
           </div>
+          
         </div>
 
+        <img src="/image/Flare/FlareUserStoryMap.png" className="case-image-wide mt-6 userStory" ref={el => showcaseRefs.current[2] = el}></img>
+
+
         <div className="case-container-mock"> 
-          <p className="Pop32" ref={el => contentSectionRefs.current[4] = el}>5. Site-Map</p>
+          <p className="Pop32" ref={el => contentSectionRefs.current[3] = el}>5. Site-Map</p>
           <div className="flex flex-col gap-10 mock-cont">
             <div className=".case-image-wide">
-              <p className="Pop20" ref={el => contentSectionRefs.current[5] = el}>A sitemap was created to understand how the flow of the features. With the essential features outlined and how users navigate between.</p>
+              <p className="Pop20" ref={el => contentSectionRefs.current[4] = el}>A sitemap was created to understand how the flow of the features. With the essential features outlined and how users navigate between.</p>
               <img className="case-figma" src="/image/Flare/Sitemap.png" ref={el => sitemapRef.current = el}></img>
             </div>
             <div className=".case-image-wide flare-figma">
-                <p className="Pop32" ref={el => contentSectionRefs.current[6] = el}>6. Hi-Fi Mockup</p>
-              <p className="Pop20" ref={el => contentSectionRefs.current[7] = el}>This culminated in a hi-fi mockup to test and prototype the features before we started the coding process.</p>
+              <p className="Pop32" ref={el => contentSectionRefs.current[5] = el}>6. Hi-Fi Mockup</p>
+              <p className="Pop20" ref={el => contentSectionRefs.current[6] = el}>This culminated in a hi-fi mockup to test and prototype the features before we started the coding process.</p>
               <iframe className="case-figma" width="800" height="600" src="https://embed.figma.com/design/ZVhJP3JiZJq8jlvfgpW2LF/Flare-Overview?node-id=0-1&embed-host=share" allowFullScreen ref={el => figmaRef.current = el}></iframe>
             </div>
           </div>
@@ -315,14 +319,24 @@ export default function Flare() {
             </div>
           </div>
           <div className="case-right-image" ref={el => showcaseRefs.current[1] = el}>
-            <p className="Pop32">The landing page was designed to act as the blog to showcase the </p>
+          <p className="Pop20">The Team!!! With the mayor of Burnaby</p>
             <img src="/image/Flare/FlareTeam.png"></img>
           </div>
         </div>
         
-
-        <img src="/image/Flare/FlareBlog.png" className="case-image-wide" ref={el => showcaseRefs.current[2] = el}></img>
+        <p className="Pop32" ref={el => showcaseRefs.current[2] = el}>The blog was designed to showcase the features and development process.</p>
+        <img src="/image/Flare/FlareBlog.png" className="case-image-wide" ref={el => showcaseRefs.current[3] = el}></img>
         <img src="/image/Flare/MockupPhoneFlareCropped.png" className="case-image-wide mt-6" ref={el => showcaseRefs.current[3] = el}></img>
+        <p className="Pop32">Promotional Material</p>
+        <img src="/image/Flare/FlareBrochureFront.png" className="case-image-wide" ref={el => showcaseRefs.current[4] = el}></img>
+        <img src="/image/Flare/FlareBrochureBack.png" className="case-image-wide mt-6" ref={el => showcaseRefs.current[4] = el}></img>
+        <Card
+          titleItem= "Flare Promotional Video"
+          subTitleItem= "Video / Audio / Color Editing"
+          cardYear= "2024"
+          cardImage= "/image/Flare/Flare-PP.png"
+          linkPath= "/Production/FlareVideo"
+        />
       </div>
     </>
   );

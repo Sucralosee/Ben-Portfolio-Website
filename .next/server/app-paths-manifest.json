@@ -1,7 +1,7 @@
 {
-  "/page": "app/page.js",
-  "/Designs/page": "app/Designs/page.js",
-  "/Designs/WhiteRabbit/page": "app/Designs/WhiteRabbit/page.js",
   "/Production/page": "app/Production/page.js",
-  "/Production/JWST/page": "app/Production/JWST/page.js"
+  "/Production/JWST/page": "app/Production/JWST/page.js",
+  "/Projects/FlareIDSP/page": "app/Projects/FlareIDSP/page.js",
+  "/Projects/page": "app/Projects/page.js",
+  "/Designs/FlareLogo/page": "app/Designs/FlareLogo/page.js"
 }
