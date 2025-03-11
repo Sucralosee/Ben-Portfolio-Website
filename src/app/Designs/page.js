@@ -20,6 +20,13 @@ const cardsData = [
     linkPath: "/Designs/TimberMag"
   },
   {
+    titleItem: "Wheel of Time Blog",
+    subTitleItem: "WordPress Design",
+    cardYear: "2024",
+    cardImage: "./image/WOT/WOTBlog.png",
+    linkPath: "/Designs/WOT"
+  },
+  {
     titleItem: "Local Harvest",
     subTitleItem: "UX / UI Design",
     cardYear: "2024",
@@ -39,7 +46,9 @@ const cardsData = [
     cardYear: "2024",
     cardImage: "./image/Can/WRCan-S.png",
     linkPath: "/Designs/WhiteRabbit"
-  }
+  },
+
+
   
 ];
 

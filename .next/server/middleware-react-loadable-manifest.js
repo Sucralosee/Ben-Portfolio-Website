@@ -1,1 +1,1 @@
-self.__REACT_LOADABLE_MANIFEST="{\"components/FlareBrand/flarebrand.js -> lottie-react\":{\"id\":\"components/FlareBrand/flarebrand.js -> lottie-react\",\"files\":[\"static/chunks/_app-pages-browser_node_modules_lottie-react_build_index_umd_js.js\"]}}"
+self.__REACT_LOADABLE_MANIFEST="{}"

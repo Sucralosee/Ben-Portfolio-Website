@@ -63,15 +63,16 @@
     transition: all 0.3s ease-in-out;
 }
 
-.links-container:hover {
+.links-container:hover{
     background-color: var(--color-D-BG-25);
     border: 0.2rem solid var(--color-D-Copy);
+    color: var(--color-D-copy);
     transform: scale(1.05);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .links-container:hover a{
-    color: var(--color-L-copy);
+    color: var(--color-D-Copy);
 }
 
 @media (width>2560px){
