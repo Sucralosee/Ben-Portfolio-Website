@@ -12,17 +12,22 @@
       "static/css/app/page.css",
       "static/chunks/app/page.js"
     ],
-    "/Designs/page": [
+    "/Projects/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/Designs/page.css",
-      "static/chunks/app/Designs/page.js"
+      "static/css/app/Projects/page.css",
+      "static/chunks/app/Projects/page.js"
     ],
-    "/Designs/WOT/page": [
+    "/Projects/FlareIDSP/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/Designs/WOT/page.css",
-      "static/chunks/app/Designs/WOT/page.js"
+      "static/css/app/Projects/FlareIDSP/page.css",
+      "static/chunks/app/Projects/FlareIDSP/page.js"
+    ],
+    "/_not-found/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/_not-found/page.js"
     ]
   }
 }

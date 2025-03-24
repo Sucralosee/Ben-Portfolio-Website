@@ -289,7 +289,8 @@ export default function Flare() {
         <p className="Pop20" ref={el => contentSectionRefs.current[6] = el}>Through analyzing existing wildfire tracking apps, we identified key gaps in usability and engagement. While many apps provide extensive data, they often lack an intuitive user experience, making it difficult to access critical information quickly. Flare sets itself apart by prioritizing user experience, accessibility, and proactive safety measures to enhance usability and emergency preparedness. </p>
         <p className="Pop32 mt-6" ref={el => contentSectionRefs.current[5] = el}>Research Insights</p>
         <p className="Pop20" ref={el => contentSectionRefs.current[6] = el}>Users need customizable alerts based on their location and risk level to stay informed during wildfire events. Additionally, educational resources should be clear and easy to digest, ensuring users can effectively prepare before wildfires occur.</p>
-        <img src="/image/Flare/FlareUserStoryMap.png" className="case-image-wide mt-6 userStory" ref={el => showcaseRefs.current[2] = el}></img>
+        {/* ref={el => showcaseRefs.current[2] = el} */}
+        <img src="/image/Flare/FlareUserStoryMap.png" className="case-image-wide mt-6 userStory"></img> 
 
 
         <div className="case-container-mock"> 
