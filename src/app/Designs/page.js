@@ -6,6 +6,13 @@ import Foot from "@/components/Foot/foot";
 
 const cardsData = [
   {
+    titleItem: "Flare Branding",
+    subTitleItem: "Brand Design",
+    cardYear: "2024",
+    cardImage: "./image/LogoFlare/FlareLogoMockup.png",
+    linkPath: "/Designs/FlareLogo"
+  },
+  {
     titleItem: "Japanese Classics",
     subTitleItem: "Poster Design",
     cardYear: "2024",
@@ -19,13 +26,13 @@ const cardsData = [
     cardImage: "./image/Timber/timberMockup-S.png",
     linkPath: "/Designs/TimberMag"
   },
-  {
-    titleItem: "Wheel of Time Blog",
-    subTitleItem: "WordPress Design",
-    cardYear: "2024",
-    cardImage: "./image/WOT/WOTBlog.png",
-    linkPath: "/Designs/WOT"
-  },
+  // {
+  //   titleItem: "Wheel of Time Blog",
+  //   subTitleItem: "WordPress Design",
+  //   cardYear: "2024",
+  //   cardImage: "./image/WOT/WOTBlog.png",
+  //   linkPath: "/Designs/WOT"
+  // },
   {
     titleItem: "Local Harvest",
     subTitleItem: "UX / UI Design",
@@ -33,13 +40,6 @@ const cardsData = [
     cardImage: "./image/LH-image/HomeLH.png",
     linkPath: "/Designs/LHpage",
   },  
-  {
-    titleItem: "Flare Branding",
-    subTitleItem: "Brand Design",
-    cardYear: "2024",
-    cardImage: "./image/LogoFlare/FlareLogoMockup.png",
-    linkPath: "/Designs/FlareLogo"
-  },
   {
     titleItem: "White Rabbit Liqueur",
     subTitleItem: "Can Design",
